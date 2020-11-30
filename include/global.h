@@ -122,11 +122,8 @@
 // Each define must be here for each of RHH's branch you have pulled.
 // e.g. If you have both the battle_engine and pokemon_expansion branch,
 //      then both BATTLE_ENGINE and POKEMON_EXPANSION must be defined here.
-<<<<<<< HEAD
 #define BATTLE_ENGINE
-=======
 #define ITEM_EXPANSION
->>>>>>> 6f29abbe0e242649e06753840e17cbe009318a93
 
 #define ROUND_BITS_TO_BYTES(numBits)(((numBits) / 8) + (((numBits) % 8) ? 1 : 0))
 

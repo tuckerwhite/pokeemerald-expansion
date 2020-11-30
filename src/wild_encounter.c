@@ -654,7 +654,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             {
                 if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
                 {
-<<<<<<< HEAD
+                 gIsSurfingEncounter = TRUE;
                     if (TryDoDoubleWildBattle())
                     {
                         struct Pokemon mon1 = gEnemyParty[0];
@@ -666,10 +666,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
                     {
                         BattleSetup_StartWildBattle();
                     }
-=======
-                    gIsSurfingEncounter = TRUE;
-                    BattleSetup_StartWildBattle();
->>>>>>> 6f29abbe0e242649e06753840e17cbe009318a93
+
                     return TRUE;
                 }
 
