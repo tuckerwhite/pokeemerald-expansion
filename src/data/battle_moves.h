@@ -11076,6 +11076,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
+        [MOVE_ARMOR_BREAK] =
+    {
+        .effect = EFFECT_ALL_STATS_UP_HIT,
+        .power = 35,
+        .type = TYPE_FIGHTING,
+        .accuracy = 0,
+        .pp = 10,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .flags = FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+
     [MOVE_EXPANDING_FORCE] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO
