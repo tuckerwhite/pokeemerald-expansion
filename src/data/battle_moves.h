@@ -11120,13 +11120,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_FADE] =
     {
-        .effect = EFFECT_SPEED_UP,
+        .effect = EFFECT_SPEED_UP, EFFECT_EVASION_UP,
         .power = 0,
         .type = TYPE_GHOST,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 100,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_USER,
         .priority = 0,
         .flags = FLAG_MIRROR_MOVE_AFFECTED,
         .split = SPLIT_STATUS,
