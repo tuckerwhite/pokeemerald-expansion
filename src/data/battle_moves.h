@@ -11090,6 +11090,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
+        [MOVE_SANDBLASTER] =
+    {
+        .effect = EFFECT_WEATHER_BALL,
+        .power = 35,
+        .type = TYPE_ROCK,
+        .accuracy = 0,
+        .pp = 10,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_SPECIAL,
+    },
+
     [MOVE_EXPANDING_FORCE] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO
