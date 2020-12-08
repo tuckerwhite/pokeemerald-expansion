@@ -2910,6 +2910,10 @@ static const u8 sSURGING_STRIKESDescription[] = _(
     "Mastering the Water style,\n"
     "strikes with 3 critical hits.");
 
+static const u8 sARMOR_BREAKDescription[] = _(
+    "Attacks its own armor to \n"
+    "raise all stats once.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -3664,5 +3668,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_JUNGLE_HEALING - 1] = sJUNGLE_HEALINGDescription,
     [MOVE_WICKED_BLOW - 1] = sWICKED_BLOWDescription,
     [MOVE_SURGING_STRIKES - 1] = sSURGING_STRIKESDescription,
+    [MOVE_ARMOR_BREAK - 1] = sARMOR_BREAKDescription,
 
 };
