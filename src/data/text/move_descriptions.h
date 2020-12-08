@@ -2917,6 +2917,10 @@ static const u8 sARMOR_BREAKDescription[] = _(
 static const u8 sSANDBLASTERDescription[] = _(
     "Doubles power in a sandstorm.");
 
+static const u8 sFADEDescription[] = _(
+    "Becomes less visible, raising\n"
+    "Speed and Evasion.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -3673,5 +3677,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SURGING_STRIKES - 1] = sSURGING_STRIKESDescription,
     [MOVE_ARMOR_BREAK - 1] = sARMOR_BREAKDescription,
     [MOVE_SANDBLASTER -1] = sSANDBLASTERDescription,
+    [MOVE_FADE - 1] = sFADEDescription,
 
 };

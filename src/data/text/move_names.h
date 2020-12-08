@@ -750,4 +750,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_WICKED_BLOW] = _("Wicked Blow"),
     [MOVE_SURGING_STRIKES] = _("SurgeStrikes"),
     [MOVE_SANDBLASTER] = _("Sandblaster"),
+    [MOVE_FADE] = _("Fade"),
 };
