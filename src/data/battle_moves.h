@@ -1968,11 +1968,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_WATERFALL] =
     {
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .effect = EFFECT_FLINCH_HIT,
-        #else
-            .effect = EFFECT_SPEED_UP_HIT,
-        #endif
+        .effect = EFFECT_SPEED_UP_HIT,
         .power = 80,
         .type = TYPE_WATER,
         .accuracy = 100,
