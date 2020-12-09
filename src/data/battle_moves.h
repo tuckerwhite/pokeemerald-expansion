@@ -11120,7 +11120,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_FADE] =
     {
-        .effect = EFFECT_SPEED_UP,
+        .effect = EFFECT_FADE,
         .power = 0,
         .type = TYPE_GHOST,
         .accuracy = 0,

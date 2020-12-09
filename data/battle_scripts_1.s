@@ -365,6 +365,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectFairyLock
 	.4byte BattleScript_EffectAllySwitch
 	.4byte BattleScript_EffectSleepHit
+	.4byte BattleScript_EffectFade
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -7693,3 +7694,8 @@ BattleScript_AnnounceAirLockCloudNine::
 	waitmessage 0x40
 	call BattleScript_WeatherFormChanges
 	end3
+
+	BattleScript_EffectFade:
+	setstatchanger STAT_EVASION, 1, FALSE
+	setstatchanger STAT_SPEED, 1, FALSE
+	goto BattleScript_EffectStatUp
