@@ -2925,6 +2925,10 @@ static const u8 sHORNCRASHDescription[] = _(
     "Drills with a horn\n"
     "to bolster Defense.");
 
+static const u8 sHORNCRASHDescription[] = _(
+    "Inflates its body,\n"
+    "drastically raising Sp.Def.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
