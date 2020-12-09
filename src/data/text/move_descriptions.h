@@ -2921,6 +2921,10 @@ static const u8 sFADEDescription[] = _(
     "Becomes less visible, raising\n"
     "Speed and Evasion.");
 
+static const u8 sHORNCRASHDescription[] = _(
+    "Drills with a horn\n"
+    "to bolster Defense.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -3678,5 +3682,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ARMOR_BREAK - 1] = sARMOR_BREAKDescription,
     [MOVE_SANDBLASTER -1] = sSANDBLASTERDescription,
     [MOVE_FADE - 1] = sFADEDescription,
+    [MOVE_HORN_CRASH - 1] = sHORNCRASHDescription,
 
 };

@@ -11132,6 +11132,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
+        [MOVE_HORN_CRASH] =
+    {
+        .effect = EFFECT_DEFENSE_UP_HIT,
+        .power = 80,
+        .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 25,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+
     [MOVE_STEEL_ROLLER] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO
