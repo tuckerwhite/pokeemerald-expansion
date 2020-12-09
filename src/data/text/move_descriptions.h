@@ -2925,7 +2925,7 @@ static const u8 sHORNCRASHDescription[] = _(
     "Drills with a horn\n"
     "to bolster Defense.");
 
-static const u8 sHORNCRASHDescription[] = _(
+static const u8 sPuffUpDescription[] = _(
     "Inflates its body,\n"
     "drastically raising Sp.Def.");
 
@@ -3687,5 +3687,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SANDBLASTER -1] = sSANDBLASTERDescription,
     [MOVE_FADE - 1] = sFADEDescription,
     [MOVE_HORN_CRASH - 1] = sHORNCRASHDescription,
+    [MOVE_PUFF_UP - 1] = sPuffUpDescription,
 
 };
