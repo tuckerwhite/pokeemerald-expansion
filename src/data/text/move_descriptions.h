@@ -2929,6 +2929,10 @@ static const u8 sPuffUpDescription[] = _(
     "Inflates its body,\n"
     "drastically raising Sp.Def.");
 
+static const u8 sWarDrumDescription[] = _(
+    "Attacks itself weakly./n"
+    "Can activate abilities.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -3688,5 +3692,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_FADE - 1] = sFADEDescription,
     [MOVE_HORN_CRASH - 1] = sHORNCRASHDescription,
     [MOVE_PUFF_UP - 1] = sPuffUpDescription,
+    [MOVE_WAR_DRUM - 1] = sWarDrumDescription,
 
 };

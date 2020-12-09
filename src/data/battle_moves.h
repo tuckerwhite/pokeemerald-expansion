@@ -11160,6 +11160,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
+        [MOVE_WAR_DRUM] =
+    {
+        .effect = EFFECT_MULTI_HIT, 
+        .power = 0,
+        .type = TYPE_NORMAL,
+        .accuracy = 0,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .flags = FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+
     [MOVE_STEEL_ROLLER] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO

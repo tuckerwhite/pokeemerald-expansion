@@ -753,4 +753,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_FADE] = _("Fade"),
     [MOVE_HORN_CRASH] = _("Horn Crash"),
     [MOVE_PUFF_UP] = _("Puff Up"),
+    [MOVE_WAR_DRUM] = _("War Drum"),
 };
