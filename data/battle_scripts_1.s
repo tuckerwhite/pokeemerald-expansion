@@ -7696,5 +7696,26 @@ BattleScript_AnnounceAirLockCloudNine::
 	end3
 
 	BattleScript_EffectFade:
-	setstatchanger STAT_EVASION, STAT_SPEED, 1, FALSE
-	goto BattleScript_EffectStatUp
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_SPEED, MAX_STAT_STAGE, BattleScript_FadeDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_EVASION, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
+BattleScript_FadeDoMoveAnim::
+	attackanimation
+	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_SPEED | BIT_EVASION, 0x0
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_FadeTryEvasion
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_FadeTryEvasion
+	printfromtable gStatUpStringIds
+	waitmessage 0x40
+BattleScript_FadeTryEvasion::
+	setstatchanger STAT_EVASION, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_FadeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_FadeEnd
+	printfromtable gStatUpStringIds
+	waitmessage 0x40
+BattleScript_FadeEnd::
+	goto BattleScript_MoveEnd
