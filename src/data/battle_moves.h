@@ -11163,8 +11163,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         [MOVE_WAR_DRUM] =
     {
         .effect = EFFECT_MULTI_HIT, 
-        .power = 0,
-        .type = TYPE_NORMAL,
+        .power = 5,
+        .type = TYPE_DARK,
         .accuracy = 0,
         .pp = 15,
         .secondaryEffectChance = 0,
