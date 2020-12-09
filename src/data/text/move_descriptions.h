@@ -2930,7 +2930,7 @@ static const u8 sPuffUpDescription[] = _(
     "drastically raising Sp.Def.");
 
 static const u8 sWarDrumDescription[] = _(
-    "Attacks itself weakly./n"
+    "Attacks itself weakly. \n"
     "Can activate abilities.");
 
 static const u8 sNotDoneYetDescription[] = _(
