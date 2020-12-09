@@ -366,6 +366,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectAllySwitch
 	.4byte BattleScript_EffectSleepHit
 	.4byte BattleScript_EffectFade
+	.4byte BattleScript_EffectSpecialDefenseUp3
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -2903,6 +2904,10 @@ BattleScript_EffectSpecialAttackUp3::
 
 BattleScript_EffectSpecialDefenseUp2::
 	setstatchanger STAT_SPDEF, 2, FALSE
+	goto BattleScript_EffectStatUp
+
+BattleScript_EffectSpecialDefenseUp3::
+	setstatchanger STAT_SPDEF, 3, FALSE
 	goto BattleScript_EffectStatUp
 
 BattleScript_EffectAccuracyUp2:
