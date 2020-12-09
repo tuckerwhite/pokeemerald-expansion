@@ -7696,7 +7696,5 @@ BattleScript_AnnounceAirLockCloudNine::
 	end3
 
 	BattleScript_EffectFade:
-	setstatchanger STAT_EVASION, 1, FALSE
-	goto BattleScript_EffectStatUp
-	setstatchanger STAT_SPEED, 1, FALSE
+	setstatchanger STAT_EVASION, STAT_SPEED, 1, FALSE
 	goto BattleScript_EffectStatUp
