@@ -2944,12 +2944,17 @@ static const u8 sBlinkStrikeDescription[] = _(
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
+static const u8 sDisarmDescription[] = _(
+    "Disarms with a deft blow,\n"
+    "lowering foe's attack.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
     [MOVE_OVERLOAD - 1] = sOverloadDescription,
     [MOVE_BLINK_STRIKE - 1] = sBlinkStrikeDescription,
+    [MOVE_DISARM - 1] = sDisarmDescription,
     [MOVE_KARATE_CHOP - 1] = sKarateChopDescription,
     [MOVE_DOUBLE_SLAP - 1] = sDoubleSlapDescription,
     [MOVE_COMET_PUNCH - 1] = sCometPunchDescription,
