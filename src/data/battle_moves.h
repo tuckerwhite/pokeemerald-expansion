@@ -11232,7 +11232,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
 
 
-    // [MOVE_FROST_NOVA] =
+    [MOVE_FROST_NOVA] =
     {
         .effect = EFFECT_FALSE_SWIPE,
         .power = 70,
