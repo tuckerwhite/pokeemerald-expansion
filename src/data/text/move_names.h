@@ -755,5 +755,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_PUFF_UP] = _("Puff Up"),
     [MOVE_WAR_DRUM] = _("War Drum"),
     [MOVE_OVERLOAD] = _("Overload"),
-    [MOVE_BLINK_STRIKE] = ("Blink Strike"),
+    [MOVE_BLINK_STRIKE] = _("Blink Strike"),
 };
