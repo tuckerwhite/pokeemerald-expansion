@@ -6555,12 +6555,12 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
         basePower = sSpeedDiffPowerTable[speed];
         break;
     case EFFECT_GYRO_BALL:
-        basePower = (1 * GetBattlerTotalSpeedStat(battlerAtk)) + 1;
+        basePower = ((25 * GetBattlerTotalSpeedStat(battlerDef)) / GetBattlerTotalSpeedStat(battlerAtk)) + 1;
         if (basePower > 150)
             basePower = 150;
         break;
     case EFFECT_BLINK_STRIKE:
-        basePower = ((25 * GetBattlerTotalSpeedStat(battlerDef)) / GetBattlerTotalSpeedStat(battlerAtk)) + 1;
+        basePower = (25 * GetBattlerTotalSpeedStat(battlerAtk)) + 1;
         if (basePower > 150)
             basePower = 150;
         break;
