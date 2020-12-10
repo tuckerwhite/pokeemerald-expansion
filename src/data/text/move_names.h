@@ -758,4 +758,6 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_BLINK_STRIKE] = _("Blink Strike"),
     [MOVE_DISARM] = _("Disarm"),
     [MOVE_JOLT] = _("Jolt"),
+    [MOVE_FROST_NOVA] _("Frost Nova"),
+    [MOVE_METALLURGY] _("Metallurgy"),
 };

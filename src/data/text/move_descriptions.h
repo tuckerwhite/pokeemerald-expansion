@@ -2956,10 +2956,15 @@ static const u8 sFrostNovaDescription[] = _(
     "A frigid blast that\n"
     "nearly decimates foes.");
 
+static const u8 sMetallurgyDescription[] = _(
+    "Hits and adds Steel\n"
+    "type to the target.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_METALLURGY - 1] sMetallurgyDescription,
     [MOVE_FROST_NOVA - 1] = sFrostNovaDescription,
     [MOVE_JOLT - 1] = sJoltDescription,
     [MOVE_OVERLOAD - 1] = sOverloadDescription,
