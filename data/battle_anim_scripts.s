@@ -767,6 +767,7 @@ gBattleAnims_Moves::
 	.4byte Move_JUNGLE_HEALING
 	.4byte Move_WICKED_BLOW
 	.4byte Move_SURGING_STRIKES
+	.4byte Move_FROST_NOVA
 	.4byte Move_COUNT @ cannot be reached, because last move is Surging Strikes
 
 	.align 2
