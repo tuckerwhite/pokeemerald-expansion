@@ -6559,6 +6559,11 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
         if (basePower > 150)
             basePower = 150;
         break;
+    case EFFECT_BLINK_STRIKE:
+        basePower = (25 * GetBattlerTotalSpeedStat(battlerAtk)) + 1;
+        if (basePower > 150)
+            basePower = 150;
+        break;
     case EFFECT_ECHOED_VOICE:
         if (gFieldTimers.echoVoiceCounter != 0)
         {

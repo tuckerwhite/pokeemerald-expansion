@@ -2937,6 +2937,10 @@ static const u8 sOverloadDescription[] = _(
     "Sends out pulses that \n"
     "hit all foes thrice.");
 
+static const u8 sBlinkStrikeDescription[] = _(
+    "Damages with user's \n"
+    "Speed, instead of Attack.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -2945,6 +2949,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
     [MOVE_OVERLOAD - 1] = sOverloadDescription,
+    [MOVE_BLINK_STRIKE - 1] = sBlinkStrikeDescription,
     [MOVE_KARATE_CHOP - 1] = sKarateChopDescription,
     [MOVE_DOUBLE_SLAP - 1] = sDoubleSlapDescription,
     [MOVE_COMET_PUNCH - 1] = sCometPunchDescription,
