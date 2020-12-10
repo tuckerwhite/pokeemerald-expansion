@@ -6560,7 +6560,7 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
             basePower = 150;
         break;
     case EFFECT_BLINK_STRIKE:
-        basePower = (25 * GetBattlerTotalSpeedStat(battlerAtk))+ 1;
+        basePower = ((25 * GetBattlerTotalSpeedStat(battlerAtk)) / GetBattlerTotalSpeedStat(battlerDef)) + 1;
         if (basePower > 150)
             basePower = 150;
         break;
