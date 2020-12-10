@@ -11190,7 +11190,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_BLINK_STRIKE] =
     {
-        .effect = EFFECT_GYRO_BALL, 
+        .effect = EFFECT_BLINK_STRIKE, 
         .power = 30,
         .type = TYPE_FLYING,
         .accuracy = 100,
