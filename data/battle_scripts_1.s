@@ -367,7 +367,6 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectSleepHit
 	.4byte BattleScript_EffectFade
 	.4byte BattleScript_EffectSpecialDefenseUp3
-	.4byte BattleScript_EffectBlinkStrike
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
