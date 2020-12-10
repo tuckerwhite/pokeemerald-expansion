@@ -368,6 +368,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectFade
 	.4byte BattleScript_EffectSpecialDefenseUp3
 	.4byte BattleScript_BlinkStrike
+	.4byte BattleScript_Sandblaster
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -2053,6 +2054,7 @@ BattleScript_EffectFusionCombo:
 BattleScript_EffectRevelationDance:
 BattleScript_EffectBelch:
 BattleScript_BlinkStrike:
+BattleScript_Sandblaster:
 
 BattleScript_HitFromAtkCanceler::
 	attackcanceler

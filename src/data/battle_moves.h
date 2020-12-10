@@ -11092,15 +11092,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
         [MOVE_SANDBLASTER] =
     {
-        .effect = EFFECT_WEATHER_BALL,
-        .power = 35,
+        .effect = EFFECT_SANDBLASTER,
+        .power = 110,
         .type = TYPE_ROCK,
-        .accuracy = 0,
+        .accuracy = 70,
         .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MIRROR_MOVE_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
         .split = SPLIT_SPECIAL,
     },
 
