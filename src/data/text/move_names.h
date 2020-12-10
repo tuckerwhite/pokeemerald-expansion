@@ -757,4 +757,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_OVERLOAD] = _("Overload"),
     [MOVE_BLINK_STRIKE] = _("Blink Strike"),
     [MOVE_DISARM] = _("Disarm"),
+    [MOVE_JOLT] = _("Jolt"),
 };

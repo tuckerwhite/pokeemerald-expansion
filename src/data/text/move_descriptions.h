@@ -2911,7 +2911,7 @@ static const u8 sSURGING_STRIKESDescription[] = _(
     "strikes with 3 critical hits.");
 
 static const u8 sARMOR_BREAKDescription[] = _(
-    "Attacks its own armor to \n"
+    "Attacks its own armor to\n"
     "raise all stats once.");
 
 static const u8 sSANDBLASTERDescription[] = _(
@@ -2930,15 +2930,15 @@ static const u8 sPuffUpDescription[] = _(
     "drastically raising Sp.Def.");
 
 static const u8 sWarDrumDescription[] = _(
-    "Attacks itself weakly. \n"
+    "Attacks itself weakly.\n"
     "Can activate abilities.");
 
 static const u8 sOverloadDescription[] = _(
-    "Sends out pulses that \n"
+    "Sends out pulses that\n"
     "hit all foes thrice.");
 
 static const u8 sBlinkStrikeDescription[] = _(
-    "Damages with user's \n"
+    "Damages with user's\n"
     "Speed, instead of Attack.");
 
 static const u8 sNotDoneYetDescription[] = _(
@@ -2948,10 +2948,15 @@ static const u8 sDisarmDescription[] = _(
     "Disarms with a deft blow,\n"
     "lowering foe's attack.");
 
+static const u8 sJoltDescription[] = _(
+    "A speedy attack that\n"
+    "cannot miss its target.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_JOLT - 1] = sJoltDescription,
     [MOVE_OVERLOAD - 1] = sOverloadDescription,
     [MOVE_BLINK_STRIKE - 1] = sBlinkStrikeDescription,
     [MOVE_DISARM - 1] = sDisarmDescription,
