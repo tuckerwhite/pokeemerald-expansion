@@ -4269,6 +4269,28 @@ u32 GetBattlerTotalSpeedStat(u8 battlerId)
     return speed;
 }
 
+u32 GetBattlerTotalDefenseStat(u8 battlerId)
+{
+    u32 defense = gBattleMons[battlerId].defense;
+    u32 ability = GetBattlerAbility(battlerId);
+    u32 holdEffect = GetBattlerHoldEffect(battlerId, TRUE);
+
+
+    // other abilities
+    if (ability == ABILITY_FUR_COAT)
+        defense *= 2;
+    else if (ability == ABILITY_GRASS_PELT && gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+        defense = (defense * 150) / 100;
+    else if (ability == ABILITY_MARVEL_SCALE && gBattleMons[battlerId].status1 & STATUS1_ANY)
+        defense = (defense * 150) / 100;
+
+    // stat stages
+    defense *= gStatStageRatios[gBattleMons[battlerId].statStages[STAT_DEF]][0];
+    defense /= gStatStageRatios[gBattleMons[battlerId].statStages[STAT_DEF]][1];
+
+        return defense;
+}
+
 s8 GetChosenMovePriority(u32 battlerId)
 {
     u16 move;

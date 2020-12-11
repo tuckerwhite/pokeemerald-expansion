@@ -6565,7 +6565,7 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
             basePower = 150;
         break;
     case EFFECT_SHIELD_SLAM:
-        basePower = 1 * gBattleMons[battlerAtk].defense;
+        basePower = (1 * GetBattlerTotalDefenseStat(battlerAtk));
         if (basePower > 150)
             basePower = 150;
         break;
