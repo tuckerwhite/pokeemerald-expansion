@@ -63,6 +63,7 @@ u8 IsRunningFromBattleImpossible(void);
 void SwitchPartyOrder(u8 battlerId);
 void SwapTurnOrder(u8 id1, u8 id2);
 u32 GetBattlerTotalSpeedStat(u8 battlerId);
+u32 GetBattlerTotalDefenseStat(u8 battlerId);
 s8 GetChosenMovePriority(u32 battlerId);
 s8 GetMovePriority(u32 battlerId, u16 move);
 u8 GetWhoStrikesFirst(u8 battlerId1, u8 battlerId2, bool8 ignoreChosenMoves);
