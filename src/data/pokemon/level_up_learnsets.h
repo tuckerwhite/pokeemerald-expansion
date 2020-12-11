@@ -5317,7 +5317,7 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_BURN_UP),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_EMBER),
     LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
@@ -5379,7 +5379,7 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE( 1, MOVE_MELTDOWN),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 4, MOVE_TOXIC_THREAD),
     LEVEL_UP_MOVE( 4, MOVE_METALLURGY),

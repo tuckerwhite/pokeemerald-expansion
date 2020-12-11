@@ -370,6 +370,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_BlinkStrike
 	.4byte BattleScript_Sandblaster
 	.4byte BattleScript_ShieldSlam
+	.4byte BattleScript_EffectMeltdown
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -422,6 +423,34 @@ BattleScript_BurnUpWorks:
 	resultmessage
 	waitmessage 0x40
 	losetype BS_ATTACKER, TYPE_FIRE
+	printstring STRINGID_ATTACKERLOSTFIRETYPE
+	waitmessage 0x40
+	tryfaintmon BS_TARGET, FALSE, NULL
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectMeltdown:
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpiftype BS_ATTACKER, TYPE_ICE, BattleScript_MeltdownWorks
+	goto BattleScript_ButItFailed
+BattleScript_MeltdownWorks:
+	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage 0x40
+	resultmessage
+	waitmessage 0x40
+	losetype BS_ATTACKER, TYPE_ICE
 	printstring STRINGID_ATTACKERLOSTFIRETYPE
 	waitmessage 0x40
 	tryfaintmon BS_TARGET, FALSE, NULL
