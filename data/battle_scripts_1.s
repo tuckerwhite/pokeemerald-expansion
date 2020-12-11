@@ -451,7 +451,7 @@ BattleScript_MeltdownWorks:
 	resultmessage
 	waitmessage 0x40
 	losetype BS_ATTACKER, TYPE_ICE
-	printstring STRINGID_ATTACKERLOSTFIRETYPE
+	printstring STRINGID_ATTACKERLOSTICETYPE
 	waitmessage 0x40
 	tryfaintmon BS_TARGET, FALSE, NULL
 	goto BattleScript_MoveEnd
