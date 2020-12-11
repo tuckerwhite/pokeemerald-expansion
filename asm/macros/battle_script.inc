@@ -1635,6 +1635,11 @@
 	various \battler, VARIOUS_TRY_THIRD_TYPE
 	.4byte \ptr
 	.endm
+
+	.macro tryoverwritetype battler:req, ptr:req
+	various \battler, VARIOUS_OVERWRITE_TYPE
+	.4byte \ptr
+	.endm
 	
 	.macro tryaccupressure battler:req, ptr:req
 	various \battler, VARIOUS_ACUPRESSURE

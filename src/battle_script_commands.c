@@ -8302,7 +8302,24 @@ static void Cmd_various(void)
             gBattlescriptCurrInstr += 7;
         }
         return;
+    
+
+    case VARIOUS_OVERWRITE_TYPE:
+        if (IS_BATTLER_OF_TYPE(gActiveBattler, gBattleMoves[gCurrentMove].argument))
+        {
+            gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 3);
+        }
+        else
+        {
+            gBattleMons[gActiveBattler].type1 = gBattleMoves[gCurrentMove].argument;
+            gBattleMons[gActiveBattler].type2 = gBattleMoves[gCurrentMove].argument;
+            gBattleMons[gActiveBattler].type3 = gBattleMoves[gCurrentMove].argument;
+            PREPARE_TYPE_BUFFER(gBattleTextBuff1, gBattleMoves[gCurrentMove].argument);
+            gBattlescriptCurrInstr += 7;
+        }
+        return;
     }
+
 
     gBattlescriptCurrInstr += 3;
 }
