@@ -2960,10 +2960,14 @@ static const u8 sMetallurgyDescription[] = _(
     "Hits and adds Steel\n"
     "type to the target.");
 
+static const u8 sShieldSlamDescription[] = _(
+    "Bashes foe with Defense.\n");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_SHIELD_SLAM - 1] = sShieldSlamDescription,
     [MOVE_METALLURGY - 1] sMetallurgyDescription,
     [MOVE_FROST_NOVA - 1] = sFrostNovaDescription,
     [MOVE_JOLT - 1] = sJoltDescription,

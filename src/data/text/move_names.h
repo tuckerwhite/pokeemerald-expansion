@@ -760,4 +760,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_JOLT] = _("Jolt"),
     [MOVE_FROST_NOVA] = _("Frost Nova"),
     [MOVE_METALLURGY] = _("Metallurgy"),
+    [MOVE_SHIELD_SLAM] = _("Shield Slam"),
 };
