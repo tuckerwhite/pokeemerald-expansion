@@ -11276,6 +11276,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
 
 
+    [MOVE_MELTDOWN] =
+    {
+        .effect = EFFECT_MELTDOWN,
+        .power = 130,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 5,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_SPECIAL,
+    },
+
+
     [MOVE_STEEL_ROLLER] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO
