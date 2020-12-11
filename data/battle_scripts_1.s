@@ -371,7 +371,6 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_Sandblaster
 	.4byte BattleScript_ShieldSlam
 	.4byte BattleScript_EffectMeltdown
-	.4byte BattleScript_OverwriteType
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
