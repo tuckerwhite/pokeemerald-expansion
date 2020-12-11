@@ -2967,10 +2967,15 @@ static const u8 sMeltdownDescription[] = _(
     "Removes ice typing to deal\n"
     "massive damage.");
 
+static const u8 sParcelForceDescription[] = _(
+    "Delibird cracks its knuckles.\n"
+    "It's time it says.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_PARCEL_FORCE - 1] = sParcelForceDescription,
     [MOVE_MELTDOWN - 1] = sMeltdownDescription,
     [MOVE_SHIELD_SLAM - 1] = sShieldSlamDescription,
     [MOVE_METALLURGY - 1] sMetallurgyDescription,

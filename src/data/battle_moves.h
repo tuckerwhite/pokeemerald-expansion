@@ -11275,7 +11275,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .argument = TYPE_STEEL,
     },
 
-
     [MOVE_MELTDOWN] =
     {
         .effect = EFFECT_MELTDOWN,
@@ -11288,6 +11287,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_SPECIAL,
+    },
+
+
+    [MOVE_PARCEL_FORCE] =
+    {
+        .effect = EFFECT_OHKO,
+        .power = 1,
+        .type = TYPE_FLYING,
+        .accuracy = 60,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
     },
 
 

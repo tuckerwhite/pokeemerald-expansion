@@ -768,6 +768,7 @@ gBattleAnims_Moves::
 	.4byte Move_WICKED_BLOW
 	.4byte Move_SURGING_STRIKES
 	.4byte Move_FROST_NOVA
+	.4byte Move_PARCEL_FORCE
 	.4byte Move_COUNT @ cannot be reached, because last move is Surging Strikes
 
 	.align 2
@@ -24449,4 +24450,15 @@ Move_FROST_NOVA:
 	launchtemplate gSlideMonToOriginalPosSpriteTemplate 0xc2 0x3 0x0 0x0 0x4
 	waitforvisualfinish
 	call UnsetPsychicBg
+	end
+Move_PARCEL_FORCE:
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	playsewithpan SE_M_DOUBLE_SLAP, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
