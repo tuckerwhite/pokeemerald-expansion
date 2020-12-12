@@ -14019,77 +14019,77 @@ Move_WICKED_BLOW::
 Move_SURGING_STRIKES::
 	end @to do:
 
-Move_ARMOR_BREAK::
+Move_ARMOR_BREAK:
 	goto Move_SHELL_SMASH
 
-Move_SANDBLASTER::
+Move_SANDBLASTER:
 	goto Move_EARTH_POWER
 
-Move_FADE::
+Move_FADE:
 	goto Move_DOUBLE_TEAM
 
-Move_HORN_CRASH::
+Move_HORN_CRASH:
 	goto Move_HORN_DRILL
 
-Move_PUFF_UP::
+Move_PUFF_UP:
 	goto Move_BULK_UP
 
-Move_WAR_DRUM::
+Move_WAR_DRUM:
 	goto Move_BELLY_DRUM
 
-Move_OVERLOAD::
-	end @to do:
+Move_OVERLOAD:
+	goto Move_TRIPLE_KICK
 
-Move_BLINK_STRIKE::
+Move_BLINK_STRIKE:
 	goto Move_EXTREME_SPEED
 
-Move_DISARM::
+Move_DISARM:
 	goto Move_QUICK_ATTACK
 
-Move_JOLT::
+Move_JOLT:
 	goto Move_THUNDER_SHOCK
 
-Move_FROST_NOVA::
+Move_FROST_NOVA:
 	goto MOVE_FROST_BREATH
 
- Move_METALLURGY::
+ Move_METALLURGY:
 	goto Move_METAL_SOUND
 
-Move_SHIELD_SLAM::
+Move_SHIELD_SLAM:
 	goto Move_TAKE_DOWN
 
-Move_MELTDOWN::
+Move_MELTDOWN:
 	goto Move_SURF
 
-Move_PARCEL_FORCE::
+Move_PARCEL_FORCE:
 	goto Move_PRESENT
 
-Move_SUPER_SPITUP::
+Move_SUPER_SPITUP:
 	goto Move_SPIT_UP
 
-Move_CANDY_CRUNCH::
-	end @to do:
+Move_CANDY_CRUNCH:
+	goto Move_CRUNCH
 
-Move_SNOW_IN::
-	end @to do:
+Move_SNOW_IN:
+	goto Move_BLIZZARD
 
-Move_ELECTROPLATE::
-	end @to do:
+Move_ELECTROPLATE:
+	goto Move_THUNDER_WAVE
 
-Move_COAL_TOSS::
+Move_COAL_TOSS:
 	goto Move_ROCK_THROW
 
-Move_BROIL::
-	end @to do:
+Move_BROIL:
+	goto Move_BLAST_BURN
 
-Move_CONSTELLATE::
-	end @to do:
+Move_CONSTELLATE:
+	goto Move_OBLIVION_WING
 
-Move_NATURES_FURY::
-	end @to do:
+Move_NATURES_FURY:
+	goto Move_PETAL_DANCE
 
-Move_FACTORY_WASTE::
-	end @to do:
+Move_FACTORY_WASTE:
+	goto Move_GUNK_SHOT
 
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
