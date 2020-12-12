@@ -11319,6 +11319,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
+    [MOVE_SUPER_SPITUP] =
+    {
+        .power = 1,
+        .effect = EFFECT_SPIT_UP,
+        .type = TYPE_POISON,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_SPECIAL,
+    },
+
+
     [MOVE_STEEL_ROLLER] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO

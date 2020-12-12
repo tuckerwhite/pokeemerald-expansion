@@ -2975,10 +2975,15 @@ static const u8 sCoalTossDescription[] = _(
     "Burns the foe by throwing\n"
     "hot coals at them.");
 
+static const u8 sSuperSpitUpDescription[] = _(
+    "Releases all stockpiled\n"
+    "power as damage.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_SUPER_SPITUP - 1] = sSuperSpitUpDescription,
     [MOVE_COAL_TOSS - 1] = sCoalTossDescription,
     [MOVE_PARCEL_FORCE - 1] = sParcelForceDescription,
     [MOVE_MELTDOWN - 1] = sMeltdownDescription,
