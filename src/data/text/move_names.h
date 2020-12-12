@@ -763,4 +763,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_SHIELD_SLAM] = _("Shield Slam"),
     [MOVE_MELTDOWN] = _("Meltdown"),
     [MOVE_PARCEL_FORCE] = _("Parcel Force"),
+    [MOVE_COAL_TOSS] = _("Coal Toss"),
 };
