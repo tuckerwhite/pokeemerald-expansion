@@ -5379,10 +5379,10 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE( 1, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE( 1, MOVE_ETERNABEAM),
     LEVEL_UP_MOVE( 4, MOVE_SUPER_SPITUP),
-    LEVEL_UP_MOVE( 4, MOVE_METALLURGY),
+    LEVEL_UP_MOVE( 4, MOVE_FROST_NOVA),
     LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
     LEVEL_UP_MOVE(17, MOVE_BIDE),

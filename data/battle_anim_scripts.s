@@ -767,9 +767,30 @@ gBattleAnims_Moves::
 	.4byte Move_JUNGLE_HEALING
 	.4byte Move_WICKED_BLOW
 	.4byte Move_SURGING_STRIKES
+	.4byte Move_ARMOR_BREAK
+	.4byte Move_SANDBLASTER
+	.4byte Move_FADE
+	.4byte Move_HORN_CRASH
+	.4byte Move_PUFF_UP
+	.4byte Move_WAR_DRUM
+	.4byte Move_OVERLOAD
+	.4byte Move_BLINK_STRIKE
+	.4byte Move_DISARM
+	.4byte Move_JOLT
 	.4byte Move_FROST_NOVA
+	.4byte Move_METALLURGY
+	.4byte Move_SHIELD_SLAM
+	.4byte Move_MELTDOWN
 	.4byte Move_PARCEL_FORCE
 	.4byte Move_SUPER_SPITUP
+	.4byte Move_CANDY_CRUNCH
+	.4byte Move_SNOW_IN
+	.4byte Move_ELECTROPLATE
+	.4byte Move_COAL_TOSS
+	.4byte Move_BROIL
+	.4byte Move_CONSTELLATE
+	.4byte Move_NATURES_FURY
+	.4byte Move_FACTORY_WASTE
 	.4byte Move_COUNT @ cannot be reached, because last move is Surging Strikes
 
 	.align 2
@@ -13998,6 +14019,70 @@ Move_WICKED_BLOW::
 Move_SURGING_STRIKES::
 	end @to do:
 
+Move_ARMOR_BREAK
+	goto Move_SHELL_SMASH
+
+Move_SANDBLASTER
+	goto Move_EARTH_POWER
+
+Move_FADE
+	goto Move_DOUBLE_TEAM
+
+Move_HORN_CRASH
+	goto Move_HORN_DRILL
+
+Move_PUFF_UP
+	goto Move_BULK_UP
+
+Move_WAR_DRUM
+	goto Move_BELLY_DRUM
+
+Move_OVERLOAD
+	end @to do:
+
+Move_BLINK_STRIKE
+	goto Move_EXTREME_SPEED
+
+Move_DISARM
+	goto Move_QUICK_ATTACK
+
+Move_JOLT
+	goto Move_THUNDER_SHOCK
+
+Move_FROST_NOVA:
+	goto MOVE_FROST_BREATH
+
+ Move_METALLURGY
+	goto Move_METAL_SOUND
+
+Move_SHIELD_SLAM
+	goto Move_TAKE_DOWN
+
+Move_MELTDOWN
+	goto Move_SURF
+
+Move_PARCEL_FORCE:
+	goto Move_PRESENT
+
+Move_SUPER_SPITUP:
+	goto Move_SPIT_UP
+
+Move_CANDY_CRUNCH
+	end @to do:
+
+Move_BROIL
+	end @to do:
+
+Move_CONSTELLATE
+	end @to do:
+
+Move_NATURES_FURY
+	end @to do:
+
+Move_FACTORY_WASTE
+	end @to do:
+
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 Move_NONE:
 Move_MIRROR_MOVE:
@@ -21801,27 +21886,6 @@ SpitUpStrongest:
 	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 240
 	goto SpitUpContinue
 
-Move_SUPER_SPITUP:
-	loadspritegfx ANIM_TAG_RED_ORB_2
-	loadspritegfx ANIM_TAG_IMPACT
-	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_SpitUpDeformMon, 5
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 8, 2
-	delay 45
-	playsewithpan SE_M_SPIT_UP, SOUND_PAN_ATTACKER
-	delay 3
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 0, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 32, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 64, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 96, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 128, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 160, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 192, 12
-	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 224, 12
-	delay 5
-	jumpifmoveturn 2, SpitUpStrong
-	jumpifmoveturn 3, SpitUpStrongest
-
 Move_SWALLOW:
 	loadspritegfx ANIM_TAG_BLUE_ORB
 	loadspritegfx ANIM_TAG_BLUE_STAR
@@ -24436,51 +24500,5 @@ Special_CriticalCaptureBallThrow:
 	createvisualtask AnimTask_IsBallBlockedByTrainer, 2
 	jumpreteq -1, BallThrowTrainerBlock
 	goto BallThrowEnd
-Move_FROST_NOVA:
-	loadspritegfx ANIM_TAG_ICE_CHUNK
-	loadspritegfx ANIM_TAG_SMALL_EMBER
-	loadspritegfx ANIM_TAG_FIRE_PLUME
-	fadetobg BG_ICE
-	waitbgfadeout
-	launchtask AnimTask_StartSlidingBg 0x5 0x4 0x300 0x0 0x0 0xffff
-	waitbgfadein
-	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
-	launchtask AnimTask_ShakeMon 0x5 0x5 0x0 0x0 0x2 0x28 0x1
-	waitforvisualfinish
-	launchtemplate gSlideMonToOffsetSpriteTemplate 0x82 0x5 0x0 0xf 0x0 0x0 0x4
-	waitforvisualfinish
-	launchtemplate gFrostBreathBlueBreathTemplate 0x82 0x5 0x1e 0xf 0x0 0xa 0xa
-	waitforvisualfinish
-	loopsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET, 0xb, 0x3
-	launchtask AnimTask_ShakeMon 0x5 0x5 0x1 0x0 0x3 0x19 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0xc2 0x3 0x1 0x5 0x0
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0xc2 0x3 0x1 0xfff6 0xfff1
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0x82, 0x3, 0x1 0x0 0x19
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0xc2 0x3 0x1 0xf 0x5
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0xc2 0x3 0x1 0xffe7 0x0
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0x82, 0x3, 0x1 0x1e 0x1e
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0x82, 0x3, 0x1 0xffe5 0x19
-	delay 0x1
-	launchtemplate gFrostBreathBlueRageTemplate 0xc2 0x3 0x1 0x0 0x8
-	waitforvisualfinish
-	launchtemplate gSlideMonToOriginalPosSpriteTemplate 0xc2 0x3 0x0 0x0 0x4
-	waitforvisualfinish
-	call UnsetPsychicBg
-	end
-Move_PARCEL_FORCE:
-	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_TARGET
-	setalpha 12, 8
-	playsewithpan SE_M_DOUBLE_SLAP, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
-	waitforvisualfinish
-	clearmonbg ANIM_TARGET
-	blendoff
-	end
+
+
