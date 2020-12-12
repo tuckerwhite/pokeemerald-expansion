@@ -371,6 +371,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_Sandblaster
 	.4byte BattleScript_ShieldSlam
 	.4byte BattleScript_EffectMeltdown
+	.4byte BattleScript_EffectSuperSpitup
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -4258,6 +4259,23 @@ BattleScript_EffectSpitUp::
 	stockpiletobasedamage BattleScript_SpitUpFail
 	goto BattleScript_HitFromAtkAnimation
 BattleScript_SpitUpFail::
+	pause 0x20
+	printstring STRINGID_FAILEDTOSPITUP
+	waitmessage 0x40
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectSuperSpitup::
+	attackcanceler
+	jumpifbyte CMP_EQUAL, gBattleCommunication + 6, 0x1, BattleScript_82D9FA2
+	attackstring
+	ppreduce
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	setbyte gIsCriticalHit, FALSE
+	damagecalc
+	adjustdamage
+	stockpiletobasedamage BattleScript_SuperSpitupFail
+	goto BattleScript_HitFromAtkAnimation
+BattleScript_SuperSpitupFail::
 	pause 0x20
 	printstring STRINGID_FAILEDTOSPITUP
 	waitmessage 0x40

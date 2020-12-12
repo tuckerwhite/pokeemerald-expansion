@@ -6468,6 +6468,9 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
     case EFFECT_SPIT_UP:
         basePower = 100 * gDisableStructs[battlerAtk].stockpileCounter;
         break;
+    case EFFECT_SUPER_SPITUP:
+        basePower = 600 * gDisableStructs[battlerAtk].stockpileCounter;
+        break;
     case EFFECT_REVENGE:
         if ((gProtectStructs[battlerAtk].physicalDmg
                 && gProtectStructs[battlerAtk].physicalBattlerId == battlerDef)

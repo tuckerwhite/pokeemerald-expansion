@@ -769,6 +769,7 @@ gBattleAnims_Moves::
 	.4byte Move_SURGING_STRIKES
 	.4byte Move_FROST_NOVA
 	.4byte Move_PARCEL_FORCE
+	.4byte Move_SUPER_SPITUP
 	.4byte Move_COUNT @ cannot be reached, because last move is Surging Strikes
 
 	.align 2
@@ -21799,6 +21800,27 @@ SpitUpStrongest:
 	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 208
 	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 240
 	goto SpitUpContinue
+
+Move_SUPER_SPITUP:
+	loadspritegfx ANIM_TAG_RED_ORB_2
+	loadspritegfx ANIM_TAG_IMPACT
+	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_SpitUpDeformMon, 5
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 8, 2
+	delay 45
+	playsewithpan SE_M_SPIT_UP, SOUND_PAN_ATTACKER
+	delay 3
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 0, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 32, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 64, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 96, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 128, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 160, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 192, 12
+	createsprite gSpitUpOrbSpriteTemplate, ANIM_ATTACKER, 2, 224, 12
+	delay 5
+	jumpifmoveturn 2, SpitUpStrong
+	jumpifmoveturn 3, SpitUpStrongest
 
 Move_SWALLOW:
 	loadspritegfx ANIM_TAG_BLUE_ORB
