@@ -5380,10 +5380,10 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_FLAME_CHARGE),
-    LEVEL_UP_MOVE( 1, MOVE_HORN_CRASH),
-    LEVEL_UP_MOVE( 4, MOVE_PUFF_UP),
-    LEVEL_UP_MOVE( 4, MOVE_WAR_DRUM),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE( 4, MOVE_MIRACLE_EYE),
+    LEVEL_UP_MOVE( 4, MOVE_FORESIGHT),
     LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
     LEVEL_UP_MOVE(17, MOVE_BIDE),
