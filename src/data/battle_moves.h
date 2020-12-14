@@ -7587,7 +7587,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_FLAME_CHARGE] =
     {
-        .effect = EFFECT_SPEED_UP_HIT,
+        .effect = EFFECT_SPEED_UP_2_HIT,
         .power = 50,
         .type = TYPE_FIRE,
         .accuracy = 100,

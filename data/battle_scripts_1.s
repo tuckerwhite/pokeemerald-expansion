@@ -372,6 +372,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_ShieldSlam
 	.4byte BattleScript_EffectMeltdown
 	.4byte BattleScript_EffectSuperSpitup
+	.4byte BattleScript_EffectSpeedUp2Hit
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -1482,6 +1483,10 @@ BattleScript_QuiverDanceEnd::
 
 BattleScript_EffectSpeedUpHit:
 	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
+BattleScript_EffectSpeedUp2Hit:
+	setmoveeffect MOVE_EFFECT_SPD_PLUS_2 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
 BattleScript_EffectMeFirst:
