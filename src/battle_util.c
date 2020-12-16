@@ -4633,6 +4633,24 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 effect++;
             }
             break;
+            case ABILITY_FLAME_BODY:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && gBattleMons[gBattlerAttacker].hp != 0
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
+             && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_FIRE)
+             && GetBattlerAbility(gBattlerAttacker) != ABILITY_WATER_VEIL
+             && !(gBattleMons[gBattlerAttacker].status1 & STATUS1_ANY)
+             && !IsAbilityStatusProtected(gBattlerAttacker)
+             && (Random() % 3) == 0)
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_BURN;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_AbilityStatusEffect;
+                gHitMarker |= HITMARKER_IGNORE_SAFEGUARD;
+                effect++;
+            }
+            break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
