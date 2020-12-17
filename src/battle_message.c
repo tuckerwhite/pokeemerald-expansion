@@ -686,6 +686,7 @@ static const u8 sText_FairyAuraActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} 
 static const u8 sText_AuraBreakActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} reversed all\nother POKéMON's auras!");
 static const u8 sText_ComatoseActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is drowsing!");
 static const u8 sText_ScreenCleanerActivates[] = _("All screens on the field were\ncleansed!");
+static const u8 sText_JetStreamActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} whipped up\na Jet Stream");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1235,6 +1236,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_AURABREAKENTERS - 12] = sText_AuraBreakActivates,
     [STRINGID_COMATOSEENTERS - 12] = sText_ComatoseActivates,
     [STRINGID_SCREENCLEANERENTERS - 12] = sText_ScreenCleanerActivates,
+    [STRINGID_JETSTREAMENTERS - 12] = sText_JetStreamActivates,
 };
 
 const u16 gTerrainStringIds[] =
@@ -1277,6 +1279,7 @@ const u16 gSwitchInAbilityStringIds[] =
     [MULTI_SWITCHIN_AURABREAK] = STRINGID_AURABREAKENTERS,
     [MULTI_SWITCHIN_COMATOSE] = STRINGID_COMATOSEENTERS,
     [MULTI_SWITCHIN_SCREENCLEANER] = STRINGID_SCREENCLEANERENTERS,
+    [MULTI_SWITCHIN_JET_STREAM] = STRINGID_JETSTREAMENTERS,
 };
 
 const u16 gMissStringIds[] =

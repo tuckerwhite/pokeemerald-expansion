@@ -6937,6 +6937,13 @@ BattleScript_GravitateActivates::
 	waitstate
 	end3
 
+BattleScript_JetStreamActivates::
+	pause 0x20
+	settailwind BattleScript_ButItFailed
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_TAILWINDBLEW
+	waitstate
+	end3
 
 BattleScript_BadDreamsActivates::
 	setbyte gBattlerTarget, 0

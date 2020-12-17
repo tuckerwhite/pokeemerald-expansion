@@ -299,6 +299,7 @@ extern const u8 BattleScript_MoveUsedPowder[];
 extern const u8 BattleScript_SelectingNotAllowedBelch[];
 extern const u8 BattleScript_SelectingNotAllowedBelchInPalace[];
 extern const u8 BattleScript_GravitateActivates[];
+extern const u8 BattleScript_JetStreamActivates[];
 extern const u8 BattleScript_PsychicSurgeActivates[];
 extern const u8 BattleScript_GrassySurgeActivates[];
 extern const u8 BattleScript_MistySurgeActivates[];
