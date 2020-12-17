@@ -278,8 +278,8 @@ static const u8 sSeismicTossDescription[] = _(
     "to the user's level.");
 
 static const u8 sStrengthDescription[] = _(
-    "Builds enormous power,\n"
-    "then slams the foe.");
+    "Slams foe like a train.\n"
+    "May boost defense.");
 
 static const u8 sAbsorbDescription[] = _(
     "An attack that absorbs\n"
@@ -2969,7 +2969,7 @@ static const u8 sMeltdownDescription[] = _(
 
 static const u8 sParcelForceDescription[] = _(
     "Delibird cracks its knuckles.\n"
-    "It's time it says.");
+    "'It's time' it says.");
 
 static const u8 sCoalTossDescription[] = _(
     "Burns the foe by throwing\n"
@@ -2979,10 +2979,50 @@ static const u8 sSuperSpitUpDescription[] = _(
     "Releases all stockpiled\n"
     "power as damage.");
 
+static const u8 sTimeWarpDescription[] = _(
+    "Drags the target through\n"
+    "time to deal damage.");
+
+static const u8 sFactoryWasteDescription[] = _(
+    "Spews chemical waste.\n"
+    "Inflicts a random effect.");
+
+static const u8 sNaturesFuryDescription[] = _(
+    "Halves the foe's HP with\n"
+    "the power of nature.");
+
+static const u8 sConstellateDescription[] = _(
+    "Heals for all of the\n"
+    "damage inflicted.");
+
+static const u8 sBroilDescription[] = _(
+    "Hits first, maxes the\n"
+    "Defense, then burns.");
+
+static const u8 sElectroplateDescription[] = _(
+    "Plates the foe and adds\n"
+    "Steel to its typing.");
+
+static const u8 sSnowInDescription[] = _(
+    "Powerful, but maximizes\n"
+    "all targets' Sp.Def.");
+
+static const u8 sCandyCrunchDescription[] = _(
+    "A sugary bite! May up\n"
+    "Attack and Speed.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_CANDY_CRUNCH - 1] = sCandyCrunchDescription,
+    [MOVE_SNOW_IN - 1] = sSnowInDescription,
+    [MOVE_ELECTROPLATE - 1] = sElectroplateDescription,
+    [MOVE_BROIL - 1] = sBroilDescription,
+    [MOVE_CONSTELLATE - 1] = sConstellateDescription,
+    [MOVE_NATURES_FURY - 1] = sNaturesFuryDescription,
+    [MOVE_FACTORY_WASTE - 1] = sFactoryWasteDescription,
+    [MOVE_TIME_WARP - 1] = sTimeWarpDescription,
     [MOVE_SUPER_SPITUP - 1] = sSuperSpitUpDescription,
     [MOVE_COAL_TOSS - 1] = sCoalTossDescription,
     [MOVE_PARCEL_FORCE - 1] = sParcelForceDescription,

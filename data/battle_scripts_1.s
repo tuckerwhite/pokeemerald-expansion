@@ -373,6 +373,8 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectMeltdown
 	.4byte BattleScript_EffectSuperSpitup
 	.4byte BattleScript_EffectSpeedUp2Hit
+	.4byte BattleScript_EffectSpeedAttackUpHit
+	.4byte BattleScript_EffectSpecialDefenseUp2Hit
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -1483,6 +1485,11 @@ BattleScript_QuiverDanceEnd::
 
 BattleScript_EffectSpeedUpHit:
 	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
+BattleScript_EffectSpeedAttckUpHit:
+	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
 BattleScript_EffectSpeedUp2Hit:
@@ -2951,6 +2958,10 @@ BattleScript_EffectSpecialDefenseUp3::
 	setstatchanger STAT_SPDEF, 3, FALSE
 	goto BattleScript_EffectStatUp
 
+BattleScript_EffectSpecialDefenseUp2Hit::
+	setmoveeffect MOVE_EFFECT_SP_DEF_PLUS_2
+	goto BattleScript_EffectHit
+
 BattleScript_EffectAccuracyUp2:
 	setstatchanger STAT_ACC, 2, FALSE
 	goto BattleScript_EffectStatUp
@@ -3952,6 +3963,11 @@ BattleScript_EffectDefenseUpHit::
 	goto BattleScript_EffectHit
 
 BattleScript_EffectAttackUpHit::
+	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
+BattleScript_EffectSpeedAttackUpHit::
+	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
