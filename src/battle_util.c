@@ -4407,7 +4407,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
              && gDisableStructs[gBattlerAttacker].disabledMove == MOVE_NONE
              && IsBattlerAlive(gBattlerAttacker)
              && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL)
-             && gBattleMons[gBattlerAttacker].pp[gChosenMovePos] != 0
+             && gBattleMons[gBattlerAttacker].pp[gChosenMovePos] != 0)
             {
                 gDisableStructs[gBattlerAttacker].disabledMove = gChosenMove;
                 gDisableStructs[gBattlerAttacker].disableTimer = 4;
@@ -7319,6 +7319,11 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     if (gBattleMons[battlerAtk].status1 & STATUS1_BURN && IS_MOVE_PHYSICAL(move)
         && gBattleMoves[move].effect != EFFECT_FACADE && abilityAtk != ABILITY_GUTS)
         dmg = ApplyModifier(UQ_4_12(0.5), dmg);
+
+    // check poisoned Pokemon v Poison type pokemon
+    if (gBattleMons[battlerAtk].status1 & STATUS1_PSN_ANY && IS_BATTLER_OF_TYPE(battlerDef, TYPE_POISON)
+        && gBattleMoves[move].effect != EFFECT_FACADE && abilityAtk != ABILITY_GUTS)
+        dmg = ApplyModifier(UQ_4_12(0.75), dmg);
 
     // check sunny/rain weather
     if (WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_RAIN_ANY)
