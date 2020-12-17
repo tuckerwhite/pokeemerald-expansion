@@ -7238,7 +7238,7 @@ BattleScript_ArmorTuningSpDefAnim:
 	printstring STRINGID_TARGETABILITYSTATLOWER
 	waitmessage 0x40
 BattleScript_ArmorTuningActivatesDefUp:
-	setstatchanger STAT_DEF, 3, FALSE
+	setstatchanger STAT_DEF, 2, FALSE
 	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_ArmorTuningActivatesEnd
 	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, 0x2, BattleScript_ArmorTuningDefAnim
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x3, BattleScript_ArmorTuningActivatesEnd
@@ -7270,7 +7270,7 @@ BattleScript_ArmorTuningDefDownAnim:
 	printstring STRINGID_TARGETABILITYSTATLOWER
 	waitmessage 0x40
 BattleScript_ArmorTuningActivatesSpDefUp:
-	setstatchanger STAT_SPDEF, 3, FALSE
+	setstatchanger STAT_SPDEF, 2, FALSE
 	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_ArmorTuningSpDefBoostActivatesEnd
 	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, 0x2, BattleScript_ArmorTuningSpDefUpAnim
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x3, BattleScript_ArmorTuningSpDefBoostActivatesEnd
