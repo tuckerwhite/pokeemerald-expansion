@@ -3894,6 +3894,13 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 effect++;
             }
             break;
+        case ABILITY_GRAVITATE:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_GRAVITY, &gFieldTimers.gravityTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_GravitateActivates);
+                effect++;
+            }
+            break;
         case ABILITY_INTIMIDATE:
             if (!(gSpecialStatuses[battler].intimidatedMon))
             {

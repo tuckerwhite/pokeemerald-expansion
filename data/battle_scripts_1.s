@@ -6930,6 +6930,14 @@ BattleScript_PsychicSurgeActivates::
 	playanimation BS_SCRIPTING, B_ANIM_TERRAIN_PSYCHIC, NULL
 	end3
 
+BattleScript_GravitateActivates::
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_GRAVITYINTENSIFIED
+	waitstate
+	end3
+
+
 BattleScript_BadDreamsActivates::
 	setbyte gBattlerTarget, 0
 	call BattleScript_AbilityPopUp
