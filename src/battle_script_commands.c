@@ -1705,7 +1705,7 @@ s32 CalcCritChanceStage(u8 battlerAtk, u8 battlerDef, u32 move, bool32 recordAbi
     {
         critChance = -1;
     }
-    else if (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR)
+    else if (abilityDef == ABILITY_BATTLE_ARMOR || abilityDef == ABILITY_SHELL_ARMOR || abilityDef == ABILITY_FRIEND_GUARD)
     {
         if (recordAbility)
             RecordAbilityBattle(battlerDef, abilityDef);
@@ -1713,7 +1713,8 @@ s32 CalcCritChanceStage(u8 battlerAtk, u8 battlerDef, u32 move, bool32 recordAbi
     }
     else if (gStatuses3[battlerAtk] & STATUS3_LASER_FOCUS
              || gBattleMoves[move].effect == EFFECT_ALWAYS_CRIT
-             || (abilityAtk == ABILITY_MERCILESS && gBattleMons[battlerDef].status1 & STATUS1_PSN_ANY))
+             || (abilityAtk == ABILITY_MERCILESS && gBattleMons[battlerDef].status1 & STATUS1_PSN_ANY)
+             || (abilityAtk == ABILITY_STRONG_JAW && gBattleMoves[move].flags & FLAG_STRONG_JAW_BOOST))
     {
         critChance = -2;
     }

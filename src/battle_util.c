@@ -4408,7 +4408,6 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
              && IsBattlerAlive(gBattlerAttacker)
              && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL)
              && gBattleMons[gBattlerAttacker].pp[gChosenMovePos] != 0
-             && (Random() % 3) == 0)
             {
                 gDisableStructs[gBattlerAttacker].disabledMove = gChosenMove;
                 gDisableStructs[gBattlerAttacker].disableTimer = 4;
@@ -6759,10 +6758,6 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (gBattleMoves[move].flags & FLAG_MAKES_CONTACT)
            MulModifier(&modifier, UQ_4_12(1.3));
         break;
-    case ABILITY_STRONG_JAW:
-        if (gBattleMoves[move].flags & FLAG_STRONG_JAW_BOOST)
-           MulModifier(&modifier, UQ_4_12(1.5));
-        break;
     case ABILITY_MEGA_LAUNCHER:
         if (gBattleMoves[move].flags & FLAG_MEGA_LAUNCHER_BOOST)
            MulModifier(&modifier, UQ_4_12(1.5));
@@ -7392,6 +7387,10 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     case ABILITY_PRISM_ARMOR:
         if (typeEffectivenessModifier >= UQ_4_12(2.0))
             MulModifier(&finalModifier, UQ_4_12(0.75));
+        break;
+    case ABILITY_MAGMA_ARMOR:
+        if (moveType == (TYPE_ROCK))
+            MulModifier(&finalModifier, UQ_4_12(0.25));
         break;
     }
 
