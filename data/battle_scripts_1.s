@@ -7222,6 +7222,70 @@ BattleScript_WeakArmorSpeedAnim:
 BattleScript_WeakArmorActivatesEnd:
 	return
 
+BattleScript_ArmorTuningDefBoostActivates::
+	call BattleScript_AbilityPopUp
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_ArmorTuningActivatesDefUp
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, 0x2, BattleScript_ArmorTuningSpDefAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x3, BattleScript_ArmorTuningActivatesDefUp
+	pause 0x10
+	printfromtable gStatDownStringIds
+	waitmessage 0x40
+	goto BattleScript_ArmorTuningActivatesDefUp
+BattleScript_ArmorTuningSpDefAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETABILITYSTATLOWER
+	waitmessage 0x40
+BattleScript_ArmorTuningActivatesDefUp:
+	setstatchanger STAT_DEF, 3, FALSE
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_ArmorTuningActivatesEnd
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, 0x2, BattleScript_ArmorTuningDefAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x3, BattleScript_ArmorTuningActivatesEnd
+	pause 0x10
+	printstring STRINGID_TARGETSTATWONTGOHIGHER
+	waitmessage 0x40
+	goto BattleScript_ArmorTuningActivatesEnd
+BattleScript_ArmorTuningDefAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETABILITYSTATRAISE
+	waitmessage 0x40
+BattleScript_ArmorTuningActivatesEnd:
+	return
+
+BattleScript_ArmorTuningSpDefBoostActivates::
+	call BattleScript_AbilityPopUp
+	setstatchanger STAT_DEF, 1, TRUE
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_ArmorTuningActivatesSpDefUp
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, 0x2, BattleScript_ArmorTuningDefDownAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x3, BattleScript_ArmorTuningActivatesSpDefUp
+	pause 0x10
+	printfromtable gStatDownStringIds
+	waitmessage 0x40
+	goto BattleScript_ArmorTuningActivatesSpDefUp
+BattleScript_ArmorTuningDefDownAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETABILITYSTATLOWER
+	waitmessage 0x40
+BattleScript_ArmorTuningActivatesSpDefUp:
+	setstatchanger STAT_SPDEF, 3, FALSE
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_ArmorTuningSpDefBoostActivatesEnd
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, 0x2, BattleScript_ArmorTuningSpDefUpAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x3, BattleScript_ArmorTuningSpDefBoostActivatesEnd
+	pause 0x10
+	printstring STRINGID_TARGETSTATWONTGOHIGHER
+	waitmessage 0x40
+	goto BattleScript_ArmorTuningSpDefBoostActivatesEnd
+BattleScript_ArmorTuningSpDefUpAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETABILITYSTATRAISE
+	waitmessage 0x40
+BattleScript_ArmorTuningSpDefBoostActivatesEnd:
+	return
+
 BattleScript_AttackerAbilityStatRaise::
 	copybyte gBattlerAbility, gBattlerAttacker
 	call BattleScript_AbilityPopUp

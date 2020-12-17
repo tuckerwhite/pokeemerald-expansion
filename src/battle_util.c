@@ -4363,6 +4363,28 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 effect++;
             }
             break;
+        case ABILITY_ARMOR_TUNING:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && TARGET_TURN_DAMAGED
+             && IsBattlerAlive(battler)
+             && IS_MOVE_PHYSICAL(gCurrentMove)
+             && (gBattleMons[battler].statStages[STAT_DEF] != 12 || gBattleMons[battler].statStages[STAT_SPDEF] != 0))
+            {
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_ArmorTuningDefBoostActivates;
+                effect++;
+            }
+            else if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && TARGET_TURN_DAMAGED
+             && IsBattlerAlive(battler)
+             && IS_MOVE_SPECIAL(gCurrentMove)
+             && (gBattleMons[battler].statStages[STAT_SPDEF] != 12 || gBattleMons[battler].statStages[STAT_DEF] != 0))
+            {
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_ArmorTuningSpDefBoostActivates;
+                effect++;
+            }
+            break;
         case ABILITY_CURSED_BODY:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && TARGET_TURN_DAMAGED
