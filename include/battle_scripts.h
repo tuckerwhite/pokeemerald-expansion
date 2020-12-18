@@ -89,6 +89,7 @@ extern const u8 BattleScript_SelectingNotAllowedMoveTauntInPalace[];
 extern const u8 BattleScript_WishComesTrue[];
 extern const u8 BattleScript_IngrainTurnHeal[];
 extern const u8 BattleScript_AtkDefDown[];
+extern const u8 BattleScript_SpdAtkUp[];
 extern const u8 BattleScript_DefSpDefDown[];
 extern const u8 BattleScript_KnockedOff[];
 extern const u8 BattleScript_MoveUsedIsImprisoned[];

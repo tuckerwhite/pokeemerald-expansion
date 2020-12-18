@@ -373,7 +373,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectMeltdown
 	.4byte BattleScript_EffectSuperSpitup
 	.4byte BattleScript_EffectSpeedUp2Hit
-	.4byte BattleScript_EffectSpeedAttackUpHit
+	.4byte BattleScript_EffectCandyCrunch
 	.4byte BattleScript_EffectSpecialDefenseUp2Hit
 
 BattleScript_EffectSleepHit:
@@ -1487,10 +1487,6 @@ BattleScript_EffectSpeedUpHit:
 	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
-BattleScript_EffectSpeedAttckUpHit:
-	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
-	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
-	goto BattleScript_EffectHit
 
 BattleScript_EffectSpeedUp2Hit:
 	setmoveeffect MOVE_EFFECT_SPD_PLUS_2 | MOVE_EFFECT_AFFECTS_USER
@@ -3966,10 +3962,24 @@ BattleScript_EffectAttackUpHit::
 	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
-BattleScript_EffectSpeedAttackUpHit::
-	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
-	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
-	goto BattleScript_EffectHit
+BattleScript_SpdAtkUp::
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_SPEED | BIT_ATK, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_ONLY_MULTIPLE
+	playstatchangeanimation BS_ATTACKER, BIT_ATK, STAT_CHANGE_CANT_PREVENT
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_SpdAtkUpTryAtk
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_SpdAtkUpTryAtk
+	printfromtable gStatUpStringIds
+	waitmessage 0x40
+BattleScript_SpdAtkUpTryAtk:
+	playstatchangeanimation BS_ATTACKER, BIT_DEF, STAT_CHANGE_CANT_PREVENT
+	setstatchanger STAT_ATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_SpdAtkUpRet
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_SpdAtkUpRet
+	printfromtable gStatUpStringIds
+	waitmessage 0x40
+BattleScript_SpdAtkUpRet:
+	return
 
 BattleScript_EffectAllStatsUpHit::
 	setmoveeffect MOVE_EFFECT_ALL_STATS_UP | MOVE_EFFECT_AFFECTS_USER
@@ -4583,6 +4593,10 @@ BattleScript_EffectIngrain:
 
 BattleScript_EffectSuperpower:
 	setmoveeffect MOVE_EFFECT_ATK_DEF_DOWN | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectHit
+
+BattleScript_EffectCandyCrunch:
+	setmoveeffect MOVE_EFFECT_SPD_ATK_UP | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
 BattleScript_EffectCloseCombat:

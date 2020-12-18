@@ -2788,7 +2788,7 @@ const struct PokedexEntry gPokedexEntries[] =
     {
         .categoryName = _("ARMOR"),
         .height = 11,
-        .weight = 1200,
+        .weight = 9100,
         .description = gDonphanPokedexText,
         .pokemonScale = 313,
         .pokemonOffset = 9,

@@ -11336,7 +11336,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_CANDY_CRUNCH] =
     {
         .power = 50,
-        .effect = EFFECT_SPEED_ATTACK_UP_HIT,
+        .effect = EFFECT_CANDY_CRUNCH,
         .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 20,
