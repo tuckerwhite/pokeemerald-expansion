@@ -11389,6 +11389,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
+    [MOVE_CONSTELLATE] =
+    {
+        .effect = EFFECT_ABSORB,
+        .power = 60,
+        .type = TYPE_FAIRY,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+        .argument = 100, // restores 100% HP instead of 50% HP
+    },
+
     [MOVE_STEEL_ROLLER] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO

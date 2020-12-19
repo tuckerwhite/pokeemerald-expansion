@@ -5380,9 +5380,9 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_CANDY_CRUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_SMOG),
-    LEVEL_UP_MOVE( 4, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE( 1, MOVE_MISTY_TERRAIN),
+    LEVEL_UP_MOVE( 1, MOVE_CONSTELLATE),
+    LEVEL_UP_MOVE( 4, MOVE_GRAVITY),
     LEVEL_UP_MOVE( 4, MOVE_FORESIGHT),
     LEVEL_UP_MOVE( 9, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(12, MOVE_FORESIGHT),
@@ -5491,7 +5491,7 @@ static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sZigzagoonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 2, MOVE_FALSE_SWIPE),
+    LEVEL_UP_MOVE( 2, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE( 4, MOVE_SPLASH),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 7, MOVE_SAND_ATTACK),
