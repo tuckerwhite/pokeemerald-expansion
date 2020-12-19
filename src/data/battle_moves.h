@@ -11191,12 +11191,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
         [MOVE_OVERLOAD] =
     {
-        .effect = EFFECT_TRIPLE_KICK, 
+        .effect = EFFECT_OVERLOAD, 
         .power = 25,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 30,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 1,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,

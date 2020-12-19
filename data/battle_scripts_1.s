@@ -375,6 +375,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectSpeedUp2Hit
 	.4byte BattleScript_EffectCandyCrunch
 	.4byte BattleScript_EffectSpecialDefenseUp2Hit
+	.4byte BattleScript_EffectOverload
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -3566,6 +3567,16 @@ BattleScript_TripleKickEnd::
 	tryfaintmon BS_TARGET, FALSE, NULL
 	moveendfrom MOVEEND_UPDATE_LAST_MOVES
 	end
+
+BattleScript_EffectOverload::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	sethword sMULTIHIT_EFFECT, MOVE_EFFECT_SP_DEF_MINUS_1
+	attackstring
+	ppreduce
+	setmultihitcounter 0x3
+	initmultihitstring
+	goto BattleScript_MultiHitLoop
 
 BattleScript_EffectThief::
 	setmoveeffect MOVE_EFFECT_STEAL_ITEM
