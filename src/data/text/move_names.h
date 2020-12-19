@@ -773,4 +773,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_NATURES_FURY] = _("Natures Fury"),
     [MOVE_FACTORY_WASTE] = _("FactoryWaste"),
     [MOVE_TIME_WARP] = _("Time Warp"), 
+    [MOVE_IRON_WIND] = _("Iron Wind"),
 };

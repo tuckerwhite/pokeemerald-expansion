@@ -791,6 +791,8 @@ gBattleAnims_Moves::
 	.4byte Move_CONSTELLATE
 	.4byte Move_NATURES_FURY
 	.4byte Move_FACTORY_WASTE
+	.4byte Move_TIME_WARP
+	.4byte Move_IRON_WIND
 	.4byte Move_COUNT @ cannot be reached, because last move is Surging Strikes
 
 	.align 2
@@ -14086,10 +14088,17 @@ Move_CONSTELLATE:
 	goto Move_OBLIVION_WING
 
 Move_NATURES_FURY:
-	goto Move_PETAL_DANCE
+	goto Move_PETAL_BLIZZARD
 
 Move_FACTORY_WASTE:
 	goto Move_GUNK_SHOT
+
+Move_TIME_WARP:
+	goto Move_SKY_DROP
+
+Move_IRON_WIND:
+	goto Move_SILVER_WIND
+
 
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@

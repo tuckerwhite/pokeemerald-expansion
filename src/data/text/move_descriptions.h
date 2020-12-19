@@ -3011,6 +3011,10 @@ static const u8 sCandyCrunchDescription[] = _(
     "A sugary bite! May up\n"
     "Attack and Speed.");
 
+static const u8 sIronWindDescription[] = _(
+    "Strikes with a blinding\n"
+    "gust that lowers Sp.Atk.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -3023,6 +3027,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_NATURES_FURY - 1] = sNaturesFuryDescription,
     [MOVE_FACTORY_WASTE - 1] = sFactoryWasteDescription,
     [MOVE_TIME_WARP - 1] = sTimeWarpDescription,
+    [MOVE_IRON_WIND - 1] = sIronWindDescription,
     [MOVE_SUPER_SPITUP - 1] = sSuperSpitUpDescription,
     [MOVE_COAL_TOSS - 1] = sCoalTossDescription,
     [MOVE_PARCEL_FORCE - 1] = sParcelForceDescription,
