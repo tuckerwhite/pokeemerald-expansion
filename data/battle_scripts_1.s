@@ -376,6 +376,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectCandyCrunch
 	.4byte BattleScript_EffectSpecialDefenseUp2Hit
 	.4byte BattleScript_EffectOverload
+	.4byte BattleScript_EffectBroil
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -3778,6 +3779,36 @@ BattleScript_SwaggerTryConfuse:
 	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_OwnTempoPrevents
 	jumpifsafeguard BattleScript_SafeguardProtected
 	setmoveeffect MOVE_EFFECT_CONFUSION
+	seteffectprimary
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectBroil::
+	attackcanceler
+	jumpifsubstituteblocks BattleScript_MakeMoveMissed
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	jumpifstatus BS_TARGET, STATUS1_BURN, BattleScript_ButItFailed
+	jumpifstatus BS_TARGET, STATUS1_BURN, BattleScript_AlreadyBurned
+	jumpiftype BS_TARGET, TYPE_FIRE, BattleScript_NotAffected
+	jumpifability BS_TARGET, ABILITY_WATER_VEIL, BattleScript_WaterVeilPrevents
+	jumpifability BS_TARGET, ABILITY_COMATOSE, BattleScript_LeafGuardProtects
+	jumpifflowerveil BattleScript_FlowerVeilProtects
+	jumpifleafguard BattleScript_LeafGuardProtects
+	jumpifshieldsdown BS_TARGET, BattleScript_LeafGuardProtects
+	jumpifstatus BS_TARGET, STATUS1_ANY, BattleScript_ButItFailed
+	jumpifsafeguard BattleScript_SafeguardProtected
+	attackanimation
+	waitanimation
+	setstatchanger STAT_DEF, 6, FALSE
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_BroilTryBurn
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_BroilTryBurn
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage 0x40
+BattleScript_BroilTryBurn:
+	setmoveeffect MOVE_EFFECT_BURN
 	seteffectprimary
 	goto BattleScript_MoveEnd
 

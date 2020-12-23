@@ -14082,7 +14082,7 @@ Move_COAL_TOSS:
 	goto Move_ROCK_THROW
 
 Move_BROIL:
-	goto Move_BLAST_BURN
+	goto Move_EMBER
 
 Move_CONSTELLATE:
 	goto Move_MOONLIGHT

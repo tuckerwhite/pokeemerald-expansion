@@ -11076,7 +11076,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-        [MOVE_ARMOR_BREAK] =
+    [MOVE_ARMOR_BREAK] =
     {
         .effect = EFFECT_ALL_STATS_UP_HIT,
         .power = 35,
@@ -11090,7 +11090,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-        [MOVE_SANDBLASTER] =
+    [MOVE_SANDBLASTER] =
     {
         .effect = EFFECT_SANDBLASTER,
         .power = 110,
@@ -11105,7 +11105,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
 
 
-        [MOVE_JOLT] =
+    [MOVE_JOLT] =
     {
         .effect = EFFECT_HIT,
         .power = 50,
@@ -11147,7 +11147,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
-        [MOVE_HORN_CRASH] =
+    [MOVE_HORN_CRASH] =
     {
         .effect = EFFECT_DEFENSE_UP_HIT,
         .power = 80,
@@ -11189,7 +11189,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-        [MOVE_OVERLOAD] =
+    [MOVE_OVERLOAD] =
     {
         .effect = EFFECT_OVERLOAD, 
         .power = 25,
@@ -11402,6 +11402,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
         .argument = 100, // restores 100% HP instead of 50% HP
+    },
+
+    [MOVE_BROIL] =
+    {
+        .effect = EFFECT_BROIL,
+        .power = 0,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 1,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_STATUS,
     },
 
     [MOVE_STEEL_ROLLER] =
