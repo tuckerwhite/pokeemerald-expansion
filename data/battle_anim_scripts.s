@@ -793,6 +793,7 @@ gBattleAnims_Moves::
 	.4byte Move_FACTORY_WASTE
 	.4byte Move_TIME_WARP
 	.4byte Move_IRON_WIND
+	.4byte Move_POWER_PROC
 	.4byte Move_COUNT @ cannot be reached, because last move is Surging Strikes
 
 	.align 2
@@ -14098,6 +14099,9 @@ Move_TIME_WARP:
 
 Move_IRON_WIND:
 	goto Move_SILVER_WIND
+
+Move_POWER_PROC:
+	goto Move_BELLY_DRUM
 
 
 

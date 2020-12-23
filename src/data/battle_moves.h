@@ -11402,6 +11402,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_STATUS,
     },
 
+    [MOVE_POWER_PROC] =
+    {
+        .effect = EFFECT_MULTI_HIT,
+        .power = 5,
+        .type = TYPE_DARK,
+        .accuracy = 0,
+        .pp = 30,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SNATCH_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+
     [MOVE_STEEL_ROLLER] =
     {
         .effect = EFFECT_PLACEHOLDER,   //TODO
