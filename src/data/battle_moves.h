@@ -73,7 +73,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_MEGA_PUNCH] =
     {
         .effect = EFFECT_ATTACK_UP_HIT,
-        .power = 80,
+        .power = 60,
         .type = TYPE_NORMAL,
         .accuracy = 85,
         .pp = 20,
@@ -190,7 +190,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         #endif
         .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 80,
+        .power = 130,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
@@ -1413,8 +1413,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_FISSURE] =
     {
-        .effect = EFFECT_OHKO,
-        .power = 1,
+        .effect = EFFECT_BURN_HIT,
+        .power = 65,
         .type = TYPE_GROUND,
         .accuracy = 30,
         .pp = 5,
@@ -1422,7 +1422,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_DMG_UNDERGROUND,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_SPECIAL,
     },
 
     [MOVE_DIG] =
@@ -2981,7 +2981,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .effect = EFFECT_ACCURACY_DOWN_HIT,
         .power = 65,
         .type = TYPE_WATER,
-        .accuracy = 85,
+        .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
@@ -4981,7 +4981,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SILVER_WIND] =
     {
         .effect = EFFECT_ALL_STATS_UP_HIT,
-        .power = 60,
+        .power = 80,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 5,
@@ -7525,10 +7525,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SYNCHRONOISE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 120,
+            .power = 180,
             .pp = 10,
         #else
-            .power = 70,
+            .power = 180,
             .pp = 15,
         #endif
         .effect = EFFECT_SYNCHRONOISE,
