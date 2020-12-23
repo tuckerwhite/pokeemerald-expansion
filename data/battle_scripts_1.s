@@ -863,19 +863,26 @@ BattleScript_RototillerNoEffect:
 	goto BattleScript_RototillerMoveTargetEnd
 BattleScript_RototillerLoop2:
 	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_ATK, 0xC, BattleScript_RototillerDoMoveAnim
-	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPATK, 0xC, BattleScript_RototillerCantRaiseMultipleStats
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_DEF, 0xC, BattleScript_RototillerDoMoveAnim
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPDEF, 0xC, BattleScript_RototillerCantRaiseMultipleStats
 BattleScript_RototillerDoMoveAnim::
 	attackanimation
 	waitanimation
 	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_TARGET, BIT_ATK | BIT_SPATK, 0x0
+	playstatchangeanimation BS_TARGET, BIT_ATK | BIT_DEF | BIT_SPDEF, 0x0
 	setstatchanger STAT_ATK, 1, FALSE
-	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_RototillerTrySpAtk
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_RototillerTrySpAtk
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_RototillerTryDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_RototillerTryDef
 	printfromtable gStatUpStringIds
 	waitmessage 0x40
-BattleScript_RototillerTrySpAtk::
-	setstatchanger STAT_SPATK, 1, FALSE
+BattleScript_RototillerTryDef::
+	setstatchanger STAT_DEF, 1, FALSE
+	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_RototillerTrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_RototillerMoveTargetEnd
+	printfromtable gStatUpStringIds
+	waitmessage 0x40
+BattleScript_RototillerTrySpDef::
+	setstatchanger STAT_SPDEF, 1, FALSE
 	statbuffchange STAT_BUFF_ALLOW_PTR, BattleScript_RototillerMoveTargetEnd
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_RototillerMoveTargetEnd
 	printfromtable gStatUpStringIds
@@ -888,6 +895,9 @@ BattleScript_RototillerCantRaiseMultipleStats:
 	printstring STRINGID_STATSWONTINCREASE2
 	waitmessage 0x40
 	goto BattleScript_RototillerMoveTargetEnd
+
+
+
 
 BattleScript_EffectBestow:
 	attackcanceler
