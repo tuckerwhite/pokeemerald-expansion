@@ -2468,7 +2468,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_HYPER_FANG] =
     {
-        .effect = EFFECT_FLINCH_HIT,
+        .effect = EFFECT_FLINCH_HIT, // Have not updated Hyper Fang's effect; have no idea how.
         .power = 80,
         .type = TYPE_NORMAL,
         .accuracy = 90,
@@ -8681,7 +8681,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-    [MOVE_ROTOTILLER] =
+    [MOVE_ROTOTILLER] = 
     {
         .effect = EFFECT_ROTOTILLER,
         .power = 0,
@@ -8692,7 +8692,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_FOES_AND_ALLY | MOVE_TARGET_USER,
         .priority = 0,
         .flags = FLAG_SNATCH_AFFECTED,
-        .split = SPLIT_STATUS,
+        .split = SPLIT_STATUS, // I havent tested changes
     },
 
     [MOVE_STICKY_WEB] =
@@ -8924,7 +8924,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_FLOWER_SHIELD] =
     {
-        .effect = EFFECT_FLOWER_SHIELD,
+        .effect = EFFECT_FLOWER_SHIELD, // updated, but haven't tested
         .power = 0,
         .type = TYPE_FAIRY,
         .accuracy = 0,
