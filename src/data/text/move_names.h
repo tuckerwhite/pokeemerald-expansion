@@ -775,4 +775,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_TIME_WARP] = _("Time Warp"), 
     [MOVE_IRON_WIND] = _("Iron Wind"),
     [MOVE_POWER_PROC] = _("War Drum"),
+    [MOVE_PLUNDER] = _("Plunder"),
 };

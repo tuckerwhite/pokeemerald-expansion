@@ -3019,10 +3019,15 @@ static const u8 sPowerProcDescription[] = _(
     "Attacks itself weakly.\n"
     "Can activate abilities.");
 
+static const u8 sPlunderDescription[] = _(
+    "Plunders the foe's held\n"
+    "item to prevent use.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
     [MOVE_POUND - 1] = sPoundDescription,
+    [MOVE_PLUNDER - 1] = sPlunderDescription,
     [MOVE_POWER_PROC - 1] = sPowerProcDescription,
     [MOVE_CANDY_CRUNCH - 1] = sCandyCrunchDescription,
     [MOVE_SNOW_IN - 1] = sSnowInDescription,

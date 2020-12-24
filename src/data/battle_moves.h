@@ -11404,7 +11404,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_POWER_PROC] =
     {
-        .effect = EFFECT_MULTI_HIT,
+        .effect = EFFECT_MULTI_HIT, // untested
         .power = 5,
         .type = TYPE_DARK,
         .accuracy = 0,
@@ -11413,6 +11413,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .target = MOVE_TARGET_USER,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SNATCH_AFFECTED,
+        .split = SPLIT_PHYSICAL,
+    },
+
+    [MOVE_PLUNDER] =
+    {
+        .effect = EFFECT_THIEF, // Have not tested this move, not even a little
+        .power = 25,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .pp = 40,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 1,
+        .flags = FLAG_MAKES_CONTACT | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
     },
 
