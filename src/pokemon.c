@@ -505,6 +505,8 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
     SPECIES_TO_HOENN(JIRACHI),
     SPECIES_TO_HOENN(DEOXYS),
     SPECIES_TO_HOENN(CHIMECHO),
+//aLTERED EMERALD MONS
+    SPECIES_TO_HOENN(LEAFEON),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -920,6 +922,8 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
     SPECIES_TO_NATIONAL(JIRACHI),
     SPECIES_TO_NATIONAL(DEOXYS),
     SPECIES_TO_NATIONAL(CHIMECHO),
+    //Altered Emerald Mons
+    SPECIES_TO_NATIONAL(LEAFEON),
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
@@ -1310,6 +1314,7 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
     HOENN_TO_NATIONAL(LUGIA),
     HOENN_TO_NATIONAL(HO_OH),
     HOENN_TO_NATIONAL(CELEBI),
+    HOENN_TO_NATIONAL(LEAFEON),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -1801,6 +1806,7 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_JIRACHI - 1] = 0x0d,
     [SPECIES_DEOXYS - 1] = 0x1b,
     [SPECIES_CHIMECHO - 1] = 0x1d,
+    [SPECIES_LEAFEON - 1] = 0x09,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

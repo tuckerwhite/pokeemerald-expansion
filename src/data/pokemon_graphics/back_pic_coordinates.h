@@ -2060,6 +2060,14 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x47,
         .y_offset = 7,
     },
+// Altered Emerald Mons
+    [SPECIES_LEAFEON] =
+    {
+        .size = 0x68,
+        .y_offset = 0,
+    },
+
+
     [SPECIES_EGG] =
     {
         .size = 0x36,

@@ -12438,5 +12438,38 @@ const struct BaseStats gBaseStats[] =
         .safariZoneFleeRate = 0,
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
+    },
+//aLTERED eMERALD
+
+    [SPECIES_LEAFEON] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 110,
+        .baseDefense   = 130,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 65,
+        .type1 = TYPE_GRASS,
+        .type2 = TYPE_GRASS,
+        .catchRate = 45,
+        .expYield = 147,
+        .evYield_HP        = 0,
+        .evYield_Attack    = 0,
+        .evYield_Defense   = 3,
+        .evYield_Speed     = 0,
+        .evYield_SpAttack  = 0,
+        .evYield_SpDefense = 0,
+        .item1 = ITEM_NONE,
+        .item2 = ITEM_NONE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = 70,
+        .growthRate = GROWTH_FAST,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_GRASS,
+        .abilities = {ABILITY_HARVEST, ABILITY_LEAF_GUARD},
+        .safariZoneFleeRate = 0,
+        .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = FALSE,
     }
 };

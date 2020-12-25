@@ -9385,4 +9385,29 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
 
+[SPECIES_LEAFEON]     = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM45_ATTRACT)
+                                            | TMHM(TM09_BULLET_SEED)
+                                            | TMHM(TM28_DIG)
+                                            | TMHM(TM32_DOUBLE_TEAM)
+                                            | TMHM(TM42_FACADE)
+                                            | TMHM(HM05_FLASH)
+                                            | TMHM(TM21_FRUSTRATION)
+                                            | TMHM(TM19_GIGA_DRAIN)
+                                            | TMHM(TM10_HIDDEN_POWER)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM17_PROTECT)
+                                            | TMHM(TM18_RAIN_DANCE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM27_RETURN)
+                                            | TMHM(TM05_ROAR)
+                                            | TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM43_SECRET_POWER)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM22_SOLARBEAM)
+                                            | TMHM(HM04_STRENGTH)
+                                            | TMHM(TM11_SUNNY_DAY)
+                                            | TMHM(TM06_TOXIC)),
+
 };

@@ -4580,6 +4580,14 @@ static const union AnimCmd sAnim_CHIMECHO_1[] =
     ANIMCMD_END,
 };
 
+// Altered Emerald Pokemon
+static const union AnimCmd sAnim_LEAFEON_1[] =
+{
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_EGG_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -6805,6 +6813,13 @@ static const union AnimCmd *const sAnims_CHIMECHO[] ={
     sAnim_CHIMECHO_1,
 };
 
+// Altered Emerald Pokemon (again)
+static const union AnimCmd *const sAnims_LEAFEON[] ={
+    sAnim_GeneralFrame0,
+    sAnim_LEAFEON_1,
+};
+
+
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
     sAnim_EGG_1,
@@ -7362,6 +7377,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(JIRACHI),
     ANIM_CMD(DEOXYS),
     ANIM_CMD(CHIMECHO),
+// Altered Emerald Mons 3
+    ANIM_CMD(LEAFEON),
+
+
     ANIM_CMD(EGG),
     ANIM_CMD(UNOWN_B),
     ANIM_CMD(UNOWN_C),

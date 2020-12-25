@@ -5747,5 +5747,15 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
+    [SPECIES_LEAFEON]       = (TUTOR(MOVE_ENDURE)
+                                            | TUTOR(MOVE_FURY_CUTTER)
+                                            | TUTOR(MOVE_MUD_SLAP)
+                                            | TUTOR(MOVE_SLEEP_TALK)
+                                            | TUTOR(MOVE_SNORE)
+                                            | TUTOR(MOVE_SUBSTITUTE)
+                                            | TUTOR(MOVE_SWAGGER)
+                                            | TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_SWORDS_DANCE)),
+
 };
 
