@@ -414,6 +414,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(CHIMECHO, gMonPalette_Chimecho),
 // Altered Emerald Mons
     SPECIES_PAL(LEAFEON, gMonPalette_Leafeon),
+    SPECIES_PAL(GLACEON, gMonPalette_Glaceon),
 
     SPECIES_PAL(EGG, gMonPalette_Egg),
     SPECIES_PAL(UNOWN_B, gMonPalette_Unown),

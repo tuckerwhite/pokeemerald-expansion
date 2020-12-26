@@ -2325,3 +2325,9 @@ const u8 gLeafeonPokedexText[] = _(
     "that of a plant than an animal. It uses\n"
     "photosynthesis to produce its energy\n"
     "supply without eating food.");
+
+const u8 gGlaceonPokedexText[] = _(
+    "It can control its body temperature\n"
+    "at will. This enables it to freeze the\n"
+    "moisture in the atmosphere, creating\n"
+    "flurries of diamond dust.");

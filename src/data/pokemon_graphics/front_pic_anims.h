@@ -4588,6 +4588,18 @@ static const union AnimCmd sAnim_LEAFEON_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_GLACEON_1[] =
+{
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+
+
+
+
+
 static const union AnimCmd sAnim_EGG_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -6819,6 +6831,10 @@ static const union AnimCmd *const sAnims_LEAFEON[] ={
     sAnim_LEAFEON_1,
 };
 
+static const union AnimCmd *const sAnims_GLACEON[] ={
+    sAnim_GeneralFrame0,
+    sAnim_GLACEON_1,
+};
 
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
@@ -7379,6 +7395,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(CHIMECHO),
 // Altered Emerald Mons 3
     ANIM_CMD(LEAFEON),
+    ANIM_CMD(GLACEON),
 
 
     ANIM_CMD(EGG),

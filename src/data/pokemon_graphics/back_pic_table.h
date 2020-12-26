@@ -414,6 +414,7 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
     SPECIES_SPRITE(CHIMECHO, gMonBackPic_Chimecho),
     //Altered Emerald mons
     SPECIES_SPRITE(LEAFEON, gMonBackPic_Leafeon),
+    SPECIES_SPRITE(GLACEON, gMonBackPic_Glaceon),
 
 
     SPECIES_SPRITE(EGG, gMonStillFrontPic_Egg),

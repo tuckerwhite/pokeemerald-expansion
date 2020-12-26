@@ -9410,4 +9410,27 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM11_SUNNY_DAY)
                                             | TMHM(TM06_TOXIC)),
 
+    [SPECIES_GLACEON]     = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
+                                            | TMHM(TM14_BLIZZARD)
+                                            | TMHM(TM28_DIG)
+                                            | TMHM(TM32_DOUBLE_TEAM)
+                                            | TMHM(TM42_FACADE)
+                                            | TMHM(TM21_FRUSTRATION)
+                                            | TMHM(TM07_HAIL)
+                                            | TMHM(TM10_HIDDEN_POWER)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM13_ICE_BEAM)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM17_PROTECT)
+                                            | TMHM(TM18_RAIN_DANCE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM27_RETURN)
+                                            | TMHM(TM05_ROAR)
+                                            | TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM43_SECRET_POWER)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(HM04_STRENGTH)
+                                            | TMHM(TM11_SUNNY_DAY)
+                                            | TMHM(TM06_TOXIC)
+                                            | TMHM(TM03_WATER_PULSE)),
 };
