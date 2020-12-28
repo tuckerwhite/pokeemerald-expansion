@@ -1341,11 +1341,11 @@ static void Cmd_attackcanceler(void)
         gBattlescriptCurrInstr = BattleScript_MagicCoatBounce;
         return;
     }
-    else if (GetBattlerAbility(gBattlerTarget) == ABILITY_MAGIC_BOUNCE
+    else if (GetBattlerAbility(gBattlerTarget) == ABILITY_REFLEGGTOR
              && gBattleMoves[gCurrentMove].flags & FLAG_MAGICCOAT_AFFECTED
              && !gProtectStructs[gBattlerAttacker].usesBouncedMove)
     {
-        RecordAbilityBattle(gBattlerTarget, ABILITY_MAGIC_BOUNCE);
+        RecordAbilityBattle(gBattlerTarget, ABILITY_REFLEGGTOR);
         gProtectStructs[gBattlerTarget].usesBouncedMove = 1;
         gBattleCommunication[MULTISTRING_CHOOSER] = 1;
         BattleScriptPushCursor();

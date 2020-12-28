@@ -261,10 +261,12 @@ static const u8 sArmorTuningDescription[] = _("Tunes armor to match foe.");
 static const u8 sAimAssistDescription[] = _("Triples capture rate.");
 static const u8 sJetStreamDescription[] = _("Sets Tailwind on entry.");
 static const u8 sOppositeDayDescription[] = _("Flips type matchups.");
+static const u8 sRefleggtorDescription[] = _("Reflects Sp. Attacks.");
 
 const u8 gAbilityNames[ABILITIES_COUNT_GEN8][ABILITY_NAME_LENGTH + 1] =
 {
     [ABILITY_NONE] = _("-------"),
+    [ABILITY_REFLEGGTOR] = _("Refleggtor"),
     [ABILITY_TANK_SHELL] = _("Tank Shell"),
     [ABILITY_HYDROLYZE] = _("Hydrolyze"),
     [ABILITY_GRAVITATE] = _("Gravitate"),
@@ -544,6 +546,7 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN8][ABILITY_NAME_LENGTH + 1] =
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN8] =
 {
     [ABILITY_NONE] = sNoneDescription,
+    [ABILITY_REFLEGGTOR] = sRefleggtorDescription,
     [ABILITY_TANK_SHELL] = sTankShellDescription,
     [ABILITY_HYDROLYZE] = sHydrolyzeDescription,
     [ABILITY_GRAVITATE] = sGravitateDescription,
