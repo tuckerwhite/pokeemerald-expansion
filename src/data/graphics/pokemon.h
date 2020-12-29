@@ -523,11 +523,11 @@ const u32 gMonShinyPalette_Graveler[] = INCBIN_U32("graphics/pokemon/graveler/sh
 const u8 gMonIcon_Graveler[] = INCBIN_U8("graphics/pokemon/graveler/icon.4bpp");
 const u8 gMonFootprint_Graveler[] = INCBIN_U8("graphics/pokemon/graveler/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Golem[] = INCBIN_U32("graphics/pokemon/golem/front.4bpp.lz");
-const u32 gMonPalette_Golem[] = INCBIN_U32("graphics/pokemon/golem/normal.gbapal.lz");
-const u32 gMonBackPic_Golem[] = INCBIN_U32("graphics/pokemon/golem/back.4bpp.lz");
+const u32 gMonStillFrontPic_Golem[] = INCBIN_U32("graphics/pokemon/golem/shieldsdown/front_shieldsdown.4bpp.lz");
+const u32 gMonPalette_Golem[] = INCBIN_U32("graphics/pokemon/golem/shieldsdown/normal_shieldsdown.gbapal.lz");
+const u32 gMonBackPic_Golem[] = INCBIN_U32("graphics/pokemon/golem/shieldsdown/back_shieldsdown.4bpp.lz");
 const u32 gMonShinyPalette_Golem[] = INCBIN_U32("graphics/pokemon/golem/shiny.gbapal.lz");
-const u8 gMonIcon_Golem[] = INCBIN_U8("graphics/pokemon/golem/icon.4bpp");
+const u8 gMonIcon_Golem[] = INCBIN_U8("graphics/pokemon/golem/shieldsdown/icon_shieldsdown.4bpp");
 const u8 gMonFootprint_Golem[] = INCBIN_U8("graphics/pokemon/golem/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Ponyta[] = INCBIN_U32("graphics/pokemon/ponyta/front.4bpp.lz");
