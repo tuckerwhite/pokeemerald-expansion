@@ -71,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 11,
+      "x": 8,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -92,8 +92,8 @@
       "dest_warp_id": 0
     },
     {
-      "x": 15,
-      "y": 18,
+      "x": 14,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_OLDALE_TOWN_HOUSE2",
       "dest_warp_id": 0
@@ -106,8 +106,8 @@
       "dest_warp_id": 0
     },
     {
-      "x": 14,
-      "y": 6,
+      "x": 15,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_OLDALE_TOWN_MART",
       "dest_warp_id": 0
@@ -125,8 +125,8 @@
     },
     {
       "type": "trigger",
-      "x": 8,
-      "y": 19,
+      "x": 7,
+      "y": 18,
       "elevation": 3,
       "var": "VAR_OLDALE_RIVAL_STATE",
       "var_value": "1",

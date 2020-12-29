@@ -258,8 +258,9 @@ CableClub_EventScript_Tutorial:: @ 8276DE0
 	end
 
 CableClub_Movement_PlayerApproachCounter: @ 8276E10
-	walk_up
-	walk_up
+	walk_down
+	walk_down
+	walk_left
 	step_end
 
 CableClub_EventScript_WelcomeToCableClub:: @ 8276E13
