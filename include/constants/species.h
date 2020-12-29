@@ -449,6 +449,10 @@
 #define SPECIES_UNOWN_EMARK 440
 #define SPECIES_UNOWN_QMARK 441
 
+#define FORMS_START SPECIES_UNOWN_QMARK 
+
+#define SPECIES_EXEGGCUTE_SCHOOL                FORMS_START + 1
+
 #define NUM_SPECIES SPECIES_EGG
 
 // National Dex Index Defines

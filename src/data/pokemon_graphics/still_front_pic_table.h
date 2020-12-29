@@ -415,6 +415,12 @@ const struct CompressedSpriteSheet gMonStillFrontPicTable[] =
     SPECIES_SPRITE(JIRACHI,       gMonStillFrontPic_Jirachi),
     SPECIES_SPRITE(DEOXYS,        gMonStillFrontPic_Deoxys),
     SPECIES_SPRITE(CHIMECHO,      gMonStillFrontPic_Chimecho),
+// Altered Emerald Mons
+    SPECIES_SPRITE(LEAFEON,       gMonStillFrontPic_Leafeon),
+    SPECIES_SPRITE(GLACEON,       gMonStillFrontPic_Glaceon),
+    SPECIES_SPRITE(EXEGGCUTE_SCHOOL, gMonStillFrontPic_ExeggcuteSchool),
+
+
     SPECIES_SPRITE(EGG,           gMonStillFrontPic_Egg),
     SPECIES_SPRITE(UNOWN_B,       gMonStillFrontPic_UnownB),
     SPECIES_SPRITE(UNOWN_C,       gMonStillFrontPic_UnownC),

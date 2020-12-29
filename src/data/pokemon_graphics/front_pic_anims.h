@@ -4595,7 +4595,19 @@ static const union AnimCmd sAnim_GLACEON_1[] =
     ANIMCMD_END,
 };
 
-
+static const union AnimCmd sAnim_EXEGGCUTE_SCHOOL_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
 
 
 
@@ -6836,6 +6848,11 @@ static const union AnimCmd *const sAnims_GLACEON[] ={
     sAnim_GLACEON_1,
 };
 
+static const union AnimCmd *const sAnims_EXEGGCUTE_SCHOOL[] ={
+    sAnim_GeneralFrame0,
+    sAnim_EXEGGCUTE_SCHOOL_1,
+};
+
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
     sAnim_EGG_1,
@@ -7396,6 +7413,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 // Altered Emerald Mons 3
     ANIM_CMD(LEAFEON),
     ANIM_CMD(GLACEON),
+    ANIM_CMD(EXEGGCUTE_SCHOOL),
 
 
     ANIM_CMD(EGG),

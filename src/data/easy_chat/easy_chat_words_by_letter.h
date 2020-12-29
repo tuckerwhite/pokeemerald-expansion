@@ -590,6 +590,7 @@ const u16 gEasyChatWordsByLetter_G[] = {
     EC_WORD_GIVE_UP,
     EC_WORD_GIVES,
     EC_POKEMON(GLALIE),
+    EC_POKEMON(GLACEON),
     EC_MOVE2(GLARE),
     EC_POKEMON2(GLIGAR),
     -1, 2, // Doubled pokemon species name
@@ -878,6 +879,7 @@ const u16 gEasyChatWordsByLetter_L[] = {
     EC_WORD_LEADERS,
     EC_WORD_LEAF,
     EC_MOVE2(LEAF_BLADE),
+    EC_POKEMON2(LEAFEON),
     EC_WORD_LEARN,
     EC_POKEMON2(LEDIAN),
     EC_POKEMON2(LEDYBA),

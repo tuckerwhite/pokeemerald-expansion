@@ -2061,7 +2061,7 @@ const struct MonCoords gMonFrontPicCoords[] =
         .y_offset = 6,
     },
     // Altered Emerald mons
-        [SPECIES_LEAFEON] =
+    [SPECIES_LEAFEON] =
     {
         .size = 0x57,
         .y_offset = 9,
@@ -2070,6 +2070,11 @@ const struct MonCoords gMonFrontPicCoords[] =
     {
         .size = 0x88,
         .y_offset = 10,
+    },
+    [SPECIES_EXEGGCUTE_SCHOOL] =
+    {
+        .size = 0x87,
+        .y_offset = 7,
     },
 
 

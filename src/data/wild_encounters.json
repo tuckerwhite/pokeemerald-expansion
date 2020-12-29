@@ -83,8 +83,8 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": 20,
+                "max_level": 21,
                 "species": "SPECIES_EXEGGCUTE"
               },
               {
