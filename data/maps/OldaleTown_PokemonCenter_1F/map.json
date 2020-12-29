@@ -84,7 +84,7 @@
     },
     {
       "x": 12,
-      "y": 1,
+      "y": 2,
       "elevation": 4,
       "dest_map": "MAP_OLDALE_TOWN_MART",
       "dest_warp_id": 0

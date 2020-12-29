@@ -2793,7 +2793,6 @@ extern const u32 gMonBackPic_ExeggcuteSchool[];
 extern const u32 gMonShinyPalette_ExeggcuteSchool[];
 extern const u32 gMonStillFrontPic_ExeggcuteSchool[];
 extern const u8 gMonIcon_ExeggcuteSchool[];
-extern const u8 gMonFootprint_ExeggcuteSchool[];
 
 extern const u32 gMonPic_Egg[];
 extern const u32 gMonPalette_Egg[];

@@ -4597,15 +4597,7 @@ static const union AnimCmd sAnim_GLACEON_1[] =
 
 static const union AnimCmd sAnim_EXEGGCUTE_SCHOOL_1[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
