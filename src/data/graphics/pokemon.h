@@ -2727,11 +2727,11 @@ const u32 gMonShinyPalette_Glaceon[] = INCBIN_U32("graphics/pokemon/glaceon/shin
 const u8 gMonIcon_Glaceon[] = INCBIN_U8("graphics/pokemon/glaceon/icon.4bpp");
 const u8 gMonFootprint_Glaceon[] = INCBIN_U8("graphics/pokemon/glaceon/footprint.1bpp");
 
-const u32 gMonStillFrontPic_ExeggcuteSchool[] = INCBIN_U32("graphics/pokemon/exeggcute/school/front.4bpp.lz");
+const u32 gMonStillFrontPic_ExeggcuteSchool[] = INCBIN_U32("graphics/pokemon/exeggcute/school/front_school.4bpp.lz");
 const u32 gMonPalette_ExeggcuteSchool[] = INCBIN_U32("graphics/pokemon/exeggcute/school/normal.gbapal.lz");
 const u32 gMonBackPic_ExeggcuteSchool[] = INCBIN_U32("graphics/pokemon/exeggcute/school/back.4bpp.lz");
 const u32 gMonShinyPalette_ExeggcuteSchool[] = INCBIN_U32("graphics/pokemon/exeggcute/school/shiny.gbapal.lz");
-const u8 gMonIcon_ExeggcuteSchool[] = INCBIN_U8("graphics/pokemon/exeggcute/school/icon.4bpp");
+const u8 gMonIcon_ExeggcuteSchool[] = INCBIN_U8("graphics/pokemon/exeggcute/school/icon_school.4bpp");
 
 
 

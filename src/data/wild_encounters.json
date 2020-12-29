@@ -83,9 +83,9 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 20,
-                "max_level": 21,
-                "species": "SPECIES_EXEGGCUTE"
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 3,

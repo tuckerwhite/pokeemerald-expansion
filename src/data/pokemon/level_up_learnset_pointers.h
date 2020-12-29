@@ -414,4 +414,5 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_CHIMECHO] = sChimechoLevelUpLearnset,
     [SPECIES_LEAFEON] = sLeafeonLevelUpLearnset,
     [SPECIES_GLACEON] = sGlaceonLevelUpLearnset,
+    [SPECIES_EXEGGCUTE_SCHOOL] = sExeggcuteLevelUpLearnset,
 };
