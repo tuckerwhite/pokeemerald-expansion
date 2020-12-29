@@ -2794,6 +2794,13 @@ extern const u32 gMonShinyPalette_ExeggcuteSchool[];
 extern const u32 gMonStillFrontPic_ExeggcuteSchool[];
 extern const u8 gMonIcon_ExeggcuteSchool[];
 
+extern const u32 gMonFrontPic_GolemShields[];
+extern const u32 gMonPalette_GolemShields[];
+extern const u32 gMonBackPic_GolemShields[];
+extern const u32 gMonShinyPalette_GolemShields[];
+extern const u32 gMonStillFrontPic_GolemShields[];
+extern const u8 gMonIcon_GolemShields[];
+
 extern const u32 gMonPic_Egg[];
 extern const u32 gMonPalette_Egg[];
 extern const u32 gMonFrontPic_Egg[];

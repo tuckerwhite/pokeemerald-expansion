@@ -2076,7 +2076,11 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x87,
         .y_offset = 7,
     },
-
+    [SPECIES_GOLEM_SHIELDS] =
+    {
+        .size = 0x77,
+        .y_offset = 5,
+    },
 
     [SPECIES_EGG] =
     {

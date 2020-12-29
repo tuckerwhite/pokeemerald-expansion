@@ -928,6 +928,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
     SPECIES_TO_NATIONAL(GLACEON),
     //Altered Emerald Forms
     [SPECIES_EXEGGCUTE_SCHOOL - 1] = NATIONAL_DEX_EXEGGCUTE,
+    [SPECIES_GOLEM_SHIELDS - 1] = NATIONAL_DEX_GOLEM,
 };
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)

@@ -397,6 +397,7 @@ const u32 gMonFrontPic_Chimecho[] = INCBIN_U32("graphics/pokemon/chimecho/anim_f
 const u32 gMonFrontPic_Leafeon[] = INCBIN_U32("graphics/pokemon/leafeon/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Glaceon[] = INCBIN_U32("graphics/pokemon/glaceon/anim_front.4bpp.lz");
 const u32 gMonFrontPic_ExeggcuteSchool[] = INCBIN_U32("graphics/pokemon/exeggcute/school/anim_front.4bpp.lz");
+const u32 gMonFrontPic_GolemShields[] = INCBIN_U32("graphics/pokemon/golem/shieldsdown/anim_front_shieldsdown.4bpp.lz");
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/b/anim_front.4bpp.lz");
