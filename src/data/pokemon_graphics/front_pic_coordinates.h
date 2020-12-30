@@ -2081,6 +2081,12 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x77,
         .y_offset = 5,
     },
+    [SPECIES_SUDOWOODO_BROKEN] =
+    {
+        .size = 0x67,
+        .y_offset = 6,
+    },
+
 
     [SPECIES_EGG] =
     {

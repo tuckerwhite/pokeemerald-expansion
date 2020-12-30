@@ -2081,6 +2081,11 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x84,
         .y_offset = 16,
     },
+    [SPECIES_SUDOWOODO_BROKEN] =
+    {
+        .size = 0x66,
+        .y_offset = 8,
+    },
 
     [SPECIES_EGG] =
     {

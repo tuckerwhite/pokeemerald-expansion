@@ -2739,7 +2739,11 @@ const u32 gMonBackPic_GolemShields[] = INCBIN_U32("graphics/pokemon/golem/shield
 const u32 gMonShinyPalette_GolemShields[] = INCBIN_U32("graphics/pokemon/golem/shiny.gbapal.lz");
 const u8 gMonIcon_GolemShields[] = INCBIN_U8("graphics/pokemon/golem/shieldsdown/icon_shieldsdown.4bpp");
 
-
+const u32 gMonStillFrontPic_SudowoodoBroken[] = INCBIN_U32("graphics/pokemon/sudowoodo/broken/front_broken.4bpp.lz");
+const u32 gMonPalette_SudowoodoBroken[] = INCBIN_U32("graphics/pokemon/sudowoodo/normal.gbapal.lz");
+const u32 gMonBackPic_SudowoodoBroken[] = INCBIN_U32("graphics/pokemon/sudowoodo/broken/back_broken.4bpp.lz");
+const u32 gMonShinyPalette_SudowoodoBroken[] = INCBIN_U32("graphics/pokemon/sudowoodo/shiny.gbapal.lz");
+const u8 gMonIcon_SudowoodoBroken[] = INCBIN_U8("graphics/pokemon/sudowoodo/broken/icon_broken.4bpp");
 
 
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");

@@ -2801,6 +2801,13 @@ extern const u32 gMonShinyPalette_GolemShields[];
 extern const u32 gMonStillFrontPic_GolemShields[];
 extern const u8 gMonIcon_GolemShields[];
 
+extern const u32 gMonFrontPic_SudowoodoBroken[];
+extern const u32 gMonPalette_SudowoodoBroken[];
+extern const u32 gMonBackPic_SudowoodoBroken[];
+extern const u32 gMonShinyPalette_SudowoodoBroken[];
+extern const u32 gMonStillFrontPic_SudowoodoBroken[];
+extern const u8 gMonIcon_SudowoodoBroken[];
+
 extern const u32 gMonPic_Egg[];
 extern const u32 gMonPalette_Egg[];
 extern const u32 gMonFrontPic_Egg[];

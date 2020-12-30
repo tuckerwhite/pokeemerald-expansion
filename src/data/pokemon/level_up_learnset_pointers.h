@@ -416,4 +416,5 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_GLACEON] = sGlaceonLevelUpLearnset,
     [SPECIES_EXEGGCUTE_SCHOOL] = sExeggcuteLevelUpLearnset,
     [SPECIES_GOLEM_SHIELDS] = sGolemLevelUpLearnset,
+    [SPECIES_SUDOWOODO_BROKEN] = sSudowoodoLevelUpLearnset,
 };

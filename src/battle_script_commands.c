@@ -2022,7 +2022,7 @@ static void Cmd_datahpupdate(void)
         }
         else if (DoesDisguiseBlockMove(gBattlerAttacker, gActiveBattler, gCurrentMove))
         {
-            gBattleMons[gActiveBattler].species = SPECIES_MIMIKYU_BUSTED;
+            gBattleMons[gActiveBattler].species = SPECIES_SUDOWOODO_BROKEN;
             BattleScriptPush(gBattlescriptCurrInstr + 2);
             gBattlescriptCurrInstr = BattleScript_TargetFormChange;
         }
@@ -11719,7 +11719,7 @@ bool32 DoesSubstituteBlockMove(u8 battlerAtk, u8 battlerDef, u32 move)
 bool32 DoesDisguiseBlockMove(u8 battlerAtk, u8 battlerDef, u32 move)
 {
     if (GetBattlerAbility(battlerDef) != ABILITY_DISGUISE
-        || gBattleMons[battlerDef].species != SPECIES_MIMIKYU
+        || gBattleMons[battlerDef].species != SPECIES_SUDOWOODO
         || gBattleMons[battlerDef].status2 & STATUS2_TRANSFORMED
         || gBattleMoves[move].power == 0)
         return FALSE;
