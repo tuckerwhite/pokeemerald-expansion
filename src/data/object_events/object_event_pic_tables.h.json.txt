@@ -1,0 +1,44 @@
+{{ doNotModifyHeader }}
+## for eventObject in EventObjects
+const struct SpriteFrameImage gObjectEventPicTable_{{ eventObject.Identifier }}[] = {
+## for frame in eventObject.Frames
+## if existsIn(frame, "Count")
+## for index in range(frame.Count)
+    overworld_frame(gObjectEventPic_{{ frame.Identifier }}, {{ divide(eventObject.Width, 8) }}, {{ divide(eventObject.Height, 8) }}, {% if existsIn(frame, "StartIndex") %}{{ add(frame.StartIndex, index) }}{% else %}{{index}}{% endif %}),
+## endfor
+## else
+    overworld_frame(gObjectEventPic_{{ frame.Identifier }}, {{ divide(eventObject.Width, 8) }}, {{ divide(eventObject.Height, 8) }}, {% if existsIn(frame, "StartIndex") %}{{ frame.StartIndex }}{% else %}0{% endif %}),
+## endif
+## endfor
+};
+
+## endfor
+
+//
+// This section of the file contains static data.
+//
+
+const struct SpriteFrameImage gObjectEventPicTable_MauvilleOldMan1[] = {
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 2),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 3),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 4),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 5),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 6),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 7),
+    overworld_frame(gObjectEventPic_MauvilleOldMan1, 2, 4, 8),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_MauvilleOldMan2[] = {
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 2),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 3),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 4),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 5),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 6),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 7),
+    overworld_frame(gObjectEventPic_MauvilleOldMan2, 2, 4, 8),
+};
+

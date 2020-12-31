@@ -1,0 +1,51 @@
+{{ doNotModifyHeader }}
+## for eventObject in EventObjects
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_{{ eventObject.Identifier }};
+## endfor
+
+const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[] = {
+## for eventObject in EventObjects
+    [OBJ_EVENT_GFX_{{ upperSnakeCase(eventObject.Identifier) }}] = &gObjectEventGraphicsInfo_{{ eventObject.Identifier }},
+## endfor
+};
+
+## for palette in Palettes
+#define OBJ_EVENT_PAL_TAG_{{ upperSnakeCase(palette.Identifier) }} 0x1100 + {{ palette.Tag }}
+## endfor
+## for pic in Pics
+{% if existsIn(pic, "PaletteTag") %}
+#define OBJ_EVENT_PAL_TAG_{{ upperSnakeCase(pic.Identifier) }} 0x1100 + {{ pic.PaletteTag }}
+{% endif %}
+## endfor
+
+const struct SpritePalette sObjectEventSpritePalettes[] = {
+## for palette in Palettes
+    {gObjectEventPalette{{ palette.Identifier }}, OBJ_EVENT_PAL_TAG_{{ upperSnakeCase(palette.Identifier) }}},
+## endfor
+## for pic in Pics
+{% if existsIn(pic, "PaletteTag") %}
+    {gObjectEventPalette{{ pic.Identifier }}, OBJ_EVENT_PAL_TAG_{{ upperSnakeCase(pic.Identifier) }}},
+{% endif %}
+## endfor
+    {NULL,                 0x0000},
+};
+
+//
+// This section of the file contains static data.
+//
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hipster;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Trader;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
+
+const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
+    [MAUVILLE_MAN_BARD]        = &gObjectEventGraphicsInfo_Bard,
+    [MAUVILLE_MAN_HIPSTER]     = &gObjectEventGraphicsInfo_Hipster,
+    [MAUVILLE_MAN_TRADER]      = &gObjectEventGraphicsInfo_Trader,
+    [MAUVILLE_MAN_STORYTELLER] = &gObjectEventGraphicsInfo_Storyteller,
+    [MAUVILLE_MAN_GIDDY]       = &gObjectEventGraphicsInfo_Giddy,
+    [MAUVILLE_MAN_UNUSED1]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan1,
+    [MAUVILLE_MAN_UNUSED2]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan2,
+};

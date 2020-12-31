@@ -1,0 +1,6116 @@
+{
+  "EventObjects": [
+    {
+      "Identifier": "BrendanNormal",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_BrendanMayNormal",
+      "Frames": [
+        {
+          "Identifier": "BrendanNormal",
+          "Count": 9
+        },
+        {
+          "Identifier": "BrendanRunning",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanMachBike",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "BrendanMachBike",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanSurfing",
+      "Palette": "8",
+      "Width": 32,
+      "Height": 32,
+      "Animations": "gObjectEventImageAnimTable_Surfing",
+      "Frames": [
+        {
+          "Identifier": "BrendanSurfing"
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanSurfing"
+        },
+        {
+          "Identifier": "BrendanSurfing"
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanFieldMove",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_FieldMove",
+      "Frames": [
+        {
+          "Identifier": "BrendanFieldMove",
+          "Count": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "QuintyPlump",
+      "Palette": "12",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "ShadowSize": "L",
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_QuintyPlump",
+      "Frames": [
+        {
+          "Identifier": "QuintyPlump",
+          "Count": 7
+        }
+      ]
+    },
+    {
+      "Identifier": "NinjaBoy",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "NinjaBoy",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Twin",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Twin",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Boy1",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Boy1",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Girl1",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Girl1",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Boy2",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Boy2",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Girl2",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Girl2",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LittleBoy",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "LittleBoy",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LittleGirl",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "LittleGirl",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Boy3",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Boy3",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Girl3",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Girl3",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RichBoy",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RichBoy",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Woman1",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Woman1",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "FatMan",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "FatMan",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "PokefanF",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "PokefanF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Man1",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Man1",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Woman2",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Woman2",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "ExpertM",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "ExpertM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "ExpertF",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "ExpertF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Man2",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Man2",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Woman3",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Woman3",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "PokefanM",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "PokefanM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Woman4",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Woman4",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Cook",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Cook",
+          "Count": 3
+        },
+        {
+          "Identifier": "Cook"
+        },
+        {
+          "Identifier": "Cook",
+          "Count": 2
+        },
+        {
+          "Identifier": "Cook",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Cook",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "LinkReceptionist",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "LinkReceptionist",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "OldMan",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "OldMan",
+          "Count": 3
+        },
+        {
+          "Identifier": "OldMan"
+        },
+        {
+          "Identifier": "OldMan",
+          "Count": 2
+        },
+        {
+          "Identifier": "OldMan",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "OldMan",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "OldWoman",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "OldWoman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Camper",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Camper",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Picnicker",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Picnicker",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Man3",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Man3",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Woman5",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Woman5",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Youngster",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Youngster",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BugCatcher",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "BugCatcher",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "PsychicM",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "PsychicM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "SchoolKidM",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "SchoolKidM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Maniac",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Maniac",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "HexManiac",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "HexManiac",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Rayquaza1",
+      "Palette": "2",
+      "Width": 64,
+      "Height": 64,
+      "PaletteSlot": 4,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        },
+        {
+          "Identifier": "RayquazaStill"
+        }
+      ]
+    },
+    {
+      "Identifier": "SwimmerM",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "SwimmerM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "SwimmerF",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "SwimmerF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BlackBelt",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "BlackBelt",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Beauty",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Beauty",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Scientist1",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Scientist1",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Lass",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Lass",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Gentleman",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Gentleman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Sailor",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Sailor",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Fisherman",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Fisherman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RunningTriathleteM",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RunningTriathleteM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RunningTriathleteF",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RunningTriathleteF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "TuberF",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "TuberF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "TuberM",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "TuberM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Hiker",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Hiker",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "CyclingTriathleteM",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_AcroBike",
+      "Frames": [
+        {
+          "Identifier": "CyclingTriathleteM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "CyclingTriathleteF",
+      "Palette": "0",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_AcroBike",
+      "Frames": [
+        {
+          "Identifier": "CyclingTriathleteF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Nurse",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Nurse",
+      "Frames": [
+        {
+          "Identifier": "Nurse",
+          "Count": 3
+        },
+        {
+          "Identifier": "Nurse"
+        },
+        {
+          "Identifier": "Nurse",
+          "Count": 2
+        },
+        {
+          "Identifier": "Nurse",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Nurse",
+          "StartIndex": 2,
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "ItemBall",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "ItemBall"
+        }
+      ]
+    },
+    {
+      "Identifier": "BerryTree",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_BerryTree",
+      "Frames": []
+    },
+    {
+      "Identifier": "BerryTreeEarlyStages",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_BerryTree",
+      "Frames": []
+    },
+    {
+      "Identifier": "BerryTreeLateStages",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_BerryTree",
+      "Frames": []
+    },
+    {
+      "Identifier": "BrendanAcroBike",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_AcroBike",
+      "Frames": [
+        {
+          "Identifier": "BrendanAcroBike",
+          "Count": 27
+        }
+      ]
+    },
+    {
+      "Identifier": "ProfBirch",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "ProfBirch",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Man4",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Man4",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Man5",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Man5",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "ReporterM",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "ReporterM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "ReporterF",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "ReporterF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Bard",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MauvilleOldMan1",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Anabel",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Anabel",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Tucker",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Tucker",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Greta",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Greta",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Spenser",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Spenser",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Noland",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Noland",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Lucy",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Lucy",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "UnusedNatuDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "UnusedNatuDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "UnusedMagnemiteDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "UnusedMagnemiteDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "UnusedSquirtleDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "UnusedSquirtleDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "UnusedWooperDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "UnusedWooperDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "UnusedPikachuDoll",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "UnusedPikachuDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "UnusedPorygon2Doll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "UnusedPorygon2Doll"
+        }
+      ]
+    },
+    {
+      "Identifier": "CuttableTree",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_CuttableTree",
+      "Frames": [
+        {
+          "Identifier": "CuttableTree",
+          "Count": 4
+        }
+      ]
+    },
+    {
+      "Identifier": "MartEmployee",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MartEmployee",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RooftopSaleWoman",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RooftopSaleWoman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Teala",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Teala",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BreakableRock",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_BreakableRock",
+      "Frames": [
+        {
+          "Identifier": "BreakableRock",
+          "Count": 4
+        }
+      ]
+    },
+    {
+      "Identifier": "PushableBoulder",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "PushableBoulder"
+        }
+      ]
+    },
+    {
+      "Identifier": "MrBrineysBoat",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MrBrineysBoat",
+          "Count": 3
+        },
+        {
+          "Identifier": "MrBrineysBoat"
+        },
+        {
+          "Identifier": "MrBrineysBoat",
+          "Count": 2
+        },
+        {
+          "Identifier": "MrBrineysBoat",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "MrBrineysBoat",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "MayNormal",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_BrendanMayNormal",
+      "Frames": [
+        {
+          "Identifier": "MayNormal",
+          "Count": 9
+        },
+        {
+          "Identifier": "MayRunning",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "MayMachBike",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MayMachBike",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "MayAcroBike",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_AcroBike",
+      "Frames": [
+        {
+          "Identifier": "MayAcroBike",
+          "Count": 27
+        }
+      ]
+    },
+    {
+      "Identifier": "MaySurfing",
+      "Palette": "17",
+      "Width": 32,
+      "Height": 32,
+      "Animations": "gObjectEventImageAnimTable_Surfing",
+      "Frames": [
+        {
+          "Identifier": "MaySurfing"
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MaySurfing"
+        },
+        {
+          "Identifier": "MaySurfing"
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "MayFieldMove",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_FieldMove",
+      "Frames": [
+        {
+          "Identifier": "MayFieldMove",
+          "Count": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "Truck",
+      "Palette": "14",
+      "Width": 48,
+      "Height": 48,
+      "PaletteSlot": 10,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "Truck"
+        }
+      ]
+    },
+    {
+      "Identifier": "VigorothCarryingBox",
+      "Palette": "15",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Vigoroth"
+        },
+        {
+          "Identifier": "Vigoroth"
+        },
+        {
+          "Identifier": "Vigoroth",
+          "Count": 3
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 1,
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "VigorothFacingAway",
+      "Palette": "15",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 3,
+          "Count": 2
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "Vigoroth",
+          "StartIndex": 4
+        }
+      ]
+    },
+    {
+      "Identifier": "BirchsBag",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BirchsBag"
+        }
+      ]
+    },
+    {
+      "Identifier": "Zigzagoon1",
+      "Palette": "16",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "EnemyZigzagoon",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Artist",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Artist",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalBrendanNormal",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_BrendanMayNormal",
+      "Frames": [
+        {
+          "Identifier": "BrendanNormal",
+          "Count": 9
+        },
+        {
+          "Identifier": "BrendanRunning",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalBrendanMachBike",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "BrendanMachBike",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalBrendanAcroBike",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_AcroBike",
+      "Frames": [
+        {
+          "Identifier": "BrendanAcroBike",
+          "Count": 27
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalBrendanSurfing",
+      "Palette": "8",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "Animations": "gObjectEventImageAnimTable_Surfing",
+      "Frames": [
+        {
+          "Identifier": "BrendanSurfing"
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanSurfing"
+        },
+        {
+          "Identifier": "BrendanSurfing"
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "BrendanSurfing",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalBrendanFieldMove",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_FieldMove",
+      "Frames": [
+        {
+          "Identifier": "BrendanFieldMove",
+          "Count": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalMayNormal",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_BrendanMayNormal",
+      "Frames": [
+        {
+          "Identifier": "MayNormal",
+          "Count": 9
+        },
+        {
+          "Identifier": "MayRunning",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalMayMachBike",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MayMachBike",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalMayAcroBike",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "BIKE_TIRE",
+      "Animations": "gObjectEventImageAnimTable_AcroBike",
+      "Frames": [
+        {
+          "Identifier": "MayAcroBike",
+          "Count": 27
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalMaySurfing",
+      "Palette": "17",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "Animations": "gObjectEventImageAnimTable_Surfing",
+      "Frames": [
+        {
+          "Identifier": "MaySurfing"
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MaySurfing"
+        },
+        {
+          "Identifier": "MaySurfing"
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "MaySurfing",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "RivalMayFieldMove",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_FieldMove",
+      "Frames": [
+        {
+          "Identifier": "MayFieldMove",
+          "Count": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "Cameraman",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Cameraman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanUnderwater",
+      "Palette": "11",
+      "Width": 32,
+      "Height": 32,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "BrendanUnderwater",
+          "Count": 3
+        },
+        {
+          "Identifier": "BrendanUnderwater"
+        },
+        {
+          "Identifier": "BrendanUnderwater",
+          "Count": 2
+        },
+        {
+          "Identifier": "BrendanUnderwater",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "BrendanUnderwater",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "MayUnderwater",
+      "Palette": "11",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MayUnderwater",
+          "Count": 3
+        },
+        {
+          "Identifier": "MayUnderwater"
+        },
+        {
+          "Identifier": "MayUnderwater",
+          "Count": 2
+        },
+        {
+          "Identifier": "MayUnderwater",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "MayUnderwater",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "MovingBox",
+      "Palette": "19",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 10,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "MovingBox"
+        }
+      ]
+    },
+    {
+      "Identifier": "CableCar",
+      "Palette": "20",
+      "Width": 64,
+      "Height": 64,
+      "PaletteSlot": 10,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "CableCar"
+        }
+      ]
+    },
+    {
+      "Identifier": "Scientist2",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Scientist2",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "DevonEmployee",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "DevonEmployee",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "AquaMemberM",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "AquaMemberM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "AquaMemberF",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "AquaMemberF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "MagmaMemberM",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MagmaMemberM",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "MagmaMemberF",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MagmaMemberF",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Sidney",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Sidney",
+          "Count": 3
+        },
+        {
+          "Identifier": "Sidney"
+        },
+        {
+          "Identifier": "Sidney",
+          "Count": 2
+        },
+        {
+          "Identifier": "Sidney",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Sidney",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Phoebe",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Phoebe",
+          "Count": 3
+        },
+        {
+          "Identifier": "Phoebe"
+        },
+        {
+          "Identifier": "Phoebe",
+          "Count": 2
+        },
+        {
+          "Identifier": "Phoebe",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Phoebe",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Glacia",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Glacia",
+          "Count": 3
+        },
+        {
+          "Identifier": "Glacia"
+        },
+        {
+          "Identifier": "Glacia",
+          "Count": 2
+        },
+        {
+          "Identifier": "Glacia",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Glacia",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Drake",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Drake",
+          "Count": 3
+        },
+        {
+          "Identifier": "Drake"
+        },
+        {
+          "Identifier": "Drake",
+          "Count": 2
+        },
+        {
+          "Identifier": "Drake",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Drake",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Roxanne",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Roxanne",
+          "Count": 3
+        },
+        {
+          "Identifier": "Roxanne"
+        },
+        {
+          "Identifier": "Roxanne",
+          "Count": 2
+        },
+        {
+          "Identifier": "Roxanne",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Roxanne",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Brawly",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Brawly",
+          "Count": 3
+        },
+        {
+          "Identifier": "Brawly"
+        },
+        {
+          "Identifier": "Brawly",
+          "Count": 2
+        },
+        {
+          "Identifier": "Brawly",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Brawly",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Wattson",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Wattson",
+          "Count": 3
+        },
+        {
+          "Identifier": "Wattson"
+        },
+        {
+          "Identifier": "Wattson",
+          "Count": 2
+        },
+        {
+          "Identifier": "Wattson",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Wattson",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Flannery",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Flannery",
+          "Count": 3
+        },
+        {
+          "Identifier": "Flannery"
+        },
+        {
+          "Identifier": "Flannery",
+          "Count": 2
+        },
+        {
+          "Identifier": "Flannery",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Flannery",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Norman",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Norman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Winona",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Winona",
+          "Count": 3
+        },
+        {
+          "Identifier": "Winona"
+        },
+        {
+          "Identifier": "Winona",
+          "Count": 2
+        },
+        {
+          "Identifier": "Winona",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Winona",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Liza",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Liza",
+          "Count": 3
+        },
+        {
+          "Identifier": "Liza"
+        },
+        {
+          "Identifier": "Liza",
+          "Count": 2
+        },
+        {
+          "Identifier": "Liza",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Liza",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Tate",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Tate",
+          "Count": 3
+        },
+        {
+          "Identifier": "Tate"
+        },
+        {
+          "Identifier": "Tate",
+          "Count": 2
+        },
+        {
+          "Identifier": "Tate",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Tate",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Wallace",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Wallace",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Steven",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Steven",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Wally",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Wally",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LittleBoy3",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RubySapphireLittleBoy",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanFishing",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Fishing",
+      "Frames": [
+        {
+          "Identifier": "BrendanFishing",
+          "Count": 12
+        }
+      ]
+    },
+    {
+      "Identifier": "MayFishing",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Fishing",
+      "Frames": [
+        {
+          "Identifier": "MayFishing",
+          "Count": 12
+        }
+      ]
+    },
+    {
+      "Identifier": "HotSpringsOldWoman",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "HotSpringsOldWoman",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "SsTidal",
+      "Palette": "21",
+      "Width": 96,
+      "Height": 40,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        },
+        {
+          "Identifier": "SSTidal"
+        }
+      ]
+    },
+    {
+      "Identifier": "SubmarineShadow",
+      "Palette": "26",
+      "Width": 88,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        },
+        {
+          "Identifier": "SubmarineShadow"
+        }
+      ]
+    },
+    {
+      "Identifier": "PichuDoll",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "PichuDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "PikachuDoll",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "PikachuDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "MarillDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "MarillDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "TogepiDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "TogepiDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "CyndaquilDoll",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "CyndaquilDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "ChikoritaDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "ChikoritaDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "TotodileDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "TotodileDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "JigglypuffDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "JigglypuffDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "MeowthDoll",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "MeowthDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "ClefairyDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "ClefairyDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "DittoDoll",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "DittoDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "SmoochumDoll",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "SmoochumDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "TreeckoDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "TreeckoDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "TorchicDoll",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "TorchicDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "MudkipDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "MudkipDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "DuskullDoll",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "DuskullDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "WynautDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "WynautDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BaltoyDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BaltoyDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "KecleonDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "KecleonDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "AzurillDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "AzurillDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "SkittyDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "SkittyDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "SwabluDoll",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "SwabluDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "GulpinDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "GulpinDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "LotadDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "LotadDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "SeedotDoll",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "SeedotDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "PikaCushion",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "PikaCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "RoundCushion",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "RoundCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "KissCushion",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "KissCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "ZigzagCushion",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "ZigzagCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "SpinCushion",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "SpinCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "DiamondCushion",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 5,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "DiamondCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "BallCushion",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BallCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "GrassCushion",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "GrassCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "FireCushion",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "FireCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "WaterCushion",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "WaterCushion"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigSnorlaxDoll",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigSnorlaxDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigRhydonDoll",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigRhydonDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigLaprasDoll",
+      "Palette": "0",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigLaprasDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigVenusaurDoll",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigVenusaurDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigCharizardDoll",
+      "Palette": "1",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigCharizardDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigBlastoiseDoll",
+      "Palette": "0",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigBlastoiseDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigWailmerDoll",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigWailmerDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigRegirockDoll",
+      "Palette": "0",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigRegirockDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigRegiceDoll",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigRegiceDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "BigRegisteelDoll",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BigRegisteelDoll"
+        }
+      ]
+    },
+    {
+      "Identifier": "Latias",
+      "Palette": "1",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "LatiasLatios"
+        },
+        {
+          "Identifier": "LatiasLatios"
+        },
+        {
+          "Identifier": "LatiasLatios",
+          "Count": 3
+        },
+        {
+          "Identifier": "LatiasLatios",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "LatiasLatios",
+          "StartIndex": 1,
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Latios",
+      "Palette": "0",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "LatiasLatios"
+        },
+        {
+          "Identifier": "LatiasLatios"
+        },
+        {
+          "Identifier": "LatiasLatios",
+          "Count": 3
+        },
+        {
+          "Identifier": "LatiasLatios",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "LatiasLatios",
+          "StartIndex": 1,
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "GameboyKid",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "GameboyKid",
+          "Count": 3
+        },
+        {
+          "Identifier": "GameboyKid"
+        },
+        {
+          "Identifier": "GameboyKid",
+          "Count": 2
+        },
+        {
+          "Identifier": "GameboyKid",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "GameboyKid",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "ContestJudge",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "ContestJudge",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanWatering",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "BrendanWatering"
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 5
+        },
+        {
+          "Identifier": "BrendanWatering",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "MayWatering",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 32,
+      "Height": 32,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MayWatering"
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 5
+        },
+        {
+          "Identifier": "MayWatering",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "BrendanDecorating",
+      "Palette": "8",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BrendanDecorating"
+        }
+      ]
+    },
+    {
+      "Identifier": "MayDecorating",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "MayDecorating"
+        }
+      ]
+    },
+    {
+      "Identifier": "Archie",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Archie",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Maxie",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Maxie",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Kyogre1",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "AffineAnimations": "gObjectEventRotScalAnimTable_KyogreGroudon",
+      "Frames": [
+        {
+          "Identifier": "Kyogre"
+        },
+        {
+          "Identifier": "Kyogre"
+        },
+        {
+          "Identifier": "Kyogre",
+          "Count": 2
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        }
+      ]
+    },
+    {
+      "Identifier": "Groudon1",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "AffineAnimations": "gObjectEventRotScalAnimTable_KyogreGroudon",
+      "Frames": [
+        {
+          "Identifier": "Groudon"
+        },
+        {
+          "Identifier": "Groudon"
+        },
+        {
+          "Identifier": "Groudon",
+          "Count": 2
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        }
+      ]
+    },
+    {
+      "Identifier": "Fossil",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "ShadowSize": "S",
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Tracks": "NONE",
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "Fossil"
+        }
+      ]
+    },
+    {
+      "Identifier": "Regirock",
+      "Palette": "1",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 3,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        }
+      ]
+    },
+    {
+      "Identifier": "Regice",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        }
+      ]
+    },
+    {
+      "Identifier": "Registeel",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        },
+        {
+          "Identifier": "Regi"
+        }
+      ]
+    },
+    {
+      "Identifier": "Skitty",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Skitty",
+          "Count": 3
+        },
+        {
+          "Identifier": "Skitty"
+        },
+        {
+          "Identifier": "Skitty",
+          "Count": 2
+        },
+        {
+          "Identifier": "Skitty",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Skitty",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Kecleon1",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Kecleon",
+          "Count": 3
+        },
+        {
+          "Identifier": "Kecleon"
+        },
+        {
+          "Identifier": "Kecleon",
+          "Count": 2
+        },
+        {
+          "Identifier": "Kecleon",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Kecleon",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Kyogre2",
+      "Palette": "22",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "AffineAnimations": "gObjectEventRotScalAnimTable_KyogreGroudon",
+      "Frames": [
+        {
+          "Identifier": "Kyogre"
+        },
+        {
+          "Identifier": "Kyogre"
+        },
+        {
+          "Identifier": "Kyogre",
+          "Count": 2
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 1
+        }
+      ]
+    },
+    {
+      "Identifier": "Groudon2",
+      "Palette": "24",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "AffineAnimations": "gObjectEventRotScalAnimTable_KyogreGroudon",
+      "Frames": [
+        {
+          "Identifier": "Groudon"
+        },
+        {
+          "Identifier": "Groudon"
+        },
+        {
+          "Identifier": "Groudon",
+          "Count": 2
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 1
+        }
+      ]
+    },
+    {
+      "Identifier": "Rayquaza2",
+      "Palette": "2",
+      "Width": 64,
+      "Height": 64,
+      "PaletteSlot": 4,
+      "Animations": "gObjectEventImageAnimTable_Rayquaza2",
+      "Frames": [
+        {
+          "Identifier": "Rayquaza",
+          "Count": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "Zigzagoon2",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Zigzagoon",
+          "Count": 3
+        },
+        {
+          "Identifier": "Zigzagoon"
+        },
+        {
+          "Identifier": "Zigzagoon",
+          "Count": 2
+        },
+        {
+          "Identifier": "Zigzagoon",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Zigzagoon",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Pikachu",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Pikachu",
+          "Count": 3
+        },
+        {
+          "Identifier": "Pikachu"
+        },
+        {
+          "Identifier": "Pikachu",
+          "Count": 2
+        },
+        {
+          "Identifier": "Pikachu",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Pikachu",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Azumarill",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Azumarill",
+          "Count": 3
+        },
+        {
+          "Identifier": "Azumarill"
+        },
+        {
+          "Identifier": "Azumarill",
+          "Count": 2
+        },
+        {
+          "Identifier": "Azumarill",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Azumarill",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Wingull",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Wingull"
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 4
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 1
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 5
+        },
+        {
+          "Identifier": "Wingull",
+          "StartIndex": 5
+        }
+      ]
+    },
+    {
+      "Identifier": "Kecleon2",
+      "Palette": "2",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Kecleon",
+          "Count": 3
+        },
+        {
+          "Identifier": "Kecleon"
+        },
+        {
+          "Identifier": "Kecleon",
+          "Count": 2
+        },
+        {
+          "Identifier": "Kecleon",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Kecleon",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "TuberMSwimming",
+      "Palette": "1",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 3,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "TuberMSwimming",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Azurill",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 16,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Azurill",
+          "Count": 3
+        },
+        {
+          "Identifier": "Azurill"
+        },
+        {
+          "Identifier": "Azurill",
+          "Count": 2
+        },
+        {
+          "Identifier": "Azurill",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "Azurill",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Mom",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Mom",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LinkBrendan",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_BrendanMayNormal",
+      "Frames": [
+        {
+          "Identifier": "BrendanNormal",
+          "Count": 9
+        },
+        {
+          "Identifier": "BrendanRunning",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LinkMay",
+      "Palette": "17",
+      "ReflectionPalette": "OBJ_EVENT_PAL_TAG_10",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_BrendanMayNormal",
+      "Frames": [
+        {
+          "Identifier": "MayNormal",
+          "Count": 9
+        },
+        {
+          "Identifier": "MayRunning",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Juan",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Juan",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Scott",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Scott",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Poochyena",
+      "Palette": "27",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Poochyena",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Kyogre3",
+      "Palette": "3",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "AffineAnimations": "gObjectEventRotScalAnimTable_KyogreGroudon",
+      "Frames": [
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 2,
+          "Count": 2
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Kyogre",
+          "StartIndex": 3
+        }
+      ]
+    },
+    {
+      "Identifier": "Groudon3",
+      "Palette": "2",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Groudon3",
+      "AffineAnimations": "gObjectEventRotScalAnimTable_KyogreGroudon",
+      "Frames": [
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 2
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 2,
+          "Count": 2
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 3
+        },
+        {
+          "Identifier": "Groudon",
+          "StartIndex": 3
+        }
+      ]
+    },
+    {
+      "Identifier": "MysteryGiftMan",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "MysteryEventDeliveryman",
+          "Count": 3
+        },
+        {
+          "Identifier": "MysteryEventDeliveryman"
+        },
+        {
+          "Identifier": "MysteryEventDeliveryman",
+          "Count": 2
+        },
+        {
+          "Identifier": "MysteryEventDeliveryman",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "MysteryEventDeliveryman",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "TrickHouseStatue",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "Statue"
+        }
+      ]
+    },
+    {
+      "Identifier": "Kirlia",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "ShadowSize": "S",
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Kirlia",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Dusclops",
+      "Palette": "3",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 5,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Dusclops",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "UnionRoomNurse",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "UnionRoomAttendant",
+          "Count": 3
+        },
+        {
+          "Identifier": "UnionRoomAttendant"
+        },
+        {
+          "Identifier": "UnionRoomAttendant",
+          "Count": 2
+        },
+        {
+          "Identifier": "UnionRoomAttendant",
+          "StartIndex": 1,
+          "Count": 2
+        },
+        {
+          "Identifier": "UnionRoomAttendant",
+          "StartIndex": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Sudowoodo",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Sudowoodo"
+        },
+        {
+          "Identifier": "Sudowoodo",
+          "Count": 2
+        },
+        {
+          "Identifier": "Sudowoodo"
+        },
+        {
+          "Identifier": "Sudowoodo"
+        },
+        {
+          "Identifier": "Sudowoodo"
+        },
+        {
+          "Identifier": "Sudowoodo",
+          "Count": 3
+        }
+      ]
+    },
+    {
+      "Identifier": "Mew",
+      "Palette": "0",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 2,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Mew",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Red",
+      "Palette": "28",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Red",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Leaf",
+      "Palette": "28",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Leaf",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Deoxys",
+      "Palette": "29",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Deoxys"
+        },
+        {
+          "Identifier": "Deoxys"
+        },
+        {
+          "Identifier": "Deoxys"
+        },
+        {
+          "Identifier": "Deoxys",
+          "Count": 2
+        },
+        {
+          "Identifier": "Deoxys",
+          "Count": 2
+        },
+        {
+          "Identifier": "Deoxys"
+        },
+        {
+          "Identifier": "Deoxys"
+        }
+      ]
+    },
+    {
+      "Identifier": "DeoxysTriangle",
+      "Palette": "30",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "Inanimate": true,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Inanimate",
+      "Frames": [
+        {
+          "Identifier": "BirthIslandStone"
+        }
+      ]
+    },
+    {
+      "Identifier": "Brandon",
+      "Palette": "2",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 4,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Brandon",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LinkRsBrendan",
+      "Palette": "33",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RubySapphireBrendanNormal",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "LinkRsMay",
+      "Palette": "34",
+      "Width": 16,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "RubySapphireMayNormal",
+          "Count": 9
+        }
+      ]
+    },
+    {
+      "Identifier": "Lugia",
+      "Palette": "32",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_Standard",
+      "Frames": [
+        {
+          "Identifier": "Lugia"
+        },
+        {
+          "Identifier": "Lugia"
+        },
+        {
+          "Identifier": "Lugia"
+        },
+        {
+          "Identifier": "Lugia",
+          "Count": 2
+        },
+        {
+          "Identifier": "Lugia",
+          "Count": 2
+        },
+        {
+          "Identifier": "Lugia",
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Identifier": "Hooh",
+      "Palette": "31",
+      "Width": 32,
+      "Height": 32,
+      "PaletteSlot": 10,
+      "EnableReflectionPaletteLoad": true,
+      "Animations": "gObjectEventImageAnimTable_HoOh",
+      "Frames": [
+        {
+          "Identifier": "HoOh"
+        },
+        {
+          "Identifier": "HoOh"
+        },
+        {
+          "Identifier": "HoOh"
+        },
+        {
+          "Identifier": "HoOh",
+          "Count": 2
+        },
+        {
+          "Identifier": "HoOh",
+          "Count": 2
+        },
+        {
+          "Identifier": "HoOh",
+          "Count": 2
+        }
+      ]
+    }
+  ],
+  "Palettes": [
+    {
+      "Identifier": "8",
+      "Path": "graphics/object_events/palettes/08",
+      "Tag": 0
+    },
+    {
+      "Identifier": "33",
+      "Path": "graphics/object_events/palettes/33",
+      "Tag": 1
+    },
+    {
+      "Identifier": "9",
+      "Path": "graphics/object_events/palettes/09",
+      "Tag": 2
+    },
+    {
+      "Identifier": "10",
+      "Path": "graphics/object_events/palettes/10",
+      "Tag": 3
+    },
+    {
+      "Identifier": "11",
+      "Path": "graphics/object_events/palettes/11",
+      "Tag": 4
+    },
+    {
+      "Identifier": "17",
+      "Path": "graphics/object_events/palettes/17",
+      "Tag": 5
+    },
+    {
+      "Identifier": "18",
+      "Path": "graphics/object_events/palettes/18",
+      "Tag": 6
+    },
+    {
+      "Identifier": "34",
+      "Path": "graphics/object_events/palettes/34",
+      "Tag": 7
+    },
+    {
+      "Identifier": "0",
+      "Path": "graphics/object_events/palettes/00",
+      "Tag": 8
+    },
+    {
+      "Identifier": "1",
+      "Path": "graphics/object_events/palettes/01",
+      "Tag": 9
+    },
+    {
+      "Identifier": "2",
+      "Path": "graphics/object_events/palettes/02",
+      "Tag": 10
+    },
+    {
+      "Identifier": "3",
+      "Path": "graphics/object_events/palettes/03",
+      "Tag": 11
+    },
+    {
+      "Identifier": "4",
+      "Path": "graphics/object_events/palettes/04",
+      "Tag": 12
+    },
+    {
+      "Identifier": "5",
+      "Path": "graphics/object_events/palettes/05",
+      "Tag": 13
+    },
+    {
+      "Identifier": "6",
+      "Path": "graphics/object_events/palettes/06",
+      "Tag": 14
+    },
+    {
+      "Identifier": "7",
+      "Path": "graphics/object_events/palettes/07",
+      "Tag": 15
+    },
+    {
+      "Identifier": "22",
+      "Path": "graphics/object_events/palettes/22",
+      "Tag": 16
+    },
+    {
+      "Identifier": "23",
+      "Path": "graphics/object_events/palettes/23",
+      "Tag": 17
+    },
+    {
+      "Identifier": "24",
+      "Path": "graphics/object_events/palettes/24",
+      "Tag": 18
+    },
+    {
+      "Identifier": "25",
+      "Path": "graphics/object_events/palettes/25",
+      "Tag": 19
+    },
+    {
+      "Identifier": "26",
+      "Path": "graphics/object_events/palettes/26",
+      "Tag": 20
+    },
+    {
+      "Identifier": "14",
+      "Path": "graphics/object_events/palettes/14",
+      "Tag": 21
+    },
+    {
+      "Identifier": "15",
+      "Path": "graphics/object_events/palettes/15",
+      "Tag": 22
+    },
+    {
+      "Identifier": "16",
+      "Path": "graphics/object_events/palettes/16",
+      "Tag": 23
+    },
+    {
+      "Identifier": "27",
+      "Path": "graphics/object_events/palettes/27",
+      "Tag": 24
+    },
+    {
+      "Identifier": "20",
+      "Path": "graphics/object_events/palettes/20",
+      "Tag": 25
+    },
+    {
+      "Identifier": "21",
+      "Path": "graphics/object_events/palettes/21",
+      "Tag": 26
+    },
+    {
+      "Identifier": "12",
+      "Path": "graphics/object_events/palettes/12",
+      "Tag": 27
+    },
+    {
+      "Identifier": "13",
+      "Path": "graphics/object_events/palettes/13",
+      "Tag": 28
+    },
+    {
+      "Identifier": "19",
+      "Path": "graphics/object_events/palettes/19",
+      "Tag": 29
+    },
+    {
+      "Identifier": "28",
+      "Path": "graphics/object_events/palettes/28",
+      "Tag": 30
+    },
+    {
+      "Identifier": "30",
+      "Path": "graphics/object_events/palettes/30",
+      "Tag": 31
+    },
+    {
+      "Identifier": "29",
+      "Path": "graphics/object_events/palettes/29",
+      "Tag": 32
+    },
+    {
+      "Identifier": "32",
+      "Path": "graphics/object_events/palettes/32",
+      "Tag": 33
+    },
+    {
+      "Identifier": "31",
+      "Path": "graphics/object_events/palettes/31",
+      "Tag": 34
+    }
+  ],
+  "Pics": [
+    {
+      "Identifier": "BrendanNormal",
+      "Path": "people/brendan/walking"
+    },
+    {
+      "Identifier": "BrendanRunning",
+      "Path": "people/brendan/running"
+    },
+    {
+      "Identifier": "RubySapphireBrendanNormal",
+      "Path": "people/ruby_sapphire_brendan/walking"
+    },
+    {
+      "Identifier": "RubySapphireBrendanRunning",
+      "Path": "people/ruby_sapphire_brendan/running"
+    },
+    {
+      "Identifier": "BrendanFieldMove",
+      "Path": "people/brendan/field_move"
+    },
+    {
+      "Identifier": "BrendanSurfing",
+      "Path": "people/brendan/surfing"
+    },
+    {
+      "Identifier": "BrendanMachBike",
+      "Path": "people/brendan/mach_bike"
+    },
+    {
+      "Identifier": "BrendanAcroBike",
+      "Path": "people/brendan/acro_bike"
+    },
+    {
+      "Identifier": "BrendanFishing",
+      "Path": "people/brendan/fishing"
+    },
+    {
+      "Identifier": "BrendanWatering",
+      "Path": "people/brendan/watering"
+    },
+    {
+      "Identifier": "BrendanDecorating",
+      "Path": "people/brendan/decorating"
+    },
+    {
+      "Identifier": "MayDecorating",
+      "Path": "people/may/decorating"
+    },
+    {
+      "Identifier": "BrendanUnderwater",
+      "Path": "people/brendan/underwater"
+    },
+    {
+      "Identifier": "MayUnderwater",
+      "Path": "people/may/underwater"
+    },
+    {
+      "Identifier": "MayNormal",
+      "Path": "people/may/walking"
+    },
+    {
+      "Identifier": "MayRunning",
+      "Path": "people/may/running"
+    },
+    {
+      "Identifier": "RubySapphireMayNormal",
+      "Path": "people/ruby_sapphire_may/walking"
+    },
+    {
+      "Identifier": "RubySapphireMayRunning",
+      "Path": "people/ruby_sapphire_may/running"
+    },
+    {
+      "Identifier": "MayMachBike",
+      "Path": "people/may/mach_bike"
+    },
+    {
+      "Identifier": "MayAcroBike",
+      "Path": "people/may/acro_bike"
+    },
+    {
+      "Identifier": "MaySurfing",
+      "Path": "people/may/surfing"
+    },
+    {
+      "Identifier": "MayFieldMove",
+      "Path": "people/may/field_move"
+    },
+    {
+      "Identifier": "MayFishing",
+      "Path": "people/may/fishing"
+    },
+    {
+      "Identifier": "MayWatering",
+      "Path": "people/may/watering"
+    },
+    {
+      "Identifier": "NinjaBoy",
+      "Path": "people/ninja_boy"
+    },
+    {
+      "Identifier": "Twin",
+      "Path": "people/twin"
+    },
+    {
+      "Identifier": "Boy1",
+      "Path": "people/boy_1"
+    },
+    {
+      "Identifier": "Girl1",
+      "Path": "people/girl_1"
+    },
+    {
+      "Identifier": "Boy2",
+      "Path": "people/boy_2"
+    },
+    {
+      "Identifier": "Girl2",
+      "Path": "people/girl_2"
+    },
+    {
+      "Identifier": "LittleBoy",
+      "Path": "people/little_boy"
+    },
+    {
+      "Identifier": "LittleGirl",
+      "Path": "people/little_girl"
+    },
+    {
+      "Identifier": "Boy3",
+      "Path": "people/boy_3"
+    },
+    {
+      "Identifier": "Girl3",
+      "Path": "people/girl_3"
+    },
+    {
+      "Identifier": "RichBoy",
+      "Path": "people/rich_boy"
+    },
+    {
+      "Identifier": "Woman1",
+      "Path": "people/woman_1"
+    },
+    {
+      "Identifier": "FatMan",
+      "Path": "people/fat_man"
+    },
+    {
+      "Identifier": "PokefanF",
+      "Path": "people/pokefan_f"
+    },
+    {
+      "Identifier": "Man1",
+      "Path": "people/man_1"
+    },
+    {
+      "Identifier": "Woman2",
+      "Path": "people/woman_2"
+    },
+    {
+      "Identifier": "ExpertM",
+      "Path": "people/expert_m"
+    },
+    {
+      "Identifier": "ExpertF",
+      "Path": "people/expert_f"
+    },
+    {
+      "Identifier": "Man2",
+      "Path": "people/man_2"
+    },
+    {
+      "Identifier": "Woman3",
+      "Path": "people/woman_3"
+    },
+    {
+      "Identifier": "PokefanM",
+      "Path": "people/pokefan_m"
+    },
+    {
+      "Identifier": "Woman4",
+      "Path": "people/woman_4"
+    },
+    {
+      "Identifier": "Cook",
+      "Path": "people/cook"
+    },
+    {
+      "Identifier": "LinkReceptionist",
+      "Path": "people/link_receptionist"
+    },
+    {
+      "Identifier": "OldMan",
+      "Path": "people/old_man"
+    },
+    {
+      "Identifier": "OldWoman",
+      "Path": "people/old_woman"
+    },
+    {
+      "Identifier": "Camper",
+      "Path": "people/camper"
+    },
+    {
+      "Identifier": "Picnicker",
+      "Path": "people/picnicker"
+    },
+    {
+      "Identifier": "Man3",
+      "Path": "people/man_3"
+    },
+    {
+      "Identifier": "Woman5",
+      "Path": "people/woman_5"
+    },
+    {
+      "Identifier": "Youngster",
+      "Path": "people/youngster"
+    },
+    {
+      "Identifier": "BugCatcher",
+      "Path": "people/bug_catcher"
+    },
+    {
+      "Identifier": "PsychicM",
+      "Path": "people/psychic_m"
+    },
+    {
+      "Identifier": "SchoolKidM",
+      "Path": "people/school_kid_m"
+    },
+    {
+      "Identifier": "Maniac",
+      "Path": "people/maniac"
+    },
+    {
+      "Identifier": "HexManiac",
+      "Path": "people/hex_maniac"
+    },
+    {
+      "Identifier": "UnusedWoman",
+      "Path": "people/unused_woman"
+    },
+    {
+      "Identifier": "SwimmerM",
+      "Path": "people/swimmer_m"
+    },
+    {
+      "Identifier": "SwimmerF",
+      "Path": "people/swimmer_f"
+    },
+    {
+      "Identifier": "BlackBelt",
+      "Path": "people/black_belt"
+    },
+    {
+      "Identifier": "Beauty",
+      "Path": "people/beauty"
+    },
+    {
+      "Identifier": "Scientist1",
+      "Path": "people/scientist_1"
+    },
+    {
+      "Identifier": "Lass",
+      "Path": "people/lass"
+    },
+    {
+      "Identifier": "Gentleman",
+      "Path": "people/gentleman"
+    },
+    {
+      "Identifier": "Sailor",
+      "Path": "people/sailor"
+    },
+    {
+      "Identifier": "Fisherman",
+      "Path": "people/fisherman"
+    },
+    {
+      "Identifier": "RunningTriathleteM",
+      "Path": "people/running_triathlete_m"
+    },
+    {
+      "Identifier": "RunningTriathleteF",
+      "Path": "people/running_triathlete_f"
+    },
+    {
+      "Identifier": "TuberF",
+      "Path": "people/tuber_f"
+    },
+    {
+      "Identifier": "TuberM",
+      "Path": "people/tuber_m"
+    },
+    {
+      "Identifier": "Hiker",
+      "Path": "people/hiker"
+    },
+    {
+      "Identifier": "CyclingTriathleteM",
+      "Path": "people/cycling_triathlete_m"
+    },
+    {
+      "Identifier": "CyclingTriathleteF",
+      "Path": "people/cycling_triathlete_f"
+    },
+    {
+      "Identifier": "Man4",
+      "Path": "people/man_4"
+    },
+    {
+      "Identifier": "Man5",
+      "Path": "people/man_5"
+    },
+    {
+      "Identifier": "Nurse",
+      "Path": "people/nurse"
+    },
+    {
+      "Identifier": "ItemBall",
+      "Path": "misc/item_ball"
+    },
+    {
+      "Identifier": "ProfBirch",
+      "Path": "people/prof_birch"
+    },
+    {
+      "Identifier": "ReporterM",
+      "Path": "people/reporter_m"
+    },
+    {
+      "Identifier": "ReporterF",
+      "Path": "people/reporter_f"
+    },
+    {
+      "Identifier": "MauvilleOldMan1",
+      "Path": "people/mauville_old_man_1"
+    },
+    {
+      "Identifier": "MauvilleOldMan2",
+      "Path": "people/mauville_old_man_2"
+    },
+    {
+      "Identifier": "MartEmployee",
+      "Path": "people/mart_employee"
+    },
+    {
+      "Identifier": "RooftopSaleWoman",
+      "Path": "people/rooftop_sale_woman"
+    },
+    {
+      "Identifier": "Teala",
+      "Path": "people/teala"
+    },
+    {
+      "Identifier": "Artist",
+      "Path": "people/artist"
+    },
+    {
+      "Identifier": "Cameraman",
+      "Path": "people/cameraman"
+    },
+    {
+      "Identifier": "Scientist2",
+      "Path": "people/scientist_2"
+    },
+    {
+      "Identifier": "DevonEmployee",
+      "Path": "people/devon_employee"
+    },
+    {
+      "Identifier": "AquaMemberM",
+      "Path": "people/team_aqua/aqua_member_m"
+    },
+    {
+      "Identifier": "AquaMemberF",
+      "Path": "people/team_aqua/aqua_member_f"
+    },
+    {
+      "Identifier": "MagmaMemberM",
+      "Path": "people/team_magma/magma_member_m"
+    },
+    {
+      "Identifier": "MagmaMemberF",
+      "Path": "people/team_magma/magma_member_f"
+    },
+    {
+      "Identifier": "Sidney",
+      "Path": "people/elite_four/sidney"
+    },
+    {
+      "Identifier": "Phoebe",
+      "Path": "people/elite_four/phoebe"
+    },
+    {
+      "Identifier": "Glacia",
+      "Path": "people/elite_four/glacia"
+    },
+    {
+      "Identifier": "Drake",
+      "Path": "people/elite_four/drake"
+    },
+    {
+      "Identifier": "Roxanne",
+      "Path": "people/gym_leaders/roxanne"
+    },
+    {
+      "Identifier": "Brawly",
+      "Path": "people/gym_leaders/brawly"
+    },
+    {
+      "Identifier": "Wattson",
+      "Path": "people/gym_leaders/wattson"
+    },
+    {
+      "Identifier": "Flannery",
+      "Path": "people/gym_leaders/flannery"
+    },
+    {
+      "Identifier": "Norman",
+      "Path": "people/gym_leaders/norman"
+    },
+    {
+      "Identifier": "Winona",
+      "Path": "people/gym_leaders/winona"
+    },
+    {
+      "Identifier": "Liza",
+      "Path": "people/gym_leaders/liza"
+    },
+    {
+      "Identifier": "Tate",
+      "Path": "people/gym_leaders/tate"
+    },
+    {
+      "Identifier": "Wallace",
+      "Path": "people/wallace"
+    },
+    {
+      "Identifier": "Steven",
+      "Path": "people/steven"
+    },
+    {
+      "Identifier": "Wally",
+      "Path": "people/wally"
+    },
+    {
+      "Identifier": "RubySapphireLittleBoy",
+      "Path": "people/rs_little_boy"
+    },
+    {
+      "Identifier": "HotSpringsOldWoman",
+      "Path": "people/hot_springs_old_woman"
+    },
+    {
+      "Identifier": "LatiasLatios",
+      "Path": "pokemon/latias_latios"
+    },
+    {
+      "Identifier": "GameboyKid",
+      "Path": "people/gameboy_kid"
+    },
+    {
+      "Identifier": "ContestJudge",
+      "Path": "people/contest_judge"
+    },
+    {
+      "Identifier": "Archie",
+      "Path": "people/team_aqua/archie"
+    },
+    {
+      "Identifier": "Maxie",
+      "Path": "people/team_magma/maxie"
+    },
+    {
+      "Identifier": "Kyogre",
+      "Path": "pokemon/kyogre"
+    },
+    {
+      "Identifier": "Groudon",
+      "Path": "pokemon/groudon"
+    },
+    {
+      "Identifier": "Regi",
+      "Path": "pokemon/regi"
+    },
+    {
+      "Identifier": "Skitty",
+      "Path": "pokemon/skitty"
+    },
+    {
+      "Identifier": "Kecleon",
+      "Path": "pokemon/kecleon"
+    },
+    {
+      "Identifier": "Rayquaza",
+      "Path": "pokemon/rayquaza"
+    },
+    {
+      "Identifier": "RayquazaStill",
+      "Path": "pokemon/rayquaza_still"
+    },
+    {
+      "Identifier": "Zigzagoon",
+      "Path": "pokemon/zigzagoon"
+    },
+    {
+      "Identifier": "Pikachu",
+      "Path": "pokemon/pikachu"
+    },
+    {
+      "Identifier": "Azumarill",
+      "Path": "pokemon/azumarill"
+    },
+    {
+      "Identifier": "Wingull",
+      "Path": "pokemon/wingull"
+    },
+    {
+      "Identifier": "TuberMSwimming",
+      "Path": "people/tuber_m_swimming"
+    },
+    {
+      "Identifier": "Azurill",
+      "Path": "pokemon/azurill"
+    },
+    {
+      "Identifier": "Mom",
+      "Path": "people/mom"
+    },
+    {
+      "Identifier": "UnusedNatuDoll",
+      "Path": "dolls/unused_natu_doll"
+    },
+    {
+      "Identifier": "UnusedMagnemiteDoll",
+      "Path": "dolls/unused_magnemite_doll"
+    },
+    {
+      "Identifier": "UnusedSquirtleDoll",
+      "Path": "dolls/unused_squirtle_doll"
+    },
+    {
+      "Identifier": "UnusedWooperDoll",
+      "Path": "dolls/unused_wooper_doll"
+    },
+    {
+      "Identifier": "UnusedPikachuDoll",
+      "Path": "dolls/unused_pikachu_doll"
+    },
+    {
+      "Identifier": "UnusedPorygon2Doll",
+      "Path": "dolls/unused_porygon2_doll"
+    },
+    {
+      "Identifier": "PichuDoll",
+      "Path": "dolls/pichu_doll"
+    },
+    {
+      "Identifier": "PikachuDoll",
+      "Path": "dolls/pikachu_doll"
+    },
+    {
+      "Identifier": "MarillDoll",
+      "Path": "dolls/marill_doll"
+    },
+    {
+      "Identifier": "TogepiDoll",
+      "Path": "dolls/togepi_doll"
+    },
+    {
+      "Identifier": "CyndaquilDoll",
+      "Path": "dolls/cyndaquil_doll"
+    },
+    {
+      "Identifier": "ChikoritaDoll",
+      "Path": "dolls/chikorita_doll"
+    },
+    {
+      "Identifier": "TotodileDoll",
+      "Path": "dolls/totodile_doll"
+    },
+    {
+      "Identifier": "JigglypuffDoll",
+      "Path": "dolls/jigglypuff_doll"
+    },
+    {
+      "Identifier": "MeowthDoll",
+      "Path": "dolls/meowth_doll"
+    },
+    {
+      "Identifier": "ClefairyDoll",
+      "Path": "dolls/clefairy_doll"
+    },
+    {
+      "Identifier": "DittoDoll",
+      "Path": "dolls/ditto_doll"
+    },
+    {
+      "Identifier": "SmoochumDoll",
+      "Path": "dolls/smoochum_doll"
+    },
+    {
+      "Identifier": "TreeckoDoll",
+      "Path": "dolls/treecko_doll"
+    },
+    {
+      "Identifier": "TorchicDoll",
+      "Path": "dolls/torchic_doll"
+    },
+    {
+      "Identifier": "MudkipDoll",
+      "Path": "dolls/mudkip_doll"
+    },
+    {
+      "Identifier": "DuskullDoll",
+      "Path": "dolls/duskull_doll"
+    },
+    {
+      "Identifier": "WynautDoll",
+      "Path": "dolls/wynaut_doll"
+    },
+    {
+      "Identifier": "BaltoyDoll",
+      "Path": "dolls/baltoy_doll"
+    },
+    {
+      "Identifier": "KecleonDoll",
+      "Path": "dolls/kecleon_doll"
+    },
+    {
+      "Identifier": "AzurillDoll",
+      "Path": "dolls/azurill_doll"
+    },
+    {
+      "Identifier": "SkittyDoll",
+      "Path": "dolls/skitty_doll"
+    },
+    {
+      "Identifier": "SwabluDoll",
+      "Path": "dolls/swablu_doll"
+    },
+    {
+      "Identifier": "GulpinDoll",
+      "Path": "dolls/gulpin_doll"
+    },
+    {
+      "Identifier": "LotadDoll",
+      "Path": "dolls/lotad_doll"
+    },
+    {
+      "Identifier": "SeedotDoll",
+      "Path": "dolls/seedot_doll"
+    },
+    {
+      "Identifier": "PikaCushion",
+      "Path": "cushions/pika_cushion"
+    },
+    {
+      "Identifier": "RoundCushion",
+      "Path": "cushions/round_cushion"
+    },
+    {
+      "Identifier": "KissCushion",
+      "Path": "cushions/kiss_cushion"
+    },
+    {
+      "Identifier": "ZigzagCushion",
+      "Path": "cushions/zigzag_cushion"
+    },
+    {
+      "Identifier": "SpinCushion",
+      "Path": "cushions/spin_cushion"
+    },
+    {
+      "Identifier": "DiamondCushion",
+      "Path": "cushions/diamond_cushion"
+    },
+    {
+      "Identifier": "BallCushion",
+      "Path": "cushions/ball_cushion"
+    },
+    {
+      "Identifier": "GrassCushion",
+      "Path": "cushions/grass_cushion"
+    },
+    {
+      "Identifier": "FireCushion",
+      "Path": "cushions/fire_cushion"
+    },
+    {
+      "Identifier": "WaterCushion",
+      "Path": "cushions/water_cushion"
+    },
+    {
+      "Identifier": "BigSnorlaxDoll",
+      "Path": "dolls/big_snorlax_doll"
+    },
+    {
+      "Identifier": "BigRhydonDoll",
+      "Path": "dolls/big_rhydon_doll"
+    },
+    {
+      "Identifier": "BigLaprasDoll",
+      "Path": "dolls/big_lapras_doll"
+    },
+    {
+      "Identifier": "BigVenusaurDoll",
+      "Path": "dolls/big_venusaur_doll"
+    },
+    {
+      "Identifier": "BigCharizardDoll",
+      "Path": "dolls/big_charizard_doll"
+    },
+    {
+      "Identifier": "BigBlastoiseDoll",
+      "Path": "dolls/big_blastoise_doll"
+    },
+    {
+      "Identifier": "BigWailmerDoll",
+      "Path": "dolls/big_wailmer_doll"
+    },
+    {
+      "Identifier": "BigRegirockDoll",
+      "Path": "dolls/big_regirock_doll"
+    },
+    {
+      "Identifier": "BigRegiceDoll",
+      "Path": "dolls/big_regice_doll"
+    },
+    {
+      "Identifier": "BigRegisteelDoll",
+      "Path": "dolls/big_registeel_doll"
+    },
+    {
+      "Identifier": "CuttableTree",
+      "Path": "misc/cuttable_tree"
+    },
+    {
+      "Identifier": "BreakableRock",
+      "Path": "misc/breakable_rock"
+    },
+    {
+      "Identifier": "PushableBoulder",
+      "Path": "misc/pushable_boulder"
+    },
+    {
+      "Identifier": "MrBrineysBoat",
+      "Path": "misc/mr_brineys_boat"
+    },
+    {
+      "Identifier": "Fossil",
+      "Path": "misc/fossil"
+    },
+    {
+      "Identifier": "SubmarineShadow",
+      "Path": "misc/submarine_shadow"
+    },
+    {
+      "Identifier": "Truck",
+      "Path": "misc/truck"
+    },
+    {
+      "Identifier": "Vigoroth",
+      "Path": "pokemon/vigoroth"
+    },
+    {
+      "Identifier": "BirchsBag",
+      "Path": "misc/birchs_bag"
+    },
+    {
+      "Identifier": "EnemyZigzagoon",
+      "Path": "pokemon/enemy_zigzagoon"
+    },
+    {
+      "Identifier": "Poochyena",
+      "Path": "pokemon/poochyena"
+    },
+    {
+      "Identifier": "CableCar",
+      "Path": "misc/cable_car"
+    },
+    {
+      "Identifier": "SSTidal",
+      "Path": "misc/ss_tidal"
+    },
+    {
+      "Identifier": "BerryTreeDirtPile",
+      "Path": "berry_trees/dirt_pile"
+    },
+    {
+      "Identifier": "BerryTreeSprout",
+      "Path": "berry_trees/sprout"
+    },
+    {
+      "Identifier": "PechaBerryTree",
+      "Path": "berry_trees/pecha"
+    },
+    {
+      "Identifier": "KelpsyBerryTree",
+      "Path": "berry_trees/kelpsy"
+    },
+    {
+      "Identifier": "WepearBerryTree",
+      "Path": "berry_trees/wepear"
+    },
+    {
+      "Identifier": "IapapaBerryTree",
+      "Path": "berry_trees/iapapa"
+    },
+    {
+      "Identifier": "CheriBerryTree",
+      "Path": "berry_trees/cheri"
+    },
+    {
+      "Identifier": "FigyBerryTree",
+      "Path": "berry_trees/figy"
+    },
+    {
+      "Identifier": "MagoBerryTree",
+      "Path": "berry_trees/mago"
+    },
+    {
+      "Identifier": "LumBerryTree",
+      "Path": "berry_trees/lum"
+    },
+    {
+      "Identifier": "RazzBerryTree",
+      "Path": "berry_trees/razz"
+    },
+    {
+      "Identifier": "GrepaBerryTree",
+      "Path": "berry_trees/grepa"
+    },
+    {
+      "Identifier": "RabutaBerryTree",
+      "Path": "berry_trees/rabuta"
+    },
+    {
+      "Identifier": "NomelBerryTree",
+      "Path": "berry_trees/nomel"
+    },
+    {
+      "Identifier": "LeppaBerryTree",
+      "Path": "berry_trees/leppa"
+    },
+    {
+      "Identifier": "LiechiBerryTree",
+      "Path": "berry_trees/liechi"
+    },
+    {
+      "Identifier": "HondewBerryTree",
+      "Path": "berry_trees/hondew"
+    },
+    {
+      "Identifier": "AguavBerryTree",
+      "Path": "berry_trees/aguav"
+    },
+    {
+      "Identifier": "WikiBerryTree",
+      "Path": "berry_trees/wiki"
+    },
+    {
+      "Identifier": "PomegBerryTree",
+      "Path": "berry_trees/pomeg"
+    },
+    {
+      "Identifier": "RawstBerryTree",
+      "Path": "berry_trees/rawst"
+    },
+    {
+      "Identifier": "SpelonBerryTree",
+      "Path": "berry_trees/spelon"
+    },
+    {
+      "Identifier": "ChestoBerryTree",
+      "Path": "berry_trees/chesto"
+    },
+    {
+      "Identifier": "OranBerryTree",
+      "Path": "berry_trees/oran"
+    },
+    {
+      "Identifier": "PersimBerryTree",
+      "Path": "berry_trees/persim"
+    },
+    {
+      "Identifier": "SitrusBerryTree",
+      "Path": "berry_trees/sitrus"
+    },
+    {
+      "Identifier": "AspearBerryTree",
+      "Path": "berry_trees/aspear"
+    },
+    {
+      "Identifier": "PamtreBerryTree",
+      "Path": "berry_trees/pamtre"
+    },
+    {
+      "Identifier": "CornnBerryTree",
+      "Path": "berry_trees/cornn"
+    },
+    {
+      "Identifier": "LansatBerryTree",
+      "Path": "berry_trees/lansat"
+    },
+    {
+      "Identifier": "DurinBerryTree",
+      "Path": "berry_trees/durin"
+    },
+    {
+      "Identifier": "TamatoBerryTree",
+      "Path": "berry_trees/tamato"
+    },
+    {
+      "Identifier": "OccaBerryTree",
+      "Path": "berry_trees/occa"
+    },
+    {
+      "Identifier": "YacheBerryTree",
+      "Path": "berry_trees/yache"
+    },
+    {
+      "Identifier": "ChopleBerryTree",
+      "Path": "berry_trees/chople"
+    },
+    {
+      "Identifier": "KebiaBerryTree",
+      "Path": "berry_trees/kebia"
+    },
+    {
+      "Identifier": "ShucaBerryTree",
+      "Path": "berry_trees/shuca"
+    },
+    {
+      "Identifier": "PayapaBerryTree",
+      "Path": "berry_trees/payapa"
+    },
+    {
+      "Identifier": "TangaBerryTree",
+      "Path": "berry_trees/tanga"
+    },
+    {
+      "Identifier": "KasibBerryTree",
+      "Path": "berry_trees/kasib"
+    },
+    {
+      "Identifier": "HabanBerryTree",
+      "Path": "berry_trees/haban"
+    },
+    {
+      "Identifier": "ColburBerryTree",
+      "Path": "berry_trees/colbur"
+    },
+    {
+      "Identifier": "RoseliBerryTree",
+      "Path": "berry_trees/roseli"
+    },
+    {
+      "Identifier": "QuintyPlump",
+      "Path": "people/quinty_plump"
+    },
+    {
+      "Identifier": "Juan",
+      "Path": "people/gym_leaders/juan"
+    },
+    {
+      "Identifier": "Scott",
+      "Path": "people/scott"
+    },
+    {
+      "Identifier": "Statue",
+      "Path": "misc/statue"
+    },
+    {
+      "Identifier": "Kirlia",
+      "Path": "pokemon/kirlia"
+    },
+    {
+      "Identifier": "Dusclops",
+      "Path": "pokemon/dusclops"
+    },
+    {
+      "Identifier": "MysteryEventDeliveryman",
+      "Path": "people/mystery_event_deliveryman"
+    },
+    {
+      "Identifier": "UnionRoomAttendant",
+      "Path": "people/union_room_attendant"
+    },
+    {
+      "Identifier": "MovingBox",
+      "Path": "misc/moving_box"
+    },
+    {
+      "Identifier": "Sudowoodo",
+      "Path": "pokemon/sudowoodo"
+    },
+    {
+      "Identifier": "Mew",
+      "Path": "pokemon/mew"
+    },
+    {
+      "Identifier": "Red",
+      "Path": "people/red"
+    },
+    {
+      "Identifier": "Leaf",
+      "Path": "people/leaf"
+    },
+    {
+      "Identifier": "BirthIslandStone",
+      "Path": "misc/birth_island_stone"
+    },
+    {
+      "Identifier": "Deoxys",
+      "Path": "pokemon/deoxys"
+    },
+    {
+      "Identifier": "Anabel",
+      "Path": "people/frontier_brains/anabel"
+    },
+    {
+      "Identifier": "Tucker",
+      "Path": "people/frontier_brains/tucker"
+    },
+    {
+      "Identifier": "Spenser",
+      "Path": "people/frontier_brains/spenser"
+    },
+    {
+      "Identifier": "Greta",
+      "Path": "people/frontier_brains/greta"
+    },
+    {
+      "Identifier": "Noland",
+      "Path": "people/frontier_brains/noland"
+    },
+    {
+      "Identifier": "Lucy",
+      "Path": "people/frontier_brains/lucy"
+    },
+    {
+      "Identifier": "Brandon",
+      "Path": "people/frontier_brains/brandon"
+    },
+    {
+      "Identifier": "Lugia",
+      "Path": "pokemon/lugia"
+    },
+    {
+      "Identifier": "HoOh",
+      "Path": "pokemon/ho_oh"
+    }
+  ]
+}
