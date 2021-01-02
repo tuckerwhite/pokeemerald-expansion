@@ -125,8 +125,8 @@
     },
     {
       "type": "trigger",
-      "x": 7,
-      "y": 18,
+      "x": 5,
+      "y": 19,
       "elevation": 3,
       "var": "VAR_OLDALE_RIVAL_STATE",
       "var_value": "1",
