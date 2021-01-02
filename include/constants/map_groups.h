@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -59,6 +63,8 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_NEW_MAP4            (57 | (0 << 8))
+#define MAP_DEWFORD_BEACH       (58 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -575,6 +581,8 @@
 
 // Map Group 30
 #define MAP_ROUTE113_GLASS_WORKSHOP (0 | (30 << 8))
+#define MAP_FRAY_MANOR              (1 | (30 << 8))
+#define MAP_FRAY_MANOR_ISLE         (2 | (30 << 8))
 
 // Map Group 31
 #define MAP_ROUTE123_BERRY_MASTERS_HOUSE (0 | (31 << 8))

@@ -93,7 +93,9 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "NewMap4",
+    "DewfordBeach"
   ],
   "gMapGroup1": [
     "LittlerootTown_BrendansHouse_1F",
@@ -609,7 +611,9 @@
     "Route110_SeasideCyclingRoadSouthEntrance"
   ],
   "gMapGroup30": [
-    "Route113_GlassWorkshop"
+    "Route113_GlassWorkshop",
+    "FrayManor",
+    "FrayManorIsle"
   ],
   "gMapGroup31": [
     "Route123_BerryMastersHouse"

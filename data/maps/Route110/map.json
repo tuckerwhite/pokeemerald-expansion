@@ -27,6 +27,11 @@
       "direction": "left",
       "offset": 60,
       "map": "MAP_ROUTE103"
+    },
+    {
+      "direction": "right",
+      "offset": 36,
+      "map": "MAP_FRAY_MANOR_ISLE"
     }
   ],
   "object_events": [

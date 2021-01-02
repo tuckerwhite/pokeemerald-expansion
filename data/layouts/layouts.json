@@ -4410,6 +4410,46 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP4",
+      "name": "NewMap4_Layout",
+      "width": 36,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/NewMap4/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap4/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRAY_MANOR",
+      "name": "FrayManor_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/FrayManor/border.bin",
+      "blockdata_filepath": "data/layouts/FrayManor/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRAY_MANOR_ISLE",
+      "name": "FrayManorIsle_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/FrayManorIsle/border.bin",
+      "blockdata_filepath": "data/layouts/FrayManorIsle/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_BEACH",
+      "name": "DewfordBeach_Layout",
+      "width": 36,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/DewfordBeach/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordBeach/map.bin"
     }
   ]
 }
