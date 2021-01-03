@@ -1018,6 +1018,41 @@ Route104_EventScript_Darian:: @ 81ED5D5
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+
+Route104_EventScript_Celebi:: 
+	goto_if_set FLAG_DEFEATED_CELEBI, Route104_EventScript_Celebi_Gone
+	msgbox Route104_Intro_Celebi
+	playmoncry SPECIES_CELEBI, 2
+	setwildbattle SPECIES_CELEBI, 15, ITEM_LUM_BERRY
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq Route104_EventScript_DefeatedCelebi
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq Route104_EventScript_RanFromCelebi
+	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
+	goto_if_eq Route104_EventScript_RanFromCelebi
+	setflag FLAG_DEFEATED_CELEBI
+	release
+	end
+
+Route104_EventScript_DefeatedCelebi::
+	setflag FLAG_DEFEATED_CELEBI
+	end
+
+Route104_EventScript_RanFromCelebi::
+	setvar VAR_0x8004, SPECIES_CELEBI
+	end
+
+Route104_EventScript_Celebi_Gone::
+	release
+	end
+
+Route104_Intro_Celebi:
+	.string "$"
+
+
 Route104_Text_BrineyLivesInSeasideCottage: @ 81ED5EC
 	.string "That seaside cottage is where\n"
 	.string "MR. BRINEY lives.\p"
