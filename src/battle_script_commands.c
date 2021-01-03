@@ -392,7 +392,7 @@ static void Cmd_yesnoboxlearnmove(void);
 static void Cmd_yesnoboxstoplearningmove(void);
 static void Cmd_hitanimation(void);
 static void Cmd_getmoneyreward(void);
-static void atk5E(void);
+static void Cmd_damagetohalftargetmaxhp(void);
 static void Cmd_swapattackerwithtarget(void);
 static void Cmd_incrementgamestat(void);
 static void Cmd_drawpartystatussummary(void);
@@ -554,6 +554,7 @@ static void Cmd_jumpifoppositegenders(void);
 static void Cmd_trygetbaddreamstarget(void);
 static void Cmd_tryworryseed(void);
 static void Cmd_metalburstdamagecalculator(void);
+static void Cmd_damagetohalftargetmaxhp(void);
 
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
@@ -651,7 +652,7 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_yesnoboxstoplearningmove,               // 0x5B
     Cmd_hitanimation,                           // 0x5C
     Cmd_getmoneyreward,                         // 0x5D
-    atk5E,                                      // 0x5E
+    Cmd_damagetohalftargetmaxhp,                // 0x5E
     Cmd_swapattackerwithtarget,                 // 0x5F
     Cmd_incrementgamestat,                      // 0x60
     Cmd_drawpartystatussummary,                 // 0x61
@@ -6257,32 +6258,15 @@ static void Cmd_getmoneyreward(void)
     gBattlescriptCurrInstr++;
 }
 
-static void atk5E(void)
+static void Cmd_damagetohalftargetmaxhp(void) // hyper fang
 {
-    gActiveBattler = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
+    gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 2;
+    if (gBattleMoveDamage == 0)
+        gBattleMoveDamage = 1;
 
-    switch (gBattleCommunication[0])
-    {
-    case 0:
-        BtlController_EmitGetMonData(0, REQUEST_ALL_BATTLE, 0);
-        MarkBattlerForControllerExec(gActiveBattler);
-        gBattleCommunication[0]++;
-        break;
-    case 1:
-         if (gBattleControllerExecFlags == 0)
-         {
-            s32 i;
-            struct BattlePokemon *bufferPoke = (struct BattlePokemon*) &gBattleResources->bufferB[gActiveBattler][4];
-            for (i = 0; i < MAX_MON_MOVES; i++)
-            {
-                gBattleMons[gActiveBattler].moves[i] = bufferPoke->moves[i];
-                gBattleMons[gActiveBattler].pp[i] = bufferPoke->pp[i];
-            }
-            gBattlescriptCurrInstr += 2;
-         }
-         break;
-    }
+    gBattlescriptCurrInstr++;
 }
+
 
 static void Cmd_swapattackerwithtarget(void)
 {
@@ -12558,6 +12542,7 @@ static void Cmd_metalburstdamagecalculator(void)
         gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
 }
+
 
 static bool32 CriticalCapture(u32 odds)
 {

@@ -2468,8 +2468,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_HYPER_FANG] =
     {
-        .effect = EFFECT_FLINCH_HIT, // Have not updated Hyper Fang's effect; have no idea how.
-        .power = 80,
+        .effect = EFFECT_HYPER_FANG, // updated Hyper Fang's effect, though it does kill
+        .power = 1,
         .type = TYPE_NORMAL,
         .accuracy = 90,
         .pp = 15,

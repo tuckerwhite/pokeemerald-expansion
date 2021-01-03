@@ -545,9 +545,8 @@
 	.byte 0x5d
 	.endm
 
-	.macro atk5E battler:req
+	.macro damagetohalftargetmaxhp
 	.byte 0x5e
-	.byte \battler
 	.endm
 
 	.macro swapattackerwithtarget
@@ -1880,4 +1879,3 @@
 	jumpifsideaffecting BS_TARGET, SIDE_STATUS_SAFEGUARD, \jumpptr
 	1:
 	.endm
-

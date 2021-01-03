@@ -377,6 +377,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectSpecialDefenseUp2Hit
 	.4byte BattleScript_EffectOverload
 	.4byte BattleScript_EffectBroil
+	.4byte BattleScript_EffectHyperFang
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -7953,3 +7954,13 @@ BattleScript_FadeTryEvasion::
 	waitmessage 0x40
 BattleScript_FadeEnd::
 	goto BattleScript_MoveEnd
+
+BattleScript_EffectHyperFang::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	typecalc
+	bichalfword gMoveResultFlags, MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE
+	damagetohalftargetmaxhp
+	goto BattleScript_HitFromAtkAnimation
