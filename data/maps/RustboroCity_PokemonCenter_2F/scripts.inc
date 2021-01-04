@@ -1,20 +1,89 @@
 RustboroCity_PokemonCenter_2F_MapScripts:: @ 8214EDE
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, CableClub_OnFrame
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, CableClub_OnWarp
-	map_script MAP_SCRIPT_ON_LOAD, CableClub_OnLoad
-	map_script MAP_SCRIPT_ON_TRANSITION, CableClub_OnTransition
-	.byte 0
-
-@ The below 3 are unused and leftover from RS
-RustboroCity_PokemonCenter_2F_EventScript_Colosseum:: @ 8214EF3
-	call CableClub_EventScript_Colosseum
+RustboroCity_Mart_EventScript_Clerk:: @ 8214F06
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_unset FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartBasic
+	goto_if_set FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartExpanded
 	end
 
-RustboroCity_PokemonCenter_2F_EventScript_TradeCenter:: @ 8214EF9
-	call CableClub_EventScript_TradeCenter
+RustboroCity_Mart_EventScript_PokemartBasic:: @ 8214F21
+	pokemart RustboroCity_Mart_Pokemart_Basic
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
 	end
 
-RustboroCity_PokemonCenter_2F_EventScript_RecordCorner:: @ 8214EFF
-	call CableClub_EventScript_RecordCorner
+RustboroCity_Mart_Pokemart_Basic: @ 8214F30
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_X_SPEED
+	.2byte ITEM_X_ATTACK
+	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_NONE
+	release
 	end
+
+RustboroCity_Mart_EventScript_PokemartExpanded:: @ 8214F48
+	pokemart RustboroCity_Mart_Pokemart_Expanded
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+RustboroCity_Mart_Pokemart_Expanded: @ 8214F58
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_TIMER_BALL
+	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_X_SPEED
+	.2byte ITEM_X_ATTACK
+	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_NONE
+	release
+	end
+
+RustboroCity_Mart_EventScript_PokefanF:: @ 8214F74
+	msgbox RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish, MSGBOX_NPC
+	end
+
+RustboroCity_Mart_EventScript_Boy:: @ 8214F7D
+	msgbox RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead, MSGBOX_NPC
+	end
+
+RustboroCity_Mart_EventScript_BugCatcher:: @ 8214F86
+	msgbox RustboroCity_Mart_Text_GettingEscapeRopeJustInCase, MSGBOX_NPC
+	end
+
+RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish: @ 8214F8F
+	.string "I'm buying some PARLYZ HEALS and\n"
+	.string "ANTIDOTES.\p"
+	.string "Just in case I run into SHROOMISH\n"
+	.string "in PETALBURG WOODS.../p"
+	.string "Not that my parents care.../p"
+	.string "Oh, they're not neglectful/n"
+	.string "or anything./p"
+	.string "They're just dead.$"
+
+RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead: @ 8214FF1
+	.string "My POKéMON evolved.\n"
+	.string "It has a lot of HP now.\p"
+	.string "I should buy SUPER POTIONS for it\n"
+	.string "instead of ordinary POTIONS.$"
+
+RustboroCity_Mart_Text_GettingEscapeRopeJustInCase: @ 821505C
+	.string "I'm getting an ESCAPE ROPE just in\n"
+	.string "case I get lost in a cave.\p"
+	.string "Thanks for saying hi to me,\n"
+	.string "stranger. Have a good one.$"
 
