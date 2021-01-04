@@ -6260,7 +6260,7 @@ static void Cmd_getmoneyreward(void)
 
 static void Cmd_damagetohalftargetmaxhp(void) // hyper fang
 {
-    gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 2;
+    gBattleMoveDamage = (gBattleMons[gBattlerTarget].maxHP / 2) - 1;
     if (gBattleMoveDamage == 0)
         gBattleMoveDamage = 1;
 
