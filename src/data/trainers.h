@@ -715,7 +715,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GABBY_AND_TY_1] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
         .trainerPic = TRAINER_PIC_INTERVIEWER,
@@ -724,12 +724,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GabbyAndTy1),
-        .party = {.NoItemDefaultMoves = sParty_GabbyAndTy1},
+        .party = {.ItemDefaultMoves = sParty_GabbyAndTy1},
     },
 
     [TRAINER_GABBY_AND_TY_2] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
         .trainerPic = TRAINER_PIC_INTERVIEWER,
@@ -738,12 +738,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GabbyAndTy2),
-        .party = {.NoItemDefaultMoves = sParty_GabbyAndTy2},
+        .party = {.ItemDefaultMoves = sParty_GabbyAndTy2},
     },
 
     [TRAINER_GABBY_AND_TY_3] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
         .trainerPic = TRAINER_PIC_INTERVIEWER,
@@ -752,12 +752,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GabbyAndTy3),
-        .party = {.NoItemDefaultMoves = sParty_GabbyAndTy3},
+        .party = {.ItemDefaultMoves = sParty_GabbyAndTy3},
     },
 
     [TRAINER_GABBY_AND_TY_4] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
         .trainerPic = TRAINER_PIC_INTERVIEWER,
@@ -766,12 +766,12 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GabbyAndTy4),
-        .party = {.NoItemDefaultMoves = sParty_GabbyAndTy4},
+        .party = {.ItemDefaultMoves = sParty_GabbyAndTy4},
     },
 
     [TRAINER_GABBY_AND_TY_5] =
     {
-        .partyFlags = 0,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
         .trainerPic = TRAINER_PIC_INTERVIEWER,
@@ -780,21 +780,21 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_GabbyAndTy5),
-        .party = {.NoItemDefaultMoves = sParty_GabbyAndTy5},
+        .party = {.ItemDefaultMoves = sParty_GabbyAndTy5},
     },
 
     [TRAINER_GABBY_AND_TY_6] =
     {
-        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
         .trainerPic = TRAINER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
-        .items = {},
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_X_ATTACK},
         .doubleBattle = TRUE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_VIABILITY | AI_SCRIPT_SETUP_FIRST_TURN | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_DOUBLE_BATTLE,
         .partySize = ARRAY_COUNT(sParty_GabbyAndTy6),
-        .party = {.NoItemCustomMoves = sParty_GabbyAndTy6},
+        .party = {.ItemCustomMoves = sParty_GabbyAndTy6},
     },
 
     [TRAINER_LOLA_1] =
@@ -817,7 +817,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_TUBER_F,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
         .trainerPic = TRAINER_PIC_TUBER_F,
-        .trainerName = _("AUSTINA"),
+        .trainerName = _("Ellie"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
@@ -995,30 +995,30 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_RANDALL] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .trainerName = _("RANDALL"),
+        .trainerName = _("Phil L"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Randall),
-        .party = {.ItemCustomMoves = sParty_Randall},
+        .party = {.NoItemCustomMoves = sParty_Randall},
     },
 
     [TRAINER_PARKER] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .trainerName = _("PARKER"),
+        .trainerName = _("Leroy"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Parker),
-        .party = {.ItemCustomMoves = sParty_Parker},
+        .party = {.NoItemCustomMoves = sParty_Parker},
     },
 
     [TRAINER_GEORGE] =
@@ -1083,7 +1083,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-        .trainerName = _("LEROY"),
+        .trainerName = _("CHRIS"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
