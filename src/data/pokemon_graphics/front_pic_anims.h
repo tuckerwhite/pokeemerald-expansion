@@ -4601,7 +4601,176 @@ static const union AnimCmd sAnim_EXEGGCUTE_SCHOOL_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_BONSLY_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 
+static const union AnimCmd sAnim_MIMEJR_1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_HAPPINY_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_WEAVILE_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MAGNEZONE_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_LICKILICKY_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RHYPERIOR_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TANGROWTH_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_ELECTIVIRE_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MAGMORTAR_1[] =
+{
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TOGEKISS_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_YANMEGA_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_GLISCOR_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_MAMOSWINE_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_PORYGON_Z_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_GALLADE_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_PROBOPASS_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_DUSKNOIR_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_FROSLASS_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+
+static const union AnimCmd sAnim_REGIGIGAS_1[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+
+static const union AnimCmd sAnim_SYLVEON_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 
 
 static const union AnimCmd sAnim_EGG_1[] =
@@ -6845,6 +7014,112 @@ static const union AnimCmd *const sAnims_EXEGGCUTE_SCHOOL[] ={
     sAnim_EXEGGCUTE_SCHOOL_1,
 };
 
+static const union AnimCmd *const sAnims_BONSLY[] ={
+    sAnim_GeneralFrame0,
+    sAnim_BONSLY_1,
+};
+
+static const union AnimCmd *const sAnims_MIMEJR[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MIMEJR_1,
+};
+
+static const union AnimCmd *const sAnims_HAPPINY[] ={
+    sAnim_GeneralFrame0,
+    sAnim_HAPPINY_1,
+};
+
+
+static const union AnimCmd *const sAnims_WEAVILE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_WEAVILE_1,
+};
+
+static const union AnimCmd *const sAnims_MAGNEZONE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MAGNEZONE_1,
+};
+
+static const union AnimCmd *const sAnims_LICKILICKY[] ={
+    sAnim_GeneralFrame0,
+    sAnim_LICKILICKY_1,
+};
+
+static const union AnimCmd *const sAnims_RHYPERIOR[] ={
+    sAnim_GeneralFrame0,
+    sAnim_RHYPERIOR_1,
+};
+
+static const union AnimCmd *const sAnims_TANGROWTH[] ={
+    sAnim_GeneralFrame0,
+    sAnim_TANGROWTH_1,
+};
+
+static const union AnimCmd *const sAnims_ELECTIVIRE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_ELECTIVIRE_1,
+};
+
+static const union AnimCmd *const sAnims_MAGMORTAR[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MAGMORTAR_1,
+};
+
+static const union AnimCmd *const sAnims_TOGEKISS[] ={
+    sAnim_GeneralFrame0,
+    sAnim_TOGEKISS_1,
+};
+
+static const union AnimCmd *const sAnims_YANMEGA[] ={
+    sAnim_GeneralFrame0,
+    sAnim_YANMEGA_1,
+};
+
+static const union AnimCmd *const sAnims_GLISCOR[] ={
+    sAnim_GeneralFrame0,
+    sAnim_GLISCOR_1,
+};
+
+static const union AnimCmd *const sAnims_MAMOSWINE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MAMOSWINE_1,
+};
+
+static const union AnimCmd *const sAnims_PORYGON_Z[] ={
+    sAnim_GeneralFrame0,
+    sAnim_PORYGON_Z_1,
+};
+
+static const union AnimCmd *const sAnims_GALLADE[] ={
+    sAnim_GeneralFrame0,
+    sAnim_GALLADE_1,
+};
+
+static const union AnimCmd *const sAnims_PROBOPASS[] ={
+    sAnim_GeneralFrame0,
+    sAnim_PROBOPASS_1,
+};
+
+static const union AnimCmd *const sAnims_DUSKNOIR[] ={
+    sAnim_GeneralFrame0,
+    sAnim_DUSKNOIR_1,
+};
+
+static const union AnimCmd *const sAnims_FROSLASS[] ={
+    sAnim_GeneralFrame0,
+    sAnim_FROSLASS_1,
+};
+
+static const union AnimCmd *const sAnims_REGIGIGAS[] ={
+    sAnim_GeneralFrame0,
+    sAnim_REGIGIGAS_1,
+};
+
+static const union AnimCmd *const sAnims_SYLVEON[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SYLVEON_1,
+};
+
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
     sAnim_EGG_1,
@@ -7406,7 +7681,27 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(LEAFEON),
     ANIM_CMD(GLACEON),
     ANIM_CMD(EXEGGCUTE_SCHOOL),
-
+    ANIM_CMD(BONSLY),
+    ANIM_CMD(MIMEJR),
+    ANIM_CMD(HAPPINY),
+    ANIM_CMD(WEAVILE),
+    ANIM_CMD(MAGNEZONE),
+    ANIM_CMD(LICKILICKY),
+    ANIM_CMD(RHYPERIOR),
+    ANIM_CMD(TANGROWTH),
+    ANIM_CMD(ELECTIVIRE),
+    ANIM_CMD(MAGMORTAR),
+    ANIM_CMD(TOGEKISS),
+    ANIM_CMD(YANMEGA),
+    ANIM_CMD(GLISCOR),
+    ANIM_CMD(MAMOSWINE),
+    ANIM_CMD(PORYGON_Z),
+    ANIM_CMD(GALLADE),
+    ANIM_CMD(PROBOPASS),
+    ANIM_CMD(DUSKNOIR),
+    ANIM_CMD(FROSLASS),
+    ANIM_CMD(REGIGIGAS),
+    ANIM_CMD(SYLVEON),
 
     ANIM_CMD(EGG),
     ANIM_CMD(UNOWN_B),

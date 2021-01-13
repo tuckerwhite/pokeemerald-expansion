@@ -2087,6 +2087,113 @@ const struct MonCoords gMonBackPicCoords[] =
         .y_offset = 8,
     },
 
+        [SPECIES_BONSLY] =
+    {
+        .size = 0x58,
+        .y_offset = 6,
+    },
+    [SPECIES_MIMEJR] =
+    {
+        .size = 0x88,
+        .y_offset = 1,
+    },
+    [SPECIES_HAPPINY] =
+    {
+        .size = 0x67,
+        .y_offset = 9,
+    },
+    [SPECIES_WEAVILE] =
+    {
+        .size = 0x88,
+        .y_offset = 6,
+    },
+    [SPECIES_MAGNEZONE] =
+    {
+        .size = 0x85,
+        .y_offset = 12,
+    },
+    [SPECIES_LICKILICKY] =
+    {
+        .size = 0x88,
+        .y_offset = 2,
+    },
+    [SPECIES_RHYPERIOR] =
+    {
+        .size = 0x88,
+        .y_offset = 0,
+    },
+    [SPECIES_TANGROWTH] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+    [SPECIES_ELECTIVIRE] =
+    {
+        .size = 0x86,
+        .y_offset = 9,
+    },
+    [SPECIES_MAGMORTAR] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+    [SPECIES_TOGEKISS] =
+    {
+        .size = 0x86,
+        .y_offset = 10,
+    },
+    [SPECIES_YANMEGA] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+    [SPECIES_GLISCOR] =
+    {
+        .size = 0x86,
+        .y_offset = 11,
+    },
+    [SPECIES_MAMOSWINE] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+    [SPECIES_PORYGON_Z] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+    [SPECIES_GALLADE] =
+    {
+        .size = 0x88,
+        .y_offset = 5,
+    },
+    [SPECIES_PROBOPASS] =
+    {
+        .size = 0x87,
+        .y_offset = 4,
+    },
+    [SPECIES_DUSKNOIR] =
+    {
+        .size = 0x87,
+        .y_offset = 6,
+    },
+    [SPECIES_FROSLASS] =
+    {
+        .size = 0x88,
+        .y_offset = 3,
+    },
+    [SPECIES_REGIGIGAS] =
+    {
+        .size = 0x85,
+        .y_offset = 13,
+    },
+    [SPECIES_SYLVEON] =
+    {
+        .size = 0x88,
+        .y_offset = 4,
+    },
+
+
     [SPECIES_EGG] =
     {
         .size = 0x36,
