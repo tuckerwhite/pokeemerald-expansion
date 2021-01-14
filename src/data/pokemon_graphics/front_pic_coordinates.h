@@ -2191,9 +2191,46 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x45,
         .y_offset = 4,
     },
-
-
-
+    [SPECIES_AMBIPOM] =
+    {
+        .size = 0x88,
+        .y_offset = 1,
+    },
+    [SPECIES_HONCHKROW] =
+    {
+        .size = 0x66,
+        .y_offset = 6,
+    },
+    [SPECIES_MISMAGIUS] =
+    {
+        .size = 0x45,
+        .y_offset = 3,
+    },
+    [SPECIES_ROSERADE] =
+    {
+        .size = 0x45,
+        .y_offset = 7,
+    },
+    [SPECIES_MANTYKE] =
+    {
+        .size = 0x46,
+        .y_offset = 12,
+    },
+    [SPECIES_MUNCHLAX] =
+    {
+        .size = 0x74,
+        .y_offset = 10,
+    },
+    [SPECIES_BUDEW] =
+    {
+        .size = 0x66,
+        .y_offset = 14,
+    },
+    [SPECIES_CHINGLING] =
+    {
+        .size = 0x86,
+        .y_offset = 15,
+    },
     [SPECIES_EGG] =
     {
         .size = 0x33,
