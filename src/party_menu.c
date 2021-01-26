@@ -1221,16 +1221,16 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
     }
     else
     {
-        switch (gPartyMenu.action)
+        switch (gPartyMenu.action - 3)
         {
-        case PARTY_ACTION_SOFTBOILED:
+        case PARTY_ACTION_SOFTBOILED - 3:
             if (IsSelectedMonNotEgg((u8*)slotPtr))
             {
                 PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
                 Task_TryUseSoftboiledOnPartyMon(taskId);
             }
             break;
-        case PARTY_ACTION_USE_ITEM:
+        case PARTY_ACTION_USE_ITEM - 3:
             if (IsSelectedMonNotEgg((u8*)slotPtr))
             {
                 if (gPartyMenu.menuType == PARTY_MENU_TYPE_IN_BATTLE)
@@ -1240,7 +1240,7 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
                 gItemUseCB(taskId, Task_ClosePartyMenuAfterText);
             }
             break;
-        case PARTY_ACTION_MOVE_TUTOR:
+        case PARTY_ACTION_MOVE_TUTOR - 3:
             if (IsSelectedMonNotEgg((u8*)slotPtr))
             {
                 PlaySE(SE_SELECT);
@@ -1248,7 +1248,7 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
                 TryTutorSelectedMon(taskId);
             }
             break;
-        case PARTY_ACTION_GIVE_MAILBOX_MAIL:
+        case PARTY_ACTION_GIVE_MAILBOX_MAIL - 3:
             if (IsSelectedMonNotEgg((u8*)slotPtr))
             {
                 PlaySE(SE_SELECT);
@@ -1256,8 +1256,8 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
                 TryGiveMailToSelectedMon(taskId);
             }
             break;
-        case PARTY_ACTION_GIVE_ITEM:
-        case PARTY_ACTION_GIVE_PC_ITEM:
+        case PARTY_ACTION_GIVE_ITEM - 3:
+        case PARTY_ACTION_GIVE_PC_ITEM - 3:
             if (IsSelectedMonNotEgg((u8*)slotPtr))
             {
                 PlaySE(SE_SELECT);
@@ -1265,23 +1265,23 @@ static void HandleChooseMonSelection(u8 taskId, s8 *slotPtr)
                 TryGiveItemOrMailToSelectedMon(taskId);
             }
             break;
-        case PARTY_ACTION_SWITCH:
+        case PARTY_ACTION_SWITCH - 3:
             PlaySE(SE_SELECT);
             SwitchSelectedMons(taskId);
             break;
-        case PARTY_ACTION_CHOOSE_AND_CLOSE:
+        case PARTY_ACTION_CHOOSE_AND_CLOSE - 3:
             PlaySE(SE_SELECT);
             Task_ClosePartyMenu(taskId);
             break;
-        case PARTY_ACTION_MINIGAME:
+        case PARTY_ACTION_MINIGAME - 3:
             if (IsSelectedMonNotEgg((u8*)slotPtr))
             {
                 TryEnterMonForMinigame(taskId, (u8)*slotPtr);
             }
             break;
         default:
-        case PARTY_ACTION_ABILITY_PREVENTS:
-        case PARTY_ACTION_SWITCHING:
+        case PARTY_ACTION_ABILITY_PREVENTS - 3:
+        case PARTY_ACTION_SWITCHING - 3:
             PlaySE(SE_SELECT);
             Task_TryCreateSelectionWindow(taskId);
             break;
@@ -1963,17 +1963,19 @@ static u8 CanMonLearnTMTutor(struct Pokemon *mon, u16 item, u8 tutor)
 
     if (item >= ITEM_TM01_FOCUS_PUNCH)
     {
-        if (!CanMonLearnTMHM(mon, item - ITEM_TM01_FOCUS_PUNCH))
-            return CANNOT_LEARN_MOVE;
-        else
+        if (CanMonLearnTMHM(mon, item - ITEM_TM01_FOCUS_PUNCH))
             move = ItemIdToBattleMoveId(item);
+        else
+            return CANNOT_LEARN_MOVE;
+        do {} while (0); // :morphon:
+    }
+    else if (CanLearnTutorMove(GetMonData(mon, MON_DATA_SPECIES), tutor) == FALSE)
+    {
+        return CANNOT_LEARN_MOVE;
     }
     else
     {
-        if (!CanLearnTutorMove(GetMonData(mon, MON_DATA_SPECIES), tutor))
-            return CANNOT_LEARN_MOVE;
-        else
-            move = GetTutorMove(tutor);
+        move = GetTutorMove(tutor);
     }
 
     if (MonKnowsMove(mon, move) == TRUE)

@@ -6530,7 +6530,7 @@ BattleScript_MoveUsedIsConfusedNoMore::
 	return
 
 BattleScript_PrintPayDayMoneyString::
-	printstring STRINGID_PLAYERPICKEDUPMONEY
+	printstring STRINGID_PKMNPICKEDUPITEM
 	waitmessage 0x40
 	return
 

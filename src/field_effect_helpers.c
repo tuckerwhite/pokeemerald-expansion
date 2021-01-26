@@ -81,15 +81,15 @@ static void LoadObjectRegularReflectionPalette(struct ObjectEvent *objectEvent, 
     const struct ObjectEventGraphicsInfo *graphicsInfo;
 
     graphicsInfo = GetObjectEventGraphicsInfo(objectEvent->graphicsId);
-    if (graphicsInfo->reflectionPaletteTag != OBJ_EVENT_PAL_TAG_NONE)
+    if (graphicsInfo->paletteTag2 != OBJ_EVENT_PAL_TAG_NONE)
     {
         if (graphicsInfo->paletteSlot == 0)
         {
-            LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag, paletteIndex);
+            LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag1, paletteIndex);
         }
         else if (graphicsInfo->paletteSlot == 10)
         {
-            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, paletteIndex);
+            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag1, paletteIndex);
         }
         else
         {
@@ -106,9 +106,9 @@ static void LoadObjectHighBridgeReflectionPalette(struct ObjectEvent *objectEven
     const struct ObjectEventGraphicsInfo *graphicsInfo;
 
     graphicsInfo = GetObjectEventGraphicsInfo(objectEvent->graphicsId);
-    if (graphicsInfo->reflectionPaletteTag != OBJ_EVENT_PAL_TAG_NONE)
+    if (graphicsInfo->paletteTag2 != OBJ_EVENT_PAL_TAG_NONE)
     {
-        PatchObjectPalette(graphicsInfo->reflectionPaletteTag, paletteNum);
+        PatchObjectPalette(graphicsInfo->paletteTag2, paletteNum);
         UpdateSpritePaletteWithWeather(paletteNum);
     }
 }

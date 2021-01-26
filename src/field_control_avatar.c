@@ -730,8 +730,7 @@ static bool8 TryStartWarpEventScript(struct MapPosition *position, u16 metatileB
         }
         if (MetatileBehavior_IsWarpOrBridge(metatileBehavior) == TRUE)
         {
-            // Maybe unused? This MB is used by log bridges, but there's never a warp event on them
-            DoSpinExitWarp();
+            sub_80B0268();
             return TRUE;
         }
         if (MetatileBehavior_IsMtPyreHole(metatileBehavior) == TRUE)

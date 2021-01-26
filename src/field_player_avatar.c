@@ -31,7 +31,7 @@
 #include "constants/songs.h"
 #include "constants/trainer_types.h"
 
-static EWRAM_DATA u8 sSpinStartFacingDir = 0;
+static EWRAM_DATA u8 gUnknown_0203734C = 0;
 EWRAM_DATA struct ObjectEvent gObjectEvents[OBJECT_EVENTS_COUNT] = {};
 EWRAM_DATA struct PlayerAvatar gPlayerAvatar = {};
 
@@ -138,7 +138,7 @@ static u8 Fishing_PutRodAway(struct Task *task);
 static u8 Fishing_EndNoMon(struct Task *task);
 static void AlignFishingAnimationFrames(void);
 
-static u8 TrySpinPlayerForWarp(struct ObjectEvent *object, s16 *a1);
+static u8 sub_808D38C(struct ObjectEvent *object, s16 *a1);
 
 // .rodata
 
@@ -342,6 +342,10 @@ void PlayerStep(u8 direction, u16 newKeys, u16 heldKeys)
 
 static bool8 TryInterruptObjectEventSpecialAnim(struct ObjectEvent *playerObjEvent, u8 direction)
 {
+    u8 r5 = direction;
+    u8 r6 = direction;
+    r6++; r6--;
+
     if (ObjectEventIsMovementOverridden(playerObjEvent)
      && !ObjectEventClearHeldMovementIfFinished(playerObjEvent))
     {
@@ -353,13 +357,13 @@ static bool8 TryInterruptObjectEventSpecialAnim(struct ObjectEvent *playerObjEve
                 return TRUE;
             }
 
-            if (playerObjEvent->movementDirection != direction)
+            if (playerObjEvent->movementDirection != r5)
             {
                 ObjectEventClearHeldMovement(playerObjEvent);
                 return FALSE;
             }
 
-            if (!sub_808B028(direction))
+            if (!sub_808B028(r6))
             {
                 ObjectEventClearHeldMovement(playerObjEvent);
                 return FALSE;
@@ -2050,64 +2054,54 @@ static void AlignFishingAnimationFrames(void)
         SetSurfBobWhileFishingState(gObjectEvents[gPlayerAvatar.objectEventId].fieldEffectSpriteId, 1, playerSprite->pos2.y);
 }
 
-void SetSpinStartFacingDir(u8 direction)
+void sub_808D074(u8 a0)
 {
-    sSpinStartFacingDir = direction;
+    gUnknown_0203734C = a0;
 }
 
-static u8 GetSpinStartFacingDir(void)
+static u8 sub_808D080(void)
 {
-    if (sSpinStartFacingDir == DIR_NONE)
-        return DIR_SOUTH;
-
-    return sSpinStartFacingDir;
+    if (gUnknown_0203734C == 0)
+    {
+        return 1;
+    }
+    return gUnknown_0203734C;
 }
 
-// Task data for Task_DoPlayerSpinEntrance and Task_DoPlayerSpinExit
-#define tState          data[0]
-#define tSpinDelayTimer data[1]
-#define tSpeed          data[2]
-#define tCurY           data[3]
-#define tDestY          data[4]
-#define tStartDir       data[5]
-#define tPriority       data[6]
-#define tSubpriority    data[7]
-#define tGroundTimer    data[8]
-
-static void Task_DoPlayerSpinExit(u8 taskId)
+static void sub_808D094(u8 taskId)
 {
     struct ObjectEvent *object = &gObjectEvents[gPlayerAvatar.objectEventId];
     struct Sprite *sprite = &gSprites[object->spriteId];
     s16 *data = gTasks[taskId].data;
 
-    switch (tState)
+    switch (data[0])
     {
-        case 0: // Init
+        case 0:
             if (!ObjectEventClearHeldMovementIfFinished(object))
+            {
                 return;
+            }
 
-            SetSpinStartFacingDir(object->facingDirection);
-            tSpinDelayTimer = 0;
-            tSpeed = 1;
-            tCurY = (u16)(sprite->pos1.y + sprite->pos2.y) << 4;
+            sub_808D074(object->facingDirection);
+            data[1] = 0;
+            data[2] = 1;
+            data[3] = (u16)(sprite->pos1.y + sprite->pos2.y) * 16;
             sprite->pos2.y = 0;
             CameraObjectReset2();
             object->fixedPriority = TRUE;
             sprite->oam.priority = 0;
             sprite->subpriority = 0;
             sprite->subspriteMode = SUBSPRITES_OFF;
-            tState++;
-        case 1: // Spin while rising
-            TrySpinPlayerForWarp(object, &tSpinDelayTimer);
-            
-            // Rise and accelerate
-            tCurY -= tSpeed;
-            tSpeed += 3;
-            sprite->pos1.y = tCurY >> 4;
-
-            // Check if offscreen
+            data[0]++;
+        case 1:
+            sub_808D38C(object, &data[1]);
+            data[3] -= data[2];
+            data[2] += 3;
+            sprite->pos1.y = data[3] >> 4;
             if (sprite->pos1.y + (s16)gTotalCameraPixelOffsetY < -32)
-                tState++;
+            {
+                data[0]++;
+            }
             break;
         case 2:
             DestroyTask(taskId);
@@ -2115,86 +2109,84 @@ static void Task_DoPlayerSpinExit(u8 taskId)
     }
 }
 
-static void Task_DoPlayerSpinEntrance(u8 taskId);
+static void sub_808D1FC(u8 taskId);
 
-void DoPlayerSpinEntrance(void)
+void sub_808D194(void)
 {
-    Task_DoPlayerSpinEntrance(CreateTask(Task_DoPlayerSpinEntrance, 0));
+    sub_808D1FC(CreateTask(sub_808D1FC, 0));
 }
 
-bool32 IsPlayerSpinEntranceActive(void)
+bool32 sub_808D1B4(void)
 {
-    return FuncIsActiveTask(Task_DoPlayerSpinEntrance);
+    return FuncIsActiveTask(sub_808D1FC);
 }
 
-void DoPlayerSpinExit(void)
+void sub_808D1C8(void)
 {
-    Task_DoPlayerSpinExit(CreateTask(Task_DoPlayerSpinExit, 0));
+    sub_808D094(CreateTask(sub_808D094, 0));
 }
 
-bool32 IsPlayerSpinExitActive(void)
+bool32 sub_808D1E8(void)
 {
-    return FuncIsActiveTask(Task_DoPlayerSpinExit);
+    return FuncIsActiveTask(sub_808D094);
 }
 
-static const u8 sSpinDirections[] = {DIR_SOUTH, DIR_WEST, DIR_EAST, DIR_NORTH, DIR_SOUTH};
+static const u8 gUnknown_084975BC[] = {DIR_SOUTH, DIR_WEST, DIR_EAST, DIR_NORTH, DIR_SOUTH};
 
-static void Task_DoPlayerSpinEntrance(u8 taskId)
+static void sub_808D1FC(u8 taskId)
 {
     struct ObjectEvent *object = &gObjectEvents[gPlayerAvatar.objectEventId];
     struct Sprite *sprite = &gSprites[object->spriteId];
     s16 *data = gTasks[taskId].data;
 
-    switch (tState)
+    switch (data[0])
     {
         case 0:
-            // Because the spin start facing direction is never set for this
-            // warp type, the player will always exit the warp facing South.
-            // This may have been intentional, unclear
-            tStartDir = GetSpinStartFacingDir();
-            ObjectEventForceSetHeldMovement(object, GetFaceDirectionMovementAction(sSpinDirections[tStartDir]));
-            tSpinDelayTimer = 0;
-            tSpeed = 116;
-            tDestY = sprite->pos1.y;
-            tPriority = sprite->oam.priority;
-            tSubpriority = sprite->subpriority;
-            tCurY = -((u16)sprite->pos2.y + 32) * 16;
+            data[5] = sub_808D080();
+            ObjectEventForceSetHeldMovement(object, GetFaceDirectionMovementAction(gUnknown_084975BC[data[5]]));
+            data[1] = 0;
+            data[2] = 116;
+            data[4] = sprite->pos1.y;
+            data[6] = sprite->oam.priority;
+            data[7] = sprite->subpriority;
+            data[3] = -((u16)sprite->pos2.y + 32) * 16;
             sprite->pos2.y = 0;
             CameraObjectReset2();
             object->fixedPriority = TRUE;
             sprite->oam.priority = 1;
             sprite->subpriority = 0;
             sprite->subspriteMode = SUBSPRITES_OFF;
-            tState++;
-        case 1: // Spin while descending
-            TrySpinPlayerForWarp(object, &tSpinDelayTimer);
-
-            // Fall and decelerate
-            tCurY += tSpeed;
-            tSpeed -= 3;
-            if (tSpeed < 4)
-                tSpeed = 4;
-            sprite->pos1.y = tCurY >> 4;
-
-            // Check if reached dest
-            if (sprite->pos1.y >= tDestY)
+            data[0]++;
+        case 1:
+            sub_808D38C(object, &data[1]);
+            data[3] += data[2];
+            data[2] -= 3;
+            if (data[2] < 4)
             {
-                sprite->pos1.y = tDestY;
-                tGroundTimer = 0;
-                tState++;
+                data[2] = 4;
+            }
+            sprite->pos1.y = data[3] >> 4;
+            if (sprite->pos1.y >= data[4])
+            {
+                sprite->pos1.y = data[4];
+                data[8] = 0;
+                data[0]++;
             }
             break;
-        case 2: // Spin on ground
-            TrySpinPlayerForWarp(object, &tSpinDelayTimer);
-            if (++tGroundTimer > 8)
-                tState++;
+        case 2:
+            sub_808D38C(object, &data[1]);
+            data[8]++;
+            if (data[8] > 8)
+            {
+                data[0]++;
+            }
             break;
-        case 3: // Spin until facing original direction
-            if (tStartDir == TrySpinPlayerForWarp(object, &tSpinDelayTimer))
+        case 3:
+            if (data[5] == sub_808D38C(object, &data[1]))
             {
                 object->fixedPriority = 0;
-                sprite->oam.priority = tPriority;
-                sprite->subpriority = tSubpriority;
+                sprite->oam.priority = data[6];
+                sprite->subpriority = data[7];
                 CameraObjectReset1();
                 DestroyTask(taskId);
             }
@@ -2202,15 +2194,19 @@ static void Task_DoPlayerSpinEntrance(u8 taskId)
     }
 }
 
-static u8 TrySpinPlayerForWarp(struct ObjectEvent *object, s16 *delayTimer)
+static u8 sub_808D38C(struct ObjectEvent *object, s16 *a1)
 {
-    if (*delayTimer < 8 && ++(*delayTimer) < 8)
+    if (*a1 < 8 && ++(*a1) < 8)
+    {
         return object->facingDirection;
+    }
 
     if (!ObjectEventCheckHeldMovementStatus(object))
+    {
         return object->facingDirection;
+    }
 
-    ObjectEventForceSetHeldMovement(object, GetFaceDirectionMovementAction(sSpinDirections[object->facingDirection]));
-    *delayTimer = 0;
-    return sSpinDirections[object->facingDirection];
+    ObjectEventForceSetHeldMovement(object, GetFaceDirectionMovementAction(gUnknown_084975BC[object->facingDirection]));
+    *a1 = 0;
+    return gUnknown_084975BC[object->facingDirection];
 }

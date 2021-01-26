@@ -6777,11 +6777,11 @@ static void SetCursorMonData(void *pokemon, u8 mode)
 {
     u8 *txtPtr;
     u16 gender;
-    bool8 sanityIsBadEgg;
+    bool8 sanityIsBagEgg;
 
     sPSSData->cursorMonItem = 0;
     gender = MON_MALE;
-    sanityIsBadEgg = FALSE;
+    sanityIsBagEgg = FALSE;
     if (mode == MODE_PARTY)
     {
         struct Pokemon *mon = (struct Pokemon *)pokemon;
@@ -6789,8 +6789,8 @@ static void SetCursorMonData(void *pokemon, u8 mode)
         sPSSData->cursorMonSpecies = GetMonData(mon, MON_DATA_SPECIES2);
         if (sPSSData->cursorMonSpecies != SPECIES_NONE)
         {
-            sanityIsBadEgg = GetMonData(mon, MON_DATA_SANITY_IS_BAD_EGG);
-            if (sanityIsBadEgg)
+            sanityIsBagEgg = GetMonData(mon, MON_DATA_SANITY_IS_BAD_EGG);
+            if (sanityIsBagEgg)
                 sPSSData->cursorMonIsEgg = TRUE;
             else
                 sPSSData->cursorMonIsEgg = GetMonData(mon, MON_DATA_IS_EGG);
@@ -6813,8 +6813,8 @@ static void SetCursorMonData(void *pokemon, u8 mode)
         if (sPSSData->cursorMonSpecies != SPECIES_NONE)
         {
             u32 otId = GetBoxMonData(boxMon, MON_DATA_OT_ID);
-            sanityIsBadEgg = GetBoxMonData(boxMon, MON_DATA_SANITY_IS_BAD_EGG);
-            if (sanityIsBadEgg)
+            sanityIsBagEgg = GetBoxMonData(boxMon, MON_DATA_SANITY_IS_BAD_EGG);
+            if (sanityIsBagEgg)
                 sPSSData->cursorMonIsEgg = TRUE;
             else
                 sPSSData->cursorMonIsEgg = GetBoxMonData(boxMon, MON_DATA_IS_EGG);
@@ -6846,7 +6846,7 @@ static void SetCursorMonData(void *pokemon, u8 mode)
     }
     else if (sPSSData->cursorMonIsEgg)
     {
-        if (sanityIsBadEgg)
+        if (sanityIsBagEgg)
             StringCopyPadded(sPSSData->cursorMonNickText, sPSSData->cursorMonNick, CHAR_SPACE, 5);
         else
             StringCopyPadded(sPSSData->cursorMonNickText, gText_EggNickname, CHAR_SPACE, 8);
@@ -8408,13 +8408,8 @@ static void sub_80D08CC(void)
         for (j = sMoveMonsPtr->minRow; j < rowCount; j++)
         {
             struct BoxPokemon *boxMon = GetBoxedMonPtr(boxId, boxPosition);
-            // UB: possible null dereference
-#ifdef UBFIX
-            if (boxMon != NULL)
-                sMoveMonsPtr->boxMons[monArrayId] = *boxMon;
-#else
+
             sMoveMonsPtr->boxMons[monArrayId] = *boxMon;
-#endif
             monArrayId++;
             boxPosition++;
         }
@@ -9334,11 +9329,10 @@ u32 GetBoxMonLevelAt(u8 boxId, u8 boxPosition)
 {
     u32 lvl;
 
+    // BUG: Missed 'else' statement.
     if (boxId < TOTAL_BOXES_COUNT && boxPosition < IN_BOX_COUNT && GetBoxMonData(&gPokemonStoragePtr->boxes[boxId][boxPosition], MON_DATA_SANITY_HAS_SPECIES))
         lvl = GetLevelFromBoxMonExp(&gPokemonStoragePtr->boxes[boxId][boxPosition]);
-    #ifdef BUGFIX
-    else
-    #endif
+    // else
         lvl = 0;
 
     return lvl;

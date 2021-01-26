@@ -700,11 +700,7 @@ struct BattleSpriteData
 struct MonSpritesGfx
 {
     void* firstDecompressed; // ptr to the decompressed sprite of the first pokemon
-    union
-    {
-	void* ptr[4];
-	u8* byte[4];
-    } sprites;
+    void* sprites[4];
     struct SpriteTemplate templates[4];
     struct SpriteFrameImage field_74[4][4];
     u8 field_F4[0x80];
