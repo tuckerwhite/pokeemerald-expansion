@@ -575,8 +575,18 @@ static u8 ChooseMoveOrAction_Singles(void)
 
 static u8 ChooseMoveOrAction_Doubles(void)
 {
-    s32 i, j;
-    u32 flags;
+    s32 i;
+    s32 j;
+#ifndef BUGFIX
+    s32 scriptsToRun;
+#else
+    // the value assigned to this is a u32 (aiFlags)
+    // this becomes relevant because aiFlags can have bit 31 set
+    // and scriptsToRun is shifted
+    // this never happens in the vanilla game because bit 31 is
+    // only set when it's the first battle
+    u32 scriptsToRun;
+#endif
     s16 bestMovePointsForTarget[MAX_BATTLERS_COUNT];
     s8 mostViableTargetsArray[MAX_BATTLERS_COUNT];
     u8 actionOrMoveIndex[MAX_BATTLERS_COUNT];
@@ -745,15 +755,14 @@ bool32 IsBattlerAIControlled(u32 battlerId)
 {
     switch (GetBattlerPosition(battlerId))
     {
-    case B_POSITION_PLAYER_LEFT:
-    default:
-        return FALSE;
-    case B_POSITION_OPPONENT_LEFT:
-        return TRUE;
-    case B_POSITION_PLAYER_RIGHT:
-        return ((gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) != 0);
-    case B_POSITION_OPPONENT_RIGHT:
-        return TRUE;
+        if (BATTLE_HISTORY->usedMoves[gBattlerTarget].moves[i] == gLastMoves[gBattlerTarget])
+            break;
+
+        if (BATTLE_HISTORY->usedMoves[gBattlerTarget].moves[i] == MOVE_NONE)
+        {
+            BATTLE_HISTORY->usedMoves[gBattlerTarget].moves[i] = gLastMoves[gBattlerTarget];
+            break;
+        }
     }
 }
 
@@ -1856,7 +1865,9 @@ static void Cmd_if_status_not_in_party(void)
         if (species != SPECIES_NONE && species != SPECIES_EGG && hp != 0 && status == statusToCompareTo)
         {
             gAIScriptPtr += 10;
+            #ifdef UBFIX
             return;
+            #endif
         }
     }
 
