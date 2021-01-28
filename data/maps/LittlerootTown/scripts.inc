@@ -260,6 +260,7 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale:: @ 81E8013
 
 LittlerootTown_EventScript_FatMan:: @ 81E8022
 	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	givecustommon SPECIES_TORCHIC, 5, ITEM_NONE, ITEM_PREMIER_BALL, NATURE_ADAMANT, 1
 	end
 
 LittlerootTown_EventScript_Boy:: @ 81E802B
