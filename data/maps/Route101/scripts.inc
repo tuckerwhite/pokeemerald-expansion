@@ -1,4 +1,4 @@
-.set LOCALID_BIRCH, 2
+ .set LOCALID_BIRCH, 2
 .set LOCALID_ZIGZAGOON, 4
 
 Route101_MapScripts:: @ 81EBCBA
