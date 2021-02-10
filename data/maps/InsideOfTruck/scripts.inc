@@ -38,14 +38,14 @@ InsideOfTruck_EventScript_SetIntroFlagsMale:: @ 823BF20
 
 InsideOfTruck_EventScript_SetIntroFlagsFemale:: @ 823BF46
 	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
-	setvar VAR_LITTLEROOT_INTRO_STATE, 1
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 255, 3, 10
+	setvar VAR_LITTLEROOT_INTRO_STATE, 2
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 255, 12, 10
 	releaseall
 	end
 
@@ -54,7 +54,7 @@ InsideOfTruck_EventScript_MovingBox:: @ 823BF6C
 	end
 
 InsideOfTruck_Text_BoxPrintedWithMonLogo: @ 823BF75
-	.string "All your earthly possessions.\n"
-	.string "They all fit in boxes\p"
-	.string "somehow.$"
+	.string "The box is printed with a POKéMON logo.\p"
+	.string "It's a POKéMON brand moving and\n"
+	.string "delivery service.$"
 

@@ -4450,26 +4450,6 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DewfordBeach/border.bin",
       "blockdata_filepath": "data/layouts/DewfordBeach/map.bin"
-    },
-    {
-      "id": "LAYOUT_LITTLEROOT_TOWN_FINAL",
-      "name": "LittlerootTownFinal_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/LittlerootTownFinal/border.bin",
-      "blockdata_filepath": "data/layouts/LittlerootTownFinal/map.bin"
-    },
-    {
-      "id": "LAYOUT_EMPTY_HOUSE",
-      "name": "EmptyHouse_Layout",
-      "width": 11,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BrendansMaysHouse",
-      "border_filepath": "data/layouts/EmptyHouse/border.bin",
-      "blockdata_filepath": "data/layouts/EmptyHouse/map.bin"
     }
   ]
 }

@@ -1069,7 +1069,3 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/FrayManorIsle/scripts.inc"
 
 	.include "data/maps/DewfordBeach/scripts.inc"
-
-	.include "data/maps/LittlerootTownFinal/scripts.inc"
-
-	.include "data/maps/EmptyHouse/scripts.inc"
