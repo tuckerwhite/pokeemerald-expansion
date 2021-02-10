@@ -1,6 +1,4 @@
 .set LOCALID_MOM, 1
-.set LOCALID_RIVAL_MOM, 4
-.set LOCALID_RIVAL, 7
 
 LittlerootTown_BrendansHouse_1F_MapScripts:: @ 81F7755
 	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_BrendansHouse_1F_OnLoad
@@ -59,7 +57,6 @@ LittlerootTown_BrendansHouse_1F_OnFrame: @ 81F77EA
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport
-	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 1, LittlerootTown_BrendansHouse_1F_EventScript_YoureNewNeighbor
 	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
 	.2byte 0
 
@@ -93,32 +90,6 @@ LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport:: @ 81F784D
 	goto PlayersHouse_1F_EventScript_PetalburgGymReportMale
 	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_YoureNewNeighbor:: @ 81F785E
-	lockall
-	playse SE_PIN
-	applymovement LOCALID_RIVAL_MOM, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_RIVAL_MOM, Common_Movement_Delay48
-	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
-	applymovement LOCALID_RIVAL_MOM, LittlerootTown_BrendansHouse_1F_Movement_RivalMomApproach
-	waitmovement 0
-	special GetRivalSonDaughterString
-	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
-	setflag FLAG_MET_RIVAL_MOM
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2
-	releaseall
-	end
-
-LittlerootTown_BrendansHouse_1F_Movement_RivalMomApproach: @ 81F789C
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
 LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom:: @ 81F78A3
 	lockall
 	setvar VAR_0x8004, LOCALID_MOM
@@ -128,176 +99,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom:: @ 81F78A3
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival0:: @ 81F78BE
-	lockall
-	setvar VAR_0x8008, 0
-	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
-	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival1:: @ 81F78CA
-	lockall
-	setvar VAR_0x8008, 1
-	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
-	end
-
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival2:: @ 81F78D6
-	lockall
-	setvar VAR_0x8008, 2
-	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
-	end
-
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival:: @ 81F78E2
-	playse SE_EXIT
-	delay 10
-	addobject LOCALID_RIVAL
-	delay 30
-	playse SE_PIN
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_RIVAL, Common_Movement_Delay48
-	waitmovement 0
-	compare VAR_0x8008, 1
-	call_if_ne LittlerootTown_BrendansHouse_1F_EventScript_PlayerFaceBrendan
-	playbgm MUS_ENCOUNTER_BRENDAN, 1
-	compare VAR_0x8008, 0
-	call_if_eq LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer0
-	compare VAR_0x8008, 1
-	call_if_eq LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer1
-	compare VAR_0x8008, 2
-	call_if_eq LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer2
-	msgbox RivalsHouse_1F_Text_BrendanWhoAreYou, MSGBOX_DEFAULT
-	closemessage
-	compare VAR_0x8008, 0
-	call_if_eq LittlerootTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs0
-	compare VAR_0x8008, 1
-	call_if_eq LittlerootTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs1
-	compare VAR_0x8008, 2
-	call_if_eq LittlerootTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs2
-	playse SE_EXIT
-	removeobject LOCALID_RIVAL
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
-	delay 30
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 3
-	setvar VAR_LITTLEROOT_TOWN_STATE, 1
-	savebgm MUS_DUMMY
-	fadedefaultbgm
-	releaseall
-	end
-
-LittlerootTown_BrendansHouse_1F_EventScript_PlayerFaceBrendan:: @ 81F7981
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer0:: @ 81F798C
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer0
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer1:: @ 81F7997
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_EventScript_BrendanApproachPlayer2:: @ 81F79A2
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer2
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer0: @ 81F79AD
-	walk_in_place_fastest_left
-	walk_left
-	walk_in_place_fastest_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer1: @ 81F79B5
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_BrendanApproachPlayer2: @ 81F79B9
-	walk_in_place_fastest_right
-	walk_right
-	walk_in_place_fastest_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-LittlerootTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs0:: @ 81F79C1
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit0
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs0
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs1:: @ 81F79D3
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit1
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs1
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_EventScript_BrendanGoUpstairs2:: @ 81F79E5
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit2
-	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2
-	waitmovement 0
-	return
-
-LittlerootTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit0: @ 81F79F7
-	delay_16
-	delay_8
-	walk_in_place_fastest_right
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit1: @ 81F79FB
-	delay_16
-	delay_8
-	walk_in_place_fastest_right
-	delay_16
-	delay_16
-	walk_in_place_fastest_up
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_PlayerWatchBrendanExit2: @ 81F7A02
-	delay_16
-	delay_8
-	walk_in_place_fastest_left
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs0: @ 81F7A06
-	walk_in_place_fastest_right
-	walk_right
-	walk_in_place_fastest_up
-	walk_up
-	walk_up
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs1: @ 81F7A0C
-	walk_in_place_fastest_right
-	walk_right
-	walk_in_place_fastest_up
-	walk_up
-	walk_up
-	walk_in_place_fastest_left
-	walk_left
-	walk_in_place_fastest_up
-	walk_up
-	step_end
-
-LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2: @ 81F7A16
-	walk_in_place_fastest_left
-	walk_left
-	walk_in_place_fastest_up
-	walk_up
-	walk_up
-	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere: @ 81F7A1C
 	.string "MOM: See, {PLAYER}?\n"

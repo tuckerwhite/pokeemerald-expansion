@@ -72,6 +72,7 @@
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
+#define MAP_EMPTY_HOUSE                          (5 | (1 << 8))
 
 // Map Group 2
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))
@@ -594,6 +595,7 @@
 
 // Map Group 33
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
+#define MAP_LITTLEROOT_TOWN_FINAL                  (1 | (33 << 8))
 
 #define MAP_GROUPS_COUNT 34
 
