@@ -128,7 +128,6 @@ LittlerootTown_EventScript_StepOffTruckMale:: @ 81E7EDB
 	setvar VAR_0x8004, 5
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 255, 8, 8
 	waitstate
 	releaseall
@@ -260,6 +259,7 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale:: @ 81E8013
 
 LittlerootTown_EventScript_FatMan:: @ 81E8022
 	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	givecustommon SPECIES_TORCHIC, 5, ITEM_NONE, ITEM_PREMIER_BALL, NATURE_ADAMANT, 1
 	end
 
 LittlerootTown_EventScript_Boy:: @ 81E802B

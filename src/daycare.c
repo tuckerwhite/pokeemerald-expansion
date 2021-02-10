@@ -193,7 +193,7 @@ static void StorePokemonInEmptyDaycareSlot(struct Pokemon *mon, struct DayCare *
     StorePokemonInDaycare(mon, &daycare->mons[slotId]);
 }
 
-void StoreSelectedPokemonInDaycare(void)
+void StoreSelectedPokemonInDaycare(void) //Tuck note could modify this to yeet the entire party into oblivion
 {
     u8 monId = GetCursorSelectionMonId();
     StorePokemonInEmptyDaycareSlot(&gPlayerParty[monId], &gSaveBlock1Ptr->daycare);

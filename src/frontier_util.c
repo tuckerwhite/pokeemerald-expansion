@@ -903,7 +903,7 @@ static void SetFrontierTrainers(void)
     gFacilityTrainers = gBattleFrontierTrainers;
 }
 
-static void SaveSelectedParty(void)
+static void SaveSelectedParty(void) //Tuck Note I feel like this will be important
 {
     u8 i;
 

@@ -151,7 +151,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 10,
+      "x": 18,
       "y": 1,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -160,8 +160,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 1,
+      "x": 18,
+      "y": 2,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "0",
@@ -169,8 +169,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 1,
+      "x": 19,
+      "y": 2,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "1",
@@ -214,8 +214,8 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 2,
+      "x": 19,
+      "y": 3,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "3",
@@ -223,8 +223,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 2,
+      "x": 18,
+      "y": 3,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "3",

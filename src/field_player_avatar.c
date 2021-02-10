@@ -2049,7 +2049,7 @@ static void AlignFishingAnimationFrames(void)
     if (animType == 5)
         playerSprite->pos2.y = -8;
     if (animType == 10 || animType == 11)
-        playerSprite->pos2.y = 8;
+            playerSprite->pos2.y = 8;
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
         SetSurfBobWhileFishingState(gObjectEvents[gPlayerAvatar.objectEventId].fieldEffectSpriteId, 1, playerSprite->pos2.y);
 }

@@ -2367,7 +2367,7 @@ static void PlayerHandleDrawTrainerPic(void)
     }
     else
     {
-        trainerPicId = gSaveBlock2Ptr->playerGender;
+        trainerPicId = gSaveBlock2Ptr->playerGender;  // Tuck Note This is the money right here, Tuck
     }
 
     if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
