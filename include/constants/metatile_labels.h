@@ -178,6 +178,9 @@
 #define METATILE_Fallarbor_RedCaveEntrance_Bottom    0x34F
 #define METATILE_Fallarbor_RedCaveEntrance_Top       0x347
 #define METATILE_Fallarbor_RedRockWall               0x269
+#define METATILE_Fallarbor_RockClimbLeftRight        0x2DC
+#define METATILE_Fallarbor_RockClimbRightLeft        0x2C4
+#define METATILE_Fallarbor_RockClimbVertical         0x2BA
 
 // gTileset_Fortree
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F

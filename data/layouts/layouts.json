@@ -4450,6 +4450,16 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DewfordBeach/border.bin",
       "blockdata_filepath": "data/layouts/DewfordBeach/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLITHER_GORGE",
+      "name": "SlitherGorge_Layout",
+      "width": 28,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/SlitherGorge/border.bin",
+      "blockdata_filepath": "data/layouts/SlitherGorge/map.bin"
     }
   ]
 }
