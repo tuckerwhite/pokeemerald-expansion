@@ -2506,3 +2506,9 @@ const u8 gChinglingPokedexText[] = _(
     "When it hops, the orb bounces all\n"
     "over and makes a ringing sound.\n"
     "It can cry for an awfully long time.");
+
+const u8 gMegrowthPokedexText[] = _(
+    "How on Earth a Meowth got so long,\n"
+    "scientists may never know.\n"
+    "It seems to ... oh no ...\n"
+    "It's getting longer!");

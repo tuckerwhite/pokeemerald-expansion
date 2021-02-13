@@ -5014,4 +5014,15 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    [NATIONAL_DEX_MEGROWTH] =
+    {
+        .categoryName = _("LONG CAT"),
+        .height = 16,
+        .weight = 136,
+        .description = gMegrowthPokedexText,
+        .pokemonScale = 269,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

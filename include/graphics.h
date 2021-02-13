@@ -2998,6 +2998,14 @@ extern const u32 gMonStillFrontPic_Chingling[];
 extern const u8 gMonIcon_Chingling[];
 extern const u8 gMonFootprint_Chingling[];
 
+extern const u32 gMonPalette_Megrowth[];
+extern const u32 gMonBackPic_Megrowth[];
+extern const u32 gMonShinyPalette_Megrowth[];
+extern const u32 gMonFrontPic_Megrowth[];
+extern const u8 gMonIcon_Megrowth[];
+extern const u8 gMonFootprint_Megrowth[];
+
+
 extern const u32 gMonPic_Egg[];
 extern const u32 gMonPalette_Egg[];
 extern const u32 gMonFrontPic_Egg[];

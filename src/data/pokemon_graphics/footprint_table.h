@@ -443,5 +443,6 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_MUNCHLAX] = gMonFootprint_Munchlax,
     [SPECIES_BUDEW] = gMonFootprint_Budew,
     [SPECIES_CHINGLING] = gMonFootprint_Chingling,
+    [SPECIES_MEGROWTH] = gMonFootprint_Megrowth,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

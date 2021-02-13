@@ -445,4 +445,5 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_MUNCHLAX] = _("MUNCHLAX"),
     [SPECIES_BUDEW] = _("BUDEW"),
     [SPECIES_CHINGLING] = _("CHINGLING"),
+    [SPECIES_MEGROWTH] = _("MEGROWTH"),
 };

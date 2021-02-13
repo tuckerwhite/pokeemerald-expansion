@@ -4841,6 +4841,11 @@ static const union AnimCmd sAnim_CHINGLING_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_MEGROWTH_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 
 static const union AnimCmd sAnim_EGG_1[] =
 {
@@ -7229,6 +7234,11 @@ static const union AnimCmd *const sAnims_CHINGLING[] ={
     sAnim_CHINGLING_1,
 };
 
+static const union AnimCmd *const sAnims_MEGROWTH[] ={
+    sAnim_GeneralFrame0,
+    sAnim_MEGROWTH_1,
+};
+
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
     sAnim_EGG_1,
@@ -7819,6 +7829,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(MUNCHLAX),
     ANIM_CMD(ROSERADE),
     ANIM_CMD(BUDEW),
+    ANIM_CMD(MEGROWTH),
 
     ANIM_CMD(EGG),
     ANIM_CMD(UNOWN_B),

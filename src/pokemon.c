@@ -508,6 +508,7 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 //aLTERED EMERALD MONS
     SPECIES_TO_HOENN(LEAFEON),
     SPECIES_TO_HOENN(GLACEON),
+    SPECIES_TO_HOENN(MEGROWTH),
 };
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -947,6 +948,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
     SPECIES_TO_NATIONAL(FROSLASS),
     SPECIES_TO_NATIONAL(REGIGIGAS),
     SPECIES_TO_NATIONAL(SYLVEON),
+    SPECIES_TO_NATIONAL(MEGROWTH),
     //Altered Emerald Forms
     [SPECIES_EXEGGCUTE_SCHOOL - 1] = NATIONAL_DEX_EXEGGCUTE,
     [SPECIES_GOLEM_SHIELDS - 1] = NATIONAL_DEX_GOLEM,
@@ -1372,6 +1374,7 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
     HOENN_TO_NATIONAL(MUNCHLAX),
     HOENN_TO_NATIONAL(BUDEW),
     HOENN_TO_NATIONAL(CHINGLING),
+    HOENN_TO_NATIONAL(MEGROWTH),
     HOENN_TO_NATIONAL(OLD_UNOWN_B),
     HOENN_TO_NATIONAL(OLD_UNOWN_C),
     HOENN_TO_NATIONAL(OLD_UNOWN_D),
@@ -1885,7 +1888,8 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_DUSKNOIR - 1] = 0x15,
     [SPECIES_FROSLASS - 1] = 0x1C,
     [SPECIES_REGIGIGAS - 1] = 0x3A,
-    [SPECIES_SYLVEON - 1] = 0x16
+    [SPECIES_SYLVEON - 1] = 0x16,
+    [SPECIES_MEGROWTH - 1] = 0x15
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =

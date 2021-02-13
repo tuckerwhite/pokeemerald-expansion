@@ -388,6 +388,7 @@ gCryTable:: @ 869DCF4
 	cry Cry_Jirachi  @ 869EF00
 	cry Cry_Deoxys  @ 869EF0C
 	cry Cry_Chimecho  @ 869EF18
+	cry Cry_Megrowth  @ 869DF58
 
 	.align 2
 gCryTable2:: @ 869EF24
@@ -779,3 +780,4 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Jirachi  @ 86A0130
 	cry2 Cry_Deoxys  @ 86A013C
 	cry2 Cry_Chimecho  @ 86A0148
+	cry Cry_Megrowth  @ 869DF58

@@ -2935,6 +2935,12 @@ const u32 gMonShinyPalette_Chingling[] = INCBIN_U32("graphics/pokemon/chingling/
 const u8 gMonIcon_Chingling[] = INCBIN_U8("graphics/pokemon/chingling/icon.4bpp");
 const u8 gMonFootprint_Chingling[] = INCBIN_U8("graphics/pokemon/chingling/footprint.1bpp");
 
+const u32 gMonFrontPic_Megrowth[] = INCBIN_U32("graphics/pokemon/megrowth/front.4bpp.lz");
+const u32 gMonPalette_Megrowth[] = INCBIN_U32("graphics/pokemon/megrowth/normal.gbapal.lz");
+const u32 gMonBackPic_Megrowth[] = INCBIN_U32("graphics/pokemon/megrowth/back.4bpp.lz");
+const u32 gMonShinyPalette_Megrowth[] = INCBIN_U32("graphics/pokemon/megrowth/shiny.gbapal.lz");
+const u8 gMonIcon_Megrowth[] = INCBIN_U8("graphics/pokemon/megrowth/icon.4bpp");
+const u8 gMonFootprint_Megrowth[] = INCBIN_U8("graphics/pokemon/megrowth/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
