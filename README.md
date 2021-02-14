@@ -34,3 +34,14 @@ Other disassembly and/or decompilation projects:
 ## Contacts
 
 You can find us on [Discord](https://discord.gg/d5dubZ3) and [IRC](https://kiwiirc.com/client/irc.freenode.net/?#pret).
+
+* Credits for AER (or whatever I end up calling this thing):
+
+Everyone on the RHH Discord for their tireless help and continuing strides to improve Decomp hacking!
+    Special shoutouts to DizzyEgg, Ghoulslash, and Lunos.
+For everyone who contributed to the Battle Engine upgrade (which I have extensively modified for this hack)
+    Lunos, Shanty, mvit, Avara, Kurausukun, TheLaw, BreadCrumbs, Tetra, Ultima, Cancer Fairy, Syreldar, and UltimaSoul!
+Big thanks to Ryuhouji and the Emerald Enhanced team for keeping their insane project open source so that I could study it.
+For the HGSS style PokedexPlus, big shoutout to TheXaman and everyone who worked with them:
+    AparagusEduardo, DizzyEgg, Jaizu, and NobodySociety.
+And, finally, a gigantic thank you to the wonderful and welcoming people at Altered Emerald discord (especially Zanzer and Toby), as well as the creator of the original hack himself, Luuma!
