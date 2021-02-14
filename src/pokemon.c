@@ -1889,7 +1889,7 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_FROSLASS - 1] = 0x1C,
     [SPECIES_REGIGIGAS - 1] = 0x3A,
     [SPECIES_SYLVEON - 1] = 0x16,
-    [SPECIES_MEGROWTH - 1] = 0x15
+    [SPECIES_MEGROWTH - 1] = 0x3A
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
