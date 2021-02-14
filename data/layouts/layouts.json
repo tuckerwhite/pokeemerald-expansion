@@ -4454,7 +4454,7 @@
     {
       "id": "LAYOUT_SLITHER_GORGE",
       "name": "SlitherGorge_Layout",
-      "width": 28,
+      "width": 38,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
